@@ -13,6 +13,7 @@ import {
 import { findPath, learningPaths, normalizePath } from "@/lib/learningPaths";
 
 const STORAGE_KEY = "zechub-my-path-v1";
+const CHANGE_EVENT = "zechub:my-path-changed";
 type SavedPage = { href: string; title: string };
 type PathState = {
   activePath: string | null;
@@ -98,7 +99,20 @@ export function PathProvider({ children }: { children: ReactNode }) {
       }
     };
     window.addEventListener("storage", sync);
-    return () => window.removeEventListener("storage", sync);
+    const syncLocal = () => {
+      try {
+        const next = parsePathState(localStorage.getItem(STORAGE_KEY));
+        stateRef.current = next;
+        setState(next);
+      } catch {
+        setStorageAvailable(false);
+      }
+    };
+    window.addEventListener(CHANGE_EVENT, syncLocal);
+    return () => {
+      window.removeEventListener("storage", sync);
+      window.removeEventListener(CHANGE_EVENT, syncLocal);
+    };
   }, []);
   const update = useCallback((fn: (previous: PathState) => PathState) => {
     const next = fn(stateRef.current);
@@ -106,6 +120,7 @@ export function PathProvider({ children }: { children: ReactNode }) {
     setState(next);
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+      window.dispatchEvent(new Event(CHANGE_EVENT));
     } catch {
       setStorageAvailable(false);
     }

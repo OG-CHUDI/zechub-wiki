@@ -80,3 +80,23 @@ it("ignores malformed or unsafe saved state", () => {
   expect(parsed.completed.learn).toEqual(["/start-here/what-is-zec-and-zcash"]);
   expect(parsed.saved).toEqual([{ href: "/wallets", title: "Wallets" }]);
 });
+
+it("synchronizes progress between two workspaces on the same page", async () => {
+  render(
+    <>
+      <PathProvider>
+        <Controls />
+      </PathProvider>
+      <PathProvider>
+        <Controls />
+      </PathProvider>
+    </>,
+  );
+  await waitFor(() =>
+    expect(screen.getAllByTestId("state")[1]).not.toHaveTextContent("loading"),
+  );
+  fireEvent.click(screen.getAllByText("Choose")[0]);
+  expect(screen.getAllByTestId("state")[1]).toHaveTextContent(
+    '"activePath":"learn"',
+  );
+});

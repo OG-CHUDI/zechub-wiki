@@ -23,7 +23,7 @@ export function PathEntry() {
       <Compass size={18} aria-hidden="true" />
       <span className="hidden sm:inline">My Path</span>
       {ready && path && (
-        <span className="hidden rounded-full bg-brand/10 px-2 py-0.5 text-xs text-brand dark:text-brand-soft md:inline">
+        <span className="hidden rounded-full bg-brand/10 px-2 py-0.5 text-xs text-slate-800 dark:text-slate-100 md:inline">
           {done}/{path.steps.length}
         </span>
       )}
@@ -43,7 +43,7 @@ export function HomePathCard() {
     >
       <div className="flex flex-wrap items-center justify-between gap-5 rounded-2xl border border-brand/20 bg-brand/5 p-6 dark:bg-slate-900 sm:p-8">
         <div>
-          <p className="text-sm font-semibold uppercase tracking-wider text-brand dark:text-brand-soft">
+          <p className="text-sm font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-200">
             Your Zcash journey
           </p>
           <h2 className="mt-2 text-xl font-semibold text-slate-950 dark:text-white">
@@ -57,7 +57,7 @@ export function HomePathCard() {
         </div>
         <Link
           href={next?.href ?? "/my-path"}
-          className="inline-flex min-h-11 items-center justify-center rounded-lg bg-brand px-5 py-2 text-sm font-semibold text-on-brand hover:bg-brand-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
+          className="inline-flex min-h-11 items-center justify-center rounded-lg bg-[color:color-mix(in_srgb,var(--color-brand)_75%,black)] px-5 py-2 text-sm font-semibold text-on-brand hover:bg-[color:color-mix(in_srgb,var(--color-brand)_65%,black)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
         >
           {path && next
             ? "Continue your path"
@@ -103,7 +103,7 @@ export function PagePathActions({
       <div className="text-sm text-slate-600 dark:text-slate-300">
         {step && active ? (
           <>
-            <span className="font-semibold text-brand dark:text-brand-soft">
+            <span className="font-semibold text-slate-800 dark:text-slate-100">
               {active.title}
             </span>{" "}
             · Step {active.steps.indexOf(step) + 1} of {active.steps.length}
@@ -127,7 +127,7 @@ export function PagePathActions({
             type="button"
             aria-pressed={done}
             onClick={() => toggleStep(active.id, pathname)}
-            className="inline-flex min-h-10 items-center gap-2 rounded-lg border border-brand/40 px-3 text-sm font-medium text-brand hover:bg-brand/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand dark:text-brand-soft"
+            className="inline-flex min-h-10 items-center gap-2 rounded-lg border border-brand/40 px-3 text-sm font-medium text-slate-800 hover:bg-brand/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand dark:text-slate-100"
           >
             <Check size={16} aria-hidden="true" />
             {done ? "Completed" : "Mark complete"}
@@ -136,7 +136,7 @@ export function PagePathActions({
         {done && next && (
           <Link
             href={next.href}
-            className="inline-flex min-h-10 items-center rounded-lg bg-brand px-3 text-sm font-semibold text-on-brand hover:bg-brand-hover"
+            className="inline-flex min-h-10 items-center rounded-lg bg-[color:color-mix(in_srgb,var(--color-brand)_75%,black)] px-3 text-sm font-semibold text-on-brand hover:bg-[color:color-mix(in_srgb,var(--color-brand)_65%,black)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
           >
             Next: {next.title}
           </Link>
