@@ -30,6 +30,7 @@ import VideoStrip from "./VideoStrip";
 import { useDarkModeContext } from "@/hooks/useDarkModeContext";
 import { useLanguage } from "@/context/LanguageContext";
 import { socialNav } from "@/constants/navigation";
+import { HomePathCard } from "@/components/MyPath/PathEntry";
 
 // Artwork lives in /public/explore/{dark,light}/. A plain string is the same
 // file name in both folders; use {dark, light} when the names differ, and a
@@ -470,6 +471,8 @@ const Home = () => {
           ) : null}
         </div>
       </section>
+
+      <HomePathCard />
 
       {/* Live chain numbers (hidden if the feed is unavailable) */}
       <section id="stats" className={`${wrap} pt-10`}>

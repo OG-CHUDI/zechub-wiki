@@ -5,6 +5,8 @@ import FloatingExplore from "@/components/FloatingExplore";
 import ProgressBar from "@/components/UI/ProgressBar";
 import { MAIN_CONTENT_ID } from "@/components/SkipToContent";
 import type { Searcher } from "@/types";
+import { PathProvider } from "@/components/MyPath/PathProvider";
+import { PagePathActions } from "@/components/MyPath/PathEntry";
 
 const EXEMPT_ROUTES = ["/welcome"];
 
@@ -19,12 +21,13 @@ export default function NavigationWrapper({
   const isExempt = EXEMPT_ROUTES.some((route) => pathname?.startsWith(route));
 
   return (
-    <>
+    <PathProvider>
       {!isExempt && (
         <>
           <div className="min-h-screen mx-auto">
             <ProgressBar />
             <Navigation searchItems={searchItems} />
+            <PagePathActions searchItems={searchItems} />
             <FloatingExplore />
 
             <div
@@ -49,6 +52,6 @@ export default function NavigationWrapper({
           {children}
         </div>
       )}
-    </>
+    </PathProvider>
   );
 }

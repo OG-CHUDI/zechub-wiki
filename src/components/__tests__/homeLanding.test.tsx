@@ -2,6 +2,7 @@ import { act, fireEvent, render, screen, waitFor } from "@testing-library/react"
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import Home from "../Home/Home";
+import { PathProvider } from "../MyPath/PathProvider";
 import VideoStrip from "../Home/VideoStrip";
 import ZcashStats from "../Home/ZcashStats";
 import en from "../../../dictionaries/en.json";
@@ -33,7 +34,7 @@ test("the homepage uses translated section, card, link, and CTA copy without cha
     groups: { ...en.homeLanding.groups, deeper: { ...en.homeLanding.groups.deeper, title: "Approfondir" } },
     involved: { ...en.homeLanding.involved, contribute: { ...en.homeLanding.involved.contribute, support: "Soutenir le projet" } },
   } } };
-  render(<Home />);
+  render(<PathProvider><Home /></PathProvider>);
   expect(document.querySelector("#hero p")).toHaveTextContent("Apprendre Zcash ensemble");
   expect(screen.getByText("Zcash", { selector: "#hero .text-brand" })).toBeInTheDocument();
   expect(screen.getByRole("heading", { name: "Choisir un portefeuille" })).toBeInTheDocument();

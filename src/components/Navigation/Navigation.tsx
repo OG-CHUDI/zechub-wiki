@@ -7,6 +7,7 @@ import type { ComponentProps } from "react";
 import DropdownMobile from "../DropdownMobile/DropdownMobile";
 import ZecPrice from "./ZecPrice";
 import SearchBar from "../SearchBar";
+import { PathEntry } from "../MyPath/PathEntry";
 import { usePathname } from "next/navigation";
 import ColorThemePicker from "../ColorThemePicker";
 import Logo from "../UI/Logo";
@@ -1653,6 +1654,7 @@ const Navigation = ({ searchItems }: { searchItems: readonly Searcher[] }) => {
               searchItems={searchItems}
             />
             <div className="flex items-center gap-1">
+            <PathEntry />
             <button
               type="button"
               onClick={() => setOpenSearch(true)}
