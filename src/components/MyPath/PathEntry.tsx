@@ -44,7 +44,7 @@ export function HomePathCard() {
       <div className="flex flex-wrap items-center justify-between gap-5 rounded-2xl border border-brand/20 bg-brand/5 p-6 dark:bg-slate-900 sm:p-8">
         <div>
           <p className="text-sm font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-200">
-            Your Zcash journey
+            My Path
           </p>
           <h2 className="mt-2 text-xl font-semibold text-slate-950 dark:text-white">
             {path ? path.title : "Learn at your own pace"}
@@ -52,7 +52,7 @@ export function HomePathCard() {
           <p className="mt-2 text-slate-600 dark:text-slate-300">
             {path
               ? `${completed.length} of ${path.steps.length} steps complete${next ? ` · Next: ${next.title}` : " · Path complete"}`
-              : "Choose a path, save useful pages, and pick up where you left off."}
+              : "Choose a path, track your progress, and save pages for later."}
           </p>
         </div>
         <Link

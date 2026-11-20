@@ -14,22 +14,22 @@ export const learningPaths: readonly LearningPath[] = [
     title: "Learn Zcash",
     audience: "New to Zcash",
     description:
-      "Build a foundation in Zcash, financial privacy and the network.",
+      "Learn the basics of Zcash, financial privacy, and the network.",
     steps: [
       {
         href: "/start-here/what-is-zec-and-zcash",
         title: "What is Zcash?",
-        description: "Meet Zcash and the ideas behind it.",
+        description: "Learn what Zcash and ZEC are.",
       },
       {
         href: "/start-here/new-user-guide",
         title: "New user guide",
-        description: "Get oriented with the essentials.",
+        description: "Start with the Zcash user guide.",
       },
       {
         href: "/using-zcash/shielded-pools",
         title: "Shielded pools",
-        description: "Understand the building blocks of private transactions.",
+        description: "Learn about shielded and transparent pools.",
       },
       {
         href: "/start-here/network-upgrades",
@@ -81,22 +81,22 @@ export const learningPaths: readonly LearningPath[] = [
       {
         href: "/developers",
         title: "Developer resources",
-        description: "Explore the developer ecosystem.",
+        description: "Find Zcash development resources.",
       },
       {
         href: "/developers/quick-start",
         title: "Developer quick start",
-        description: "Get familiar with the tools and components.",
+        description: "Get started with Zcash development tools.",
       },
       {
         href: "/guides/zcash-devtool",
         title: "Zcash Devtool",
-        description: "Explore a practical development tool.",
+        description: "Learn how to use Zcash Devtool.",
       },
       {
         href: "/visualizer",
         title: "Zcash visualizers",
-        description: "Explore concepts interactively.",
+        description: "Explore interactive Zcash visualizations.",
       },
     ],
   },
@@ -109,7 +109,7 @@ export const learningPaths: readonly LearningPath[] = [
       {
         href: "/start-here/what-is-zechub",
         title: "What is ZecHub?",
-        description: "Discover the project and its mission.",
+        description: "Learn about ZecHub and its mission.",
       },
       {
         href: "/contribute/help-build-zechub",

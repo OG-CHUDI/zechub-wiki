@@ -10,7 +10,6 @@ import {
   LockKeyhole,
   RotateCcw,
   ShieldCheck,
-  Sparkles,
   Users,
 } from "lucide-react";
 import { Link } from "@/i18n/navigation";
@@ -41,14 +40,14 @@ export default function MyPathPage() {
     <main className="mx-auto max-w-6xl px-5 pb-24 pt-12 sm:px-8 sm:pt-16">
       <div className="max-w-3xl">
         <p className="mb-4 flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.16em] text-slate-700 dark:text-slate-200">
-          <Compass size={17} aria-hidden="true" /> Your space to learn
+          <Compass size={17} aria-hidden="true" /> Learning paths
         </p>
         <h1 className="text-4xl font-semibold tracking-tight text-slate-950 dark:text-white sm:text-5xl">
           Find your way with Zcash.
         </h1>
         <p className="mt-5 text-lg leading-relaxed text-slate-600 dark:text-slate-300">
-          Choose a goal, explore at your own pace, and pick up where you left
-          off. Your progress stays in this browser.
+          Choose a path, mark steps complete, and save pages for later. Your
+          progress stays in this browser.
         </p>
         <p className="mt-4 flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400">
           <LockKeyhole size={16} aria-hidden="true" /> No account or wallet
@@ -73,7 +72,7 @@ export default function MyPathPage() {
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div>
               <p className="text-sm font-semibold text-slate-700 dark:text-slate-200">
-                YOUR CURRENT PATH
+                Current path
               </p>
               <h2
                 id="active-path-heading"
@@ -112,7 +111,7 @@ export default function MyPathPage() {
             </Link>
           ) : (
             <p className="mt-6 font-semibold text-emerald-700 dark:text-emerald-300">
-              You completed this path. Explore another whenever you’re ready.
+              You completed this path. Choose another path to keep learning.
             </p>
           )}
           <ol className="mt-7 divide-y divide-slate-200 border-t border-slate-200 dark:divide-slate-700 dark:border-slate-700">
@@ -174,15 +173,13 @@ export default function MyPathPage() {
         <div className="flex items-end justify-between gap-4">
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-200">
-              Choose your direction
+              Learning paths
             </p>
             <h2
               id="paths-heading"
               className="mt-2 text-2xl font-semibold text-slate-950 dark:text-white"
             >
-              {active
-                ? "Explore other paths"
-                : "Where would you like to start?"}
+              {active ? "All paths" : "Choose a path"}
             </h2>
           </div>
         </div>
@@ -261,13 +258,13 @@ export default function MyPathPage() {
           </h2>
         </div>
         <p className="mt-2 text-slate-600 dark:text-slate-300">
-          Keep useful pages close, even when they’re not part of a path.
+          Save wiki pages to find them again later.
         </p>
         {!ready || state.saved.length === 0 ? (
           <div className="mt-5 rounded-2xl border border-dashed border-slate-300 p-8 text-center dark:border-slate-700">
-            <Sparkles className="mx-auto text-brand" aria-hidden="true" />
+            <Bookmark className="mx-auto text-brand" aria-hidden="true" />
             <p className="mt-3 font-semibold text-slate-800 dark:text-slate-200">
-              Your reading list starts here.
+              No saved pages yet.
             </p>
             <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
               Use “Save page” while exploring the wiki.
