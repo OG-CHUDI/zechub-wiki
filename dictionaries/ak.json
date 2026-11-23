@@ -1,4 +1,340 @@
 {
+  "myPath": {
+    "myPath": "Me Kwan",
+    "closeMyPath": "To Me Kwan no mu",
+    "pageActions": "Me Kwan krataafa no nneyɛe",
+    "learningPaths": "Adesua akwan",
+    "heading": "Hwehwɛ wo kwan ne Zcash.",
+    "intro": "Paw ɔkwan bi, hyɛ anammɔn ahorow no agyirae sɛ awie, na sie nkratafa no ma akyiri yi. Wo nkɔsoɔ tra browser yi mu.",
+    "privacy": "Akonta anaa sika kotoku nkitahodi biara ho nhia.",
+    "storageUnavailable": "Browser storage no nni hɔ. Wo nkɔso yɛ bere tiaa mu de na ebia wobɛyera bere a wufi saa adwene yi mu no.",
+    "currentPath": "Mprempren kwan no",
+    "completeCount": "{done} a ɛyɛ {total} awie",
+    "progress": "{title} nkɔsoɔ",
+    "continueStep": "Toa so: {title}",
+    "completedPath": "Wowiee saa kwan yi. Paw ɔkwan foforo a wobɛfa so akɔ so asua ade.",
+    "completed": "Wɔawie",
+    "markComplete": "Mark wie",
+    "resetConfirm": "Reset nkɔsoɔ ma {title}? Nkratafa a wɔakora so no bɛtra hɔ.",
+    "resetPath": "Reset saa kwan yi",
+    "allPaths": "Akwan nyinaa",
+    "choosePath": "Paw ɔkwan bi",
+    "stepCount": "{count} anammɔn ahorow",
+    "returnPath": "San kɔ ɔkwan no so",
+    "startPath": "Fi ase saa kwan yi",
+    "completedCount": "{count} awie",
+    "savedPages": "Nkratafa a wɔakora so",
+    "savedDescription": "Sie wiki nkratafa na woahu bio akyiri yi.",
+    "noSaved": "Nkratafa biara nni hɔ a wɔakora so de besi nnɛ.",
+    "saveHint": "Fa Save krataafa no di dwuma bere a worehwehwɛ wiki no mu.",
+    "remove": "Yi fi hɔ",
+    "clearConfirm": "Popa Me Kwan nkɔso ne nkratafa a wɔakora so nyinaa fi browser yi so?",
+    "clearAll": "Popa Me Kwan data nyinaa",
+    "headerProgress": "Me Kwan: {done} a {total} anammɔn awie",
+    "homeHeading": "Sua ade wɔ w’ankasa wo kwan so",
+    "homeProgress": "{done} a {total} anammɔn awie",
+    "nextTitle": "Nea edi hɔ: {title}",
+    "pathComplete": "Ɔkwan no awie",
+    "homeIntro": "Paw ɔkwan bi, di wo nkɔso akyi, na fa nkratafa sie ma akyiri yi.",
+    "continuePath": "Toa w’akwan no so",
+    "viewPath": "Hwɛ wo kwan no",
+    "explorePaths": "Hwehwɛ akwan a wɔfa so sua ade",
+    "stepPosition": "Anamɔn {current} a ɛyɛ {total}",
+    "keepPage": "Fa kratafa yi sie ma akyiri yi",
+    "saved": "Wɔakora so",
+    "savePage": "Sie krataafa no",
+    "paths": {
+      "learn": {
+        "title": "Sua Zcash",
+        "audience": "Foforo wɔ Zcash mu",
+        "description": "Sua Zcash mfitiaseɛ, sikasɛm mu kokoamsɛm, ne ntwamutam no.",
+        "steps": [
+          {
+            "title": "Zcash Mfitiaseɛ",
+            "description": "Sua nea Zcash ne ZEC yɛ."
+          },
+          {
+            "title": "Zcash Foforo a Wɔde Di Dwuma Nkyerɛkyerɛmu",
+            "description": "Fi ase fa Zcash dwumadie akwankyerɛ no so."
+          },
+          {
+            "title": "Zcash Botae a Wɔde Yɛ Adwuma",
+            "description": "Sua Zcash ayɔnkofa ho kokoamsɛm ho ade."
+          },
+          {
+            "title": "Zcash Network Nkɔsoɔ a Wɔayɛ",
+            "description": "Hwɛ sɛnea Zcash anya nkɔso."
+          },
+          {
+            "title": "Sikasɛm ho nhyehyɛe",
+            "description": "Te ZEC a wɔde ma ne nea wɔde ma no ase."
+          },
+          {
+            "title": "Hena na obetumi ahu sika a wotua?",
+            "description": "Hwehwɛ nea nnipa ahorow betumi ahu mu."
+          },
+          {
+            "title": "Akwan a wɔfa so de ZEC di dwuma",
+            "description": "Hwehwɛ dwumadie a mfasoɔ wɔ so ma Zcash."
+          }
+        ]
+      },
+      "use": {
+        "title": "Fa Zcash di dwuma wɔ kokoam",
+        "audience": "Wɔasiesie ne ho sɛ wode ZEC bedi dwuma",
+        "description": "Hwehwɛ sika kotoku, nnwuma ne nneɛma a wɔpaw a ɛka kokoam nsɛm.",
+        "steps": [
+          {
+            "title": "ZEC a wode bedi dwuma, wɔ kokoam",
+            "description": "Sua sɛnea wode ZEC bedi dwuma wɔ kokoam."
+          },
+          {
+            "title": "Hwehwɛ sika kotoku mu",
+            "description": "Fa sika kotoku ne emu nneɛma toto ho."
+          },
+          {
+            "title": "Zcash a wobenya",
+            "description": "Sua akwan a wobɛfa so anya ZEC ho ade."
+          },
+          {
+            "title": "Nkitahodi ahorow",
+            "description": "Sua sɛnea Zcash nkitahodi ahorow yɛ adwuma."
+          },
+          {
+            "title": "Zcash Botae a Wɔde Yɛ Adwuma",
+            "description": "Sua sɛnea Zcash bɔ nkitahodi ho kokoamsɛm ho ban."
+          },
+          {
+            "title": "Address ahorow a wɔaka abom",
+            "description": "Te address ahorow a wɔde gye Zcash no ase."
+          },
+          {
+            "title": "Memos a wɔabɔ ho ban",
+            "description": "Sua sɛnea memos yɛ adwuma wɔ shielded payments mu."
+          },
+          {
+            "title": "Sika a wɔresan agye",
+            "description": "Sua sika kotoku a wɔsan nya ne backups ho ade."
+          }
+        ]
+      },
+      "build": {
+        "title": "Fa Zcash si dan",
+        "audience": "Wɔn a wɔyɛ nneɛma",
+        "description": "Hwehwɛ mfiridwuma mu nneɛma ne nnwinnade a wode befi ase asi.",
+        "steps": [
+          {
+            "title": "Developer nneɛma a wɔde yɛ adwuma",
+            "description": "Hwehwɛ Zcash nkɔsoɔ nneɛma."
+          },
+          {
+            "title": "Developer ntɛm mfiase",
+            "description": "Hyɛ aseɛ de Zcash nkɔsoɔ nnwinnadeɛ."
+          },
+          {
+            "title": "Zcash Devtool no na ɛyɛ adwuma",
+            "description": "Sua sɛnea wode Zcash Devtool bedi dwuma."
+          },
+          {
+            "title": "Zcash mfoniniyɛfo",
+            "description": "Hwehwɛ nkitahodi Zcash mfonini ahorow mu."
+          },
+          {
+            "title": "Zcash sɔhwɛ afiri",
+            "description": "Hwehwɛ network bi a wode bɛsɔ application ahorow ahwɛ."
+          },
+          {
+            "title": "Zcash JS. Ɔde ne nsa kyerɛɛ ne so",
+            "description": "Hwehwɛ JavaScript developer akwankyerɛ no mu."
+          },
+          {
+            "title": "Nodes ne indexing a wɔde yɛ nneɛma",
+            "description": "Sua node RPC ne blockchain indexing ho ade."
+          }
+        ]
+      },
+      "contribute": {
+        "title": "Boa ma ZecHub",
+        "audience": "Mpɔtam hɔfo a wɔde mmoa ma",
+        "description": "Sua sɛnea mpɔtam hɔfo yɛ adwuma ne baabi a wubetumi aboa.",
+        "steps": [
+          {
+            "title": "Dɛn ne ZecHub?",
+            "description": "Sua ZecHub ne n’asɛmpatrɛw ho ade."
+          },
+          {
+            "title": "Boa ma Wɔkyekye ZecHub",
+            "description": "Hwehwɛ akwan a wobɛfa so aboa."
+          },
+          {
+            "title": "Ɔreboa ZecHub",
+            "description": "Te ntoboa adwumayɛ nhyehyɛe no ase."
+          },
+          {
+            "title": "ZecHub Style Akwankyerɛ",
+            "description": "Sua mpɔtam hɔfo nhyiam horow a ɛfa emu nsɛm ho."
+          },
+          {
+            "title": "ZecHub DAO",
+            "description": "Hwehwɛ sɛnea ZecHub mpɔtam hɔfo hyehyɛ wɔn ho."
+          },
+          {
+            "title": "ZecNnawɔtwe biara",
+            "description": "Sua mpɔtam hɔ nsɛmma nhoma no ho ade."
+          }
+        ]
+      },
+      "privacy": {
+        "title": "Kokoamsɛm a ɛboro sikatua so",
+        "audience": "Kokoam nsɛm ho adesuafo",
+        "description": "Te asɛm a wotumi hu ne nnwinnade a ɛboa da biara da kokoam nsɛm ase.",
+        "steps": [
+          {
+            "title": "Hena na obetumi ahu sika a wotua?",
+            "description": "Sua sikatua ho nsɛm a wobetumi ahu."
+          },
+          {
+            "title": "Siw explorer a wotumi hu no kwan",
+            "description": "Te nea ɔmanfo blockchain data betumi ada no adi no ase."
+          },
+          {
+            "title": "Nsafe a wɔhwɛ",
+            "description": "Hwehwɛ nkitahodi ho nsɛm a wɔpaw a wɔkyɛ mu."
+          },
+          {
+            "title": "Abɔfoɔ a wɔbɛbɔ wɔn ho ban",
+            "description": "Hwehwɛ nnwinnade a wode bedi nkitaho wɔ kokoam."
+          },
+          {
+            "title": "Wɛbsaet so browser ahorow",
+            "description": "Sua browser kokoam nsɛm a wɔpaw ho ade."
+          },
+          {
+            "title": "VPN ne dVPN",
+            "description": "Hwehwɛ ntwamutam kokoam nnwinnade ne nea wɔde di gua."
+          },
+          {
+            "title": "PGP encryption a wɔde kyerɛw nsɛm",
+            "description": "Sua nkrasɛm a wɔde sie na wɔde wɔn nsa hyɛ ase ho ade."
+          }
+        ]
+      },
+      "protocol": {
+        "title": "Sɛnea Zcash yɛ adwuma",
+        "audience": "Mfiridwuma ho adesuafo",
+        "description": "Kɔ akyiri wɔ shielded transactions, cryptography, nodes ne protocol nhwehwɛmu mu.",
+        "steps": [
+          {
+            "title": "Zcash fapem ahorow",
+            "description": "Sua nnwuma a wɔabɔ ho ban no fapem ahorow ho ade."
+          },
+          {
+            "title": "Hash dwumadie ahodoɔ",
+            "description": "Sua cryptographic dan titiriw bi."
+          },
+          {
+            "title": "Adanse a nimdeɛ nnim",
+            "description": "Hwehwɛ adanse ahorow a wɔde di dwuma ma nnwuma a wɔabɔ ho ban no mu."
+          },
+          {
+            "title": "Nodes a ɛyɛ pɛ",
+            "description": "Sua sɛnea nodes de wɔn ho hyɛ network no mu."
+          },
+          {
+            "title": "Lightwallet node ahorow a ɛwɔ hɔ",
+            "description": "Hwehwɛ infrastructure a sika kotoku a emu yɛ hare de di dwuma no mu."
+          },
+          {
+            "title": "Nhwehwɛmu a wɔyɛ wɔ ɔkwan a ɛfata so",
+            "description": "Hwehwɛ sɛnea wobetumi agye protocol ahobammɔ atom."
+          },
+          {
+            "title": "Network upgrades a wɔyɛ no yiye",
+            "description": "Di abakɔsɛm a ɛfa protocol nsakrae ho akyi."
+          }
+        ]
+      },
+      "real-world": {
+        "title": "Zcash wɔ wiase ankasa mu",
+        "audience": "Da biara da dwumadie",
+        "description": "Hwehwɛ sikatua, ntoboa, adebɔfo ne kokoam nsɛm a mfaso wɔ so.",
+        "steps": [
+          {
+            "title": "Zcash dwumadie nsɛm",
+            "description": "Fi ase de akwan a wobɛfa so de ZEC adi dwuma no ho nsɛm a wɔaka abom."
+          },
+          {
+            "title": "Aguadifo sikatua",
+            "description": "Hwehwɛ gye a wobɛgye Zcash atom sɛ aguadifoɔ."
+          },
+          {
+            "title": "Ankorankoro ntoboa ahorow",
+            "description": "Sua ntoboa a wɔabɔ ho ban a wobenya ho ade."
+          },
+          {
+            "title": "Freelancer kokoam nsɛm",
+            "description": "Hwehwɛ kokoam nhyehyɛe bi mu ma freelancers."
+          },
+          {
+            "title": "Nsɛm ho amanneɛbɔfo kokoam nsɛm",
+            "description": "Hwehwɛ nhyehyɛe bi a ɛfa kokoam nsɛm ho ma nsɛm ho amanneɛbɔfo."
+          },
+          {
+            "title": "Adebɔfo ne afotu",
+            "description": "Hwehwɛ nnwinnade a wɔde bɛyɛ adebɔfo ne wɔn a wɔboa."
+          },
+          {
+            "title": "Sikatua ho adesrɛ ahorow",
+            "description": "Sua sɛnea payment request links yɛ adwuma."
+          }
+        ]
+      },
+      "community": {
+        "title": "Zcash mpɔtam ne nniso",
+        "audience": "Mpɔtam hɔ asuafo",
+        "description": "Hwehwɛ ahyehyɛde ahorow, sikasɛm ne nnipa a wɔreyɛ abɔde a nkwa wom nhyehyɛe no.",
+        "steps": [
+          {
+            "title": "Sɛnea wɔahyehyɛ Zcash",
+            "description": "Hu akuo a wɔreyɛ adwuma wɔ Zcash so no."
+          },
+          {
+            "title": "Nkɔso sikakorabea",
+            "description": "Sua sɛnea wɔde sika boa network development."
+          },
+          {
+            "title": "Sika a wɔde ma ne nniso",
+            "description": "Hwehwɛ nniso ne sikasɛm mu wɔ abɔde a nkwa wom mu."
+          },
+          {
+            "title": "Mpɔtam hɔfo afotufo kuw",
+            "description": "Sua mpɔtam hɔ afotufo kuw no ho ade."
+          },
+          {
+            "title": "Mpɔtam hɔ nnwuma",
+            "description": "Hu nnwuma a wɔyɛ wɔ abɔde a nkwa wom no nyinaa mu."
+          },
+          {
+            "title": "Nnua ho adwumayɛfo frɛ",
+            "description": "Hwehwɛ mfiridwuma ho mpɔtam hɔ nkɔmmɔbɔ."
+          },
+          {
+            "title": "Boa ma ZecHub",
+            "description": "Hwehwɛ akwan a wobɛfa so aboa nhomasua mpɔtam hɔfo."
+          }
+        ]
+      }
+    },
+    "tryNextPath": "Sɔ ɔkwan foforo hwɛ: {title}",
+    "exploreWiki": "Hwehwɛ wiki no nyinaa mu",
+    "exploreWikiDescription": "Kɔ so sua ade denam nsɛmti ne nkratafa a ɛwɔ nimdeɛ no mu nyinaa so.",
+    "previous": "Nea atwam",
+    "next": "Nea edi hɔ",
+    "previousPaths": "Akwan a atwam",
+    "nextPaths": "Akwan a edi hɔ",
+    "stepPages": "Anamɔn nkratafa",
+    "pageOf": "Kratafa {page} a ɛwɔ {total} mu"
+  },
   "menuLabels": {
     "Accept Payments": "Gye Katua a Wotua Tom",
     "Akash Network Zebra": "Akash Network Zebra",

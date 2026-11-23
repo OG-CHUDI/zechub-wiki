@@ -1,0 +1,46 @@
+/* The embedded desktop has its own paper/vault palette, independent of the wiki themes. */
+[data-desktop-path="vault"], [data-desktop-path-trigger="vault"] {
+  --path-bg: #11100e;
+  --path-card: #1a1916;
+  --path-text: #f8f5ed;
+  --path-muted: #c5bfb2;
+  --path-border: #454038;
+  --path-gold: #f4b728;
+  color: var(--path-text);
+  background: var(--path-bg);
+  border-color: var(--path-border);
+}
+[data-desktop-path="paper"], [data-desktop-path-trigger="paper"] {
+  --path-bg: #f4efe4;
+  --path-card: #fffdf7;
+  --path-text: #211e19;
+  --path-muted: #5c554a;
+  --path-border: #c6bca9;
+  --path-gold: #8a5900;
+  color: var(--path-text);
+  background: var(--path-bg);
+  border-color: var(--path-border);
+}
+[data-desktop-path-toolbar] { background: var(--path-bg) !important; border-color: var(--path-border) !important; }
+[data-desktop-path] h1, [data-desktop-path] h2, [data-desktop-path] h3 {
+  color: var(--path-text) !important;
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: -0.025em;
+}
+[data-desktop-path] main { padding-top: 2rem; }
+[data-desktop-path] main p, [data-desktop-path] main li, [data-desktop-path] main a:not([class*="bg-"]) { color: var(--path-muted) !important; }
+[data-desktop-path] main article, [data-desktop-path] main section > div[class*="rounded"], [data-desktop-path] main section[class*="rounded"], [data-desktop-path] main ul[class*="rounded"] {
+  background: var(--path-card) !important;
+  border-color: var(--path-border) !important;
+}
+[data-desktop-path] main button, [data-desktop-path] main a[class*="bg-[color"] {
+  color: var(--path-text) !important;
+  border-color: var(--path-border) !important;
+}
+[data-desktop-path] main button[class*="bg-[color"], [data-desktop-path] main a[class*="bg-[color"] {
+  background: #f4b728 !important;
+  color: #211a0c !important;
+}
+[data-desktop-path] main button[class*="bg-[color"]:hover, [data-desktop-path] main a[class*="bg-[color"]:hover { background: #ffd25c !important; }
+[data-desktop-path] [role="progressbar"] > div { background: var(--path-gold) !important; }
+[data-desktop-path] [data-desktop-path-toolbar] button { color: var(--path-text) !important; }

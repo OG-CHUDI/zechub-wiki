@@ -5,6 +5,8 @@ import { useTheme } from "next-themes";
 import { Compass, X } from "lucide-react";
 import { PathProvider } from "@/components/MyPath/PathProvider";
 import MyPathPage from "@/components/MyPath/MyPathPage";
+import "@/components/MyPath/desktop-path.css";
+import { usePathCopy } from "@/components/MyPath/usePathCopy";
 import {
   DATA_ATTRIBUTE,
   DEFAULT_INTERFACE,
@@ -14,6 +16,7 @@ import {
 } from "@/lib/interfaces";
 
 export default function DesktopInterfaceHost({ locale }: { locale: string }) {
+  const { copy } = usePathCopy();
   const { resolvedTheme, setTheme } = useTheme();
   const [active, setActive] = useState(DEFAULT_INTERFACE);
   const [frameSrc, setFrameSrc] = useState<string | null>(null);
@@ -21,6 +24,7 @@ export default function DesktopInterfaceHost({ locale }: { locale: string }) {
   const [visible, setVisible] = useState(false);
   const [closing, setClosing] = useState(false);
   const [pathOpen, setPathOpen] = useState(false);
+  const [dockReady, setDockReady] = useState(false);
   const frameRef = useRef<HTMLIFrameElement>(null);
   const pathButtonRef = useRef<HTMLButtonElement>(null);
   const pathPanelRef = useRef<HTMLElement>(null);
@@ -54,6 +58,7 @@ export default function DesktopInterfaceHost({ locale }: { locale: string }) {
     setVisible(false);
     setClosing(false);
     setPathOpen(false);
+    setDockReady(false);
   }, [open]);
 
   useEffect(() => {
@@ -101,6 +106,15 @@ export default function DesktopInterfaceHost({ locale }: { locale: string }) {
       if (event.origin !== appOrigin) return;
       if (event.source !== frameRef.current?.contentWindow) return;
       if (!event.data) return;
+      if (event.data.type === "zechub:my-path-ready") {
+        setDockReady(true);
+        frameRef.current?.contentWindow?.postMessage({ type: "zechub:my-path-label", label: copy.myPath }, appOrigin);
+        return;
+      }
+      if (event.data.type === "zechub:open-my-path") {
+        setPathOpen(true);
+        return;
+      }
       if (event.data.type === "zechub:theme") {
         const next: unknown = event.data.theme;
         if (next !== "paper" && next !== "vault") return;
@@ -115,7 +129,7 @@ export default function DesktopInterfaceHost({ locale }: { locale: string }) {
     };
     window.addEventListener("message", onMessage);
     return () => window.removeEventListener("message", onMessage);
-  }, [open, option?.embedUrl, setTheme, closeDesktop]);
+  }, [open, option?.embedUrl, setTheme, closeDesktop, copy.myPath]);
 
   useEffect(() => {
     if (!open) return;
@@ -125,7 +139,7 @@ export default function DesktopInterfaceHost({ locale }: { locale: string }) {
       if (event.key !== "Escape") return;
       if (pathOpen) {
         setPathOpen(false);
-        pathButtonRef.current?.focus();
+        (pathButtonRef.current ?? frameRef.current)?.focus();
         return;
       }
       closeDesktop(DEFAULT_INTERFACE);
@@ -170,6 +184,7 @@ export default function DesktopInterfaceHost({ locale }: { locale: string }) {
     url.searchParams.set("theme", theme);
     url.searchParams.set("parentOrigin", window.location.origin);
     setFrameLoaded(false);
+    setDockReady(false);
     setFrameSrc(url.toString());
     setPathOpen(false);
   };
@@ -205,32 +220,34 @@ export default function DesktopInterfaceHost({ locale }: { locale: string }) {
           />
         </div>
       ) : null}
-      <button
+      {!dockReady && <button
         ref={pathButtonRef}
         type="button"
         aria-expanded={pathOpen}
         aria-controls="desktop-my-path"
         onClick={() => setPathOpen((value) => !value)}
-        className="absolute bottom-4 right-4 z-10 inline-flex min-h-11 items-center gap-2 rounded-xl border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-900 shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand dark:border-slate-600 dark:bg-slate-900 dark:text-white"
+        data-desktop-path-trigger={theme}
+        className="absolute bottom-4 right-4 z-10 inline-flex min-h-11 items-center gap-2 rounded-xl px-4 text-sm font-semibold shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400"
       >
-        <Compass size={18} aria-hidden="true" /> My Path
-      </button>
+        <Compass size={18} aria-hidden="true" /> {copy.myPath}
+      </button>}
       {pathOpen && (
         <aside
           ref={pathPanelRef}
           id="desktop-my-path"
-          aria-label="My Path"
+          aria-label={copy.myPath}
           tabIndex={-1}
-          className="absolute inset-y-0 right-0 z-20 w-full max-w-2xl overflow-y-auto border-l border-slate-200 bg-page shadow-2xl dark:border-slate-700 dark:bg-surface"
+          data-desktop-path={theme}
+          className="absolute inset-y-0 right-0 z-20 w-full max-w-2xl overflow-y-auto border-l shadow-2xl"
         >
-          <div className="sticky top-0 z-10 flex justify-end border-b border-slate-200 bg-page p-3 dark:border-slate-700 dark:bg-surface">
+          <div data-desktop-path-toolbar className="sticky top-0 z-10 flex justify-end border-b p-3">
             <button
               type="button"
               onClick={() => {
                 setPathOpen(false);
-                pathButtonRef.current?.focus();
+                (pathButtonRef.current ?? frameRef.current)?.focus();
               }}
-              aria-label="Close My Path"
+              aria-label={copy.closeMyPath}
               className="rounded-lg p-2 text-slate-700 hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand dark:text-slate-200 dark:hover:bg-slate-800"
             >
               <X size={20} aria-hidden="true" />

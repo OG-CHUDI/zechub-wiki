@@ -1,4 +1,340 @@
 {
+  "myPath": {
+    "myPath": "Ụzọ m",
+    "closeMyPath": "Mechie ụzọ m",
+    "pageActions": "Omume ibe m ụzọ",
+    "learningPaths": "Ụzọ mmụta",
+    "heading": "Chọta ụzọ gị na Zcash.",
+    "intro": "Họrọ ụzọ, kaa akara n'ụzọ zuru ezu, ma chekwaa ibe maka ma emechaa. Ọganihu gị dị na ihe nchọgharị a.",
+    "privacy": "Enweghị akaụntụ ma ọ bụ njikọ obere akpa achọrọ.",
+    "storageUnavailable": "Nchekwa ihe nchọgharị adịghị. Ọganihu gị bụ nwa oge ma nwee ike ịla n'iyi mgbe ịhapụ echiche a.",
+    "currentPath": "Ụzọ dị ugbu a",
+    "completeCount": "{done} nke {total} zuru ezu",
+    "progress": "Ọganihu {title}",
+    "continueStep": "Gaa n'ihu: {title}",
+    "completedPath": "Ị dechara ụzọ a. Họrọ ụzọ ọzọ iji nọgide na-amụ ihe.",
+    "completed": "Emechara",
+    "markComplete": "Kaa akara zuru oke",
+    "resetConfirm": "Tọgharia ọganihu maka {title}? Ibe ndị echekwara ga-anọ.",
+    "resetPath": "Tọgharịa ụzọ a",
+    "allPaths": "Ụzọ niile",
+    "choosePath": "Họrọ ụzọ",
+    "stepCount": "{count} nzọụkwụ",
+    "returnPath": "Laghachi n'ụzọ",
+    "startPath": "Bido ụzọ a",
+    "completedCount": "{count} emechara",
+    "savedPages": "Ibe ndị echekwara",
+    "savedDescription": "Chekwa ibe wiki ka ịchọta ha ọzọ ma emechaa.",
+    "noSaved": "Enweghị ibe echekwara.",
+    "saveHint": "Jiri Chekwa ibe mgbe ị na-achọgharị wiki.",
+    "remove": "Wepu",
+    "clearConfirm": "Hichapụ ọganihu okporo ụzọ m niile yana ibe echekwara na ihe nchọgharị a?",
+    "clearAll": "Hichapụ data Ụzọ m niile",
+    "headerProgress": "Ụzọ m: {done} nke usoro {total} zuru ezu",
+    "homeHeading": "Mụta n'ọsọ nke gị",
+    "homeProgress": "{done} nke {total} nzọụkwụ zuru ezu",
+    "nextTitle": "Na-esote: {title}",
+    "pathComplete": "Ụzọ zuru ezu",
+    "homeIntro": "Họrọ ụzọ, soro ọganihu gị, wee chekwaa ibe maka ma emechaa.",
+    "continuePath": "Gaa n'ihu n'ụzọ gị",
+    "viewPath": "Lelee ụzọ gị",
+    "explorePaths": "Nyochaa ụzọ mmụta",
+    "stepPosition": "Nzọụkwụ {current} nke {total}",
+    "keepPage": "Debe ibe a ka emechaa",
+    "saved": "Echekwara",
+    "savePage": "Chekwa ibe",
+    "paths": {
+      "learn": {
+        "title": "Mụta Zcash",
+        "audience": "Ọhụrụ maka Zcash",
+        "description": "Mụta ihe ndabere nke Zcash, nzuzo ego na netwọkụ.",
+        "steps": [
+          {
+            "title": "Isi Mmalite nke Zcash",
+            "description": "Mụta ihe Zcash na ZEC bụ."
+          },
+          {
+            "title": "Zcash Ntuziaka Maka Onye Ọrụ Ọhụrụ",
+            "description": "Malite na ntuziaka onye ọrụ Zcash."
+          },
+          {
+            "title": "Zcash Pool Uru [Value Pools]",
+            "description": "Mụta maka nzuzo azụmahịa Zcash."
+          },
+          {
+            "title": "Zcash Network Upgrades",
+            "description": "Hụ ka Zcash siri malite."
+          },
+          {
+            "title": "Amụma ego",
+            "description": "Ghọta ihe na-enye ZEC."
+          },
+          {
+            "title": "Kedu onye ga-ahụ ụgwọ?",
+            "description": "Chọpụta ihe ndị dị iche iche nwere ike ịhụ."
+          },
+          {
+            "title": "Ụzọ iji ZEC",
+            "description": "Nyochaa ojiji bara uru maka Zcash."
+          }
+        ]
+      },
+      "use": {
+        "title": "Jiri Zcash na nzuzo",
+        "audience": "Dị njikere iji ZEC",
+        "description": "Nyochaa obere akpa, azụmahịa na nhọrọ ndị na-emetụta nzuzo.",
+        "steps": [
+          {
+            "title": "Iji ZEC n'ụzọ nzuzo",
+            "description": "Mụta ka esi eji ZEC na nzuzo."
+          },
+          {
+            "title": "Nyochaa obere akpa",
+            "description": "Tụlee obere akpa na atụmatụ ha."
+          },
+          {
+            "title": "Inweta Zcash",
+            "description": "Mụta maka ụzọ ị ga-esi nweta ZEC."
+          },
+          {
+            "title": "Azụmahia [Transactions]",
+            "description": "Mụta ka azụmahịa Zcash si arụ ọrụ."
+          },
+          {
+            "title": "Zcash Pool Uru [Value Pools]",
+            "description": "Mụta ka Zcash si echebe nzuzo azụmahịa."
+          },
+          {
+            "title": "Adreesị ejikọtara ọnụ",
+            "description": "Ghọta adreesị ndị ejiri nweta Zcash."
+          },
+          {
+            "title": "Ihe ndetu echedoro",
+            "description": "Mụta ka ndetu si arụ ọrụ na ịkwụ ụgwọ mkpuchi."
+          },
+          {
+            "title": "Na-eweghachi ego",
+            "description": "Mụta maka mgbake obere akpa na nkwado ndabere."
+          }
+        ]
+      },
+      "build": {
+        "title": "Jiri Zcash wuo ya",
+        "audience": "Ndị mmepe",
+        "description": "Chọta akụrụngwa teknụzụ na ngwaọrụ iji malite iwu ụlọ.",
+        "steps": [
+          {
+            "title": "Akụrụngwa onye nrụpụta",
+            "description": "Chọta akụrụngwa mmepe Zcash."
+          },
+          {
+            "title": "Onye nrụpụta ngwa ngwa mmalite",
+            "description": "Bido jiri ngwaọrụ mmepe Zcash."
+          },
+          {
+            "title": "Ngwá ọrụ Devtool nke Zcash",
+            "description": "Mụta ka esi eji Zcash Devtool."
+          },
+          {
+            "title": "Zcash visualizers",
+            "description": "Choputa ihe nlere anya Zcash."
+          },
+          {
+            "title": "Zcash testnet",
+            "description": "Chọgharịa netwọk maka nnwale ngwa."
+          },
+          {
+            "title": "Zcash JS",
+            "description": "Chọgharịa ntuziaka onye nrụpụta Javascript."
+          },
+          {
+            "title": "Ọnụ na indexing",
+            "description": "Mụta maka node RPC na blockchain indexing."
+          }
+        ]
+      },
+      "contribute": {
+        "title": "Nye aka na ZecHub",
+        "audience": "Ndị enyemaka obodo",
+        "description": "Mụta ka obodo si arụ ọrụ yana ebe ị nwere ike inye aka.",
+        "steps": [
+          {
+            "title": "Gịnị bụ ZecHub?",
+            "description": "Mụta maka ZecHub na ebumnuche ya."
+          },
+          {
+            "title": "Nyere Aka Wulite ZecHub",
+            "description": "Chọgharịa ụzọ isi nye aka."
+          },
+          {
+            "title": "Itinye Aka na ZecHub",
+            "description": "Ghọta usoro ntinye aka."
+          },
+          {
+            "title": "ZecHub Ntuziaka ụdị edemede [Style Guide]",
+            "description": "Mụta mgbakọ ọdịnaya nke obodo."
+          },
+          {
+            "title": "ZecHub DAO",
+            "description": "Nyochaa ka obodo ZecHub si ahazi."
+          },
+          {
+            "title": "Kwa izu",
+            "description": "Mụta maka akwụkwọ akụkọ obodo."
+          }
+        ]
+      },
+      "privacy": {
+        "title": "Nzuzo gafere ugwo",
+        "audience": "Ndị mmụta nzuzo",
+        "description": "Ghọta visibiliti azụmahịa yana ngwaọrụ na-akwado nzuzo kwa ụbọchị.",
+        "steps": [
+          {
+            "title": "Kedu onye ga-ahụ ụgwọ?",
+            "description": "Mụta ihe ozi ịkwụ ụgwọ nwere ike ịhụ."
+          },
+          {
+            "title": "Gbochie ọhụhụ onye nyocha",
+            "description": "Ghọta ihe data blockchain ọha nwere ike ikpughe."
+          },
+          {
+            "title": "Igodo nlele",
+            "description": "Chọgharịa ikesa ozi azụmahịa ahọpụtara."
+          },
+          {
+            "title": "Ndị ozi echedoro",
+            "description": "Chọgharịa ngwaọrụ maka nzikọrịta ozi nkeonwe."
+          },
+          {
+            "title": "Ihe nchọgharị weebụ",
+            "description": "Mụta maka nhọrọ nzuzo ihe nchọgharị."
+          },
+          {
+            "title": "VPN na dVPN",
+            "description": "Chọgharịa ngwaọrụ nzuzo netwọkụ yana azụmaahịa ha."
+          },
+          {
+            "title": "PGP izo ya ezo",
+            "description": "Mụta maka izo ya ezo na ịbanye ozi."
+          }
+        ]
+      },
+      "protocol": {
+        "title": "Kedu ka Zcash si arụ ọrụ",
+        "audience": "Ndị mmụta nka nka",
+        "description": "Banye n'ime azụmahịa echedoro, cryptography, ọnụ na nyocha protocol.",
+        "steps": [
+          {
+            "title": "ntọala Zcash",
+            "description": "Mụta ntọala nke azụmahịa echekwara."
+          },
+          {
+            "title": "Ọrụ hash",
+            "description": "Mụta ihe mgbochi ụlọ ihe nzuzo nzuzo."
+          },
+          {
+            "title": "Ihe akaebe efu-ihe ọmụma",
+            "description": "Nyochaa ihe akaebe ejiri maka azụmahịa echedoro."
+          },
+          {
+            "title": "Ọnụ ọnụ zuru oke",
+            "description": "Mụta ka ọnụ ọnụ na-esonye na netwọk."
+          },
+          {
+            "title": "Ọnụ ego obere akpa",
+            "description": "Nyochaa akụrụngwa nke obere akpa ọkụ na-eji."
+          },
+          {
+            "title": "Nkwenye n'ụzọ nkịtị",
+            "description": "Nyochaa ka enwere ike isi nweta nkwenye protocol."
+          },
+          {
+            "title": "Nkwalite netwọkụ",
+            "description": "Soro akụkọ mgbanwe protocol."
+          }
+        ]
+      },
+      "real-world": {
+        "title": "Zcash na ụwa n'ezie",
+        "audience": "Kwa ụbọchị ojiji",
+        "description": "Nyochaa ịkwụ ụgwọ, onyinye, ndị okike na ọnọdụ nzuzo bara uru.",
+        "steps": [
+          {
+            "title": "Zcash jiri ikpe",
+            "description": "Malite na nchịkọta nke ụzọ iji ZEC."
+          },
+          {
+            "title": "Ụgwọ ndị ahịa",
+            "description": "Chọgharịa ịnakwere Zcash dị ka onye ahịa."
+          },
+          {
+            "title": "Onyinye nkeonwe",
+            "description": "Mụta maka ịnata onyinye echedoro."
+          },
+          {
+            "title": "nzuzo freelancer",
+            "description": "Chọgharịa nhazi nzuzo maka ndị nweere onwe ha."
+          },
+          {
+            "title": "Nzuzo onye nta akụkọ",
+            "description": "Chọgharịa nhazi nzuzo maka ndị nta akụkọ."
+          },
+          {
+            "title": "Ndị okike na ndụmọdụ",
+            "description": "Chọpụta ngwaọrụ maka ndị okike na ndị nkwado."
+          },
+          {
+            "title": "Arịrịọ ịkwụ ụgwọ",
+            "description": "Mụta ka njikọ arịrịọ ịkwụ ụgwọ si arụ ọrụ."
+          }
+        ]
+      },
+      "community": {
+        "title": "Obodo Zcash na ọchịchị",
+        "audience": "Ndị mmụta obodo",
+        "description": "Nyochaa ndị otu, ego na ndị mmadụ na-akpụzi gburugburu ebe obibi.",
+        "steps": [
+          {
+            "title": "Otu esi ahazi Zcash",
+            "description": "Zute otu ndị na-arụ ọrụ na Zcash."
+          },
+          {
+            "title": "Ego mmepe",
+            "description": "Mụta ka esi enweta ego mmepe netwọk."
+          },
+          {
+            "title": "Ego na ọchịchị",
+            "description": "Chọpụta ọchịchị na ego na gburugburu ebe obibi."
+          },
+          {
+            "title": "panel ndụmọdụ obodo",
+            "description": "Mụta maka panel ndụmọdụ obodo."
+          },
+          {
+            "title": "Ọrụ obodo",
+            "description": "Chọpụta ọrụ n'ofe gburugburu ebe obibi."
+          },
+          {
+            "title": "Arborist oku",
+            "description": "Chọta mkparịta ụka teknuzu obodo."
+          },
+          {
+            "title": "Nye aka na ZecHub",
+            "description": "Chọta ụzọ ị ga-esi nyere obodo agụmakwụkwọ aka."
+          }
+        ]
+      }
+    },
+    "tryNextPath": "Gbalịa ụzọ ọzọ: {title}",
+    "exploreWiki": "Chọgharịa wiki zuru ezu",
+    "exploreWikiDescription": "Nọgide na-amụ ihe na isiokwu na ibe niile dị na ebe mmụta.",
+    "previous": "Nke gara aga",
+    "next": "Na-esote",
+    "previousPaths": "Ụzọ gara aga",
+    "nextPaths": "Ụzọ na-esote",
+    "stepPages": "ibe nzọụkwụ",
+    "pageOf": "Ibe {page} nke {total}"
+  },
   "menuLabels": {
     "Accept Payments": "Nabata Ịkwụ Ụgwọ",
     "Akash Network Zebra": "Akash Network Zebra",

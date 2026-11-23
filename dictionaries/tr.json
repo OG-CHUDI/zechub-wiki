@@ -1,4 +1,340 @@
 {
+  "myPath": {
+    "myPath": "Yolum",
+    "closeMyPath": "Yolumu Kapat",
+    "pageActions": "Yolum sayfası eylemleri",
+    "learningPaths": "Öğrenme yolları",
+    "heading": "Zcash ile yolunuzu bulun.",
+    "intro": "Bir yol seçin, adımları tamamlandı olarak işaretleyin ve sayfaları daha sonra kullanmak üzere kaydedin. İlerlemeniz bu tarayıcıda kalır.",
+    "privacy": "Hesap veya cüzdan bağlantısına gerek yok.",
+    "storageUnavailable": "Tarayıcı depolama alanı kullanılamıyor. İlerlemeniz geçicidir ve bu görünümden çıktığınızda kaybolabilir.",
+    "currentPath": "Geçerli yol",
+    "completeCount": "{total}'nin {done}'si tamamlandı",
+    "progress": "{title} ilerleme",
+    "continueStep": "Devam: {title}",
+    "completedPath": "Bu yolu tamamladınız. Öğrenmeye devam etmek için başka bir yol seçin.",
+    "completed": "Tamamlandı",
+    "markComplete": "Tamamlandı olarak işaretle",
+    "resetConfirm": "{title} için ilerleme sıfırlansın mı? Kaydedilen sayfalar kalacak.",
+    "resetPath": "Bu yolu sıfırla",
+    "allPaths": "Tüm yollar",
+    "choosePath": "Bir yol seç",
+    "stepCount": "{count} adım",
+    "returnPath": "Yola dön",
+    "startPath": "Bu yolu başlat",
+    "completedCount": "{count} tamamlandı",
+    "savedPages": "Kayıtlı sayfalar",
+    "savedDescription": "Daha sonra tekrar bulmak için wiki sayfalarını kaydedin.",
+    "noSaved": "Henüz kayıtlı sayfa yok.",
+    "saveHint": "Wiki'yi keşfederken Kaydet sayfasını kullanın.",
+    "remove": "Kaldır",
+    "clearConfirm": "Bu tarayıcıdaki tüm My Path ilerlemesi ve kayıtlı sayfalar temizlensin mi?",
+    "clearAll": "Tüm Yolum verilerini temizle",
+    "headerProgress": "Yolum: {total} adımlarından {done} tamamlandı",
+    "homeHeading": "Kendi hızınızda öğrenin",
+    "homeProgress": "{total} adımlarından {done} tamamlandı",
+    "nextTitle": "Sonraki: {title}",
+    "pathComplete": "Yol tamamlandı",
+    "homeIntro": "Bir yol seçin, ilerlemenizi takip edin ve sayfaları daha sonra kullanmak üzere kaydedin.",
+    "continuePath": "Yolunuza devam edin",
+    "viewPath": "Yolunuzu görüntüleyin",
+    "explorePaths": "Öğrenme yollarını keşfedin",
+    "stepPosition": "{total}'nin {current} adımı",
+    "keepPage": "Bu sayfayı daha sonra kullanmak üzere saklayın",
+    "saved": "Kaydedildi",
+    "savePage": "Sayfayı kaydet",
+    "paths": {
+      "learn": {
+        "title": "Zcash'yi öğrenin",
+        "audience": "Zcash'de yeni",
+        "description": "Zcash, finansal gizlilik ve ağın temellerini öğrenin.",
+        "steps": [
+          {
+            "title": "Zcash Temelleri",
+            "description": "Zcash ve ZEC'nin ne olduğunu öğrenin."
+          },
+          {
+            "title": "Zcash Yeni Kullanıcı Rehberi",
+            "description": "Zcash kullanım kılavuzuyla başlayın."
+          },
+          {
+            "title": "Zcash Değer Havuzları",
+            "description": "Zcash işlem gizliliği hakkında bilgi edinin."
+          },
+          {
+            "title": "Zcash Ağ Yükseltmeleri",
+            "description": "Zcash'nin nasıl geliştiğini görün."
+          },
+          {
+            "title": "Para politikası",
+            "description": "ZEC arzını ve verilmesini anlayın."
+          },
+          {
+            "title": "Ödemeyi kimler görebilir?",
+            "description": "Farklı insanların neler görebileceğini keşfedin."
+          },
+          {
+            "title": "ZEC'yi kullanma yolları",
+            "description": "Zcash'nin pratik kullanımlarını keşfedin."
+          }
+        ]
+      },
+      "use": {
+        "title": "Zcash'yi özel olarak kullanın",
+        "audience": "ZEC kullanıma hazır",
+        "description": "Cüzdanları, işlemleri ve gizliliği etkileyen seçenekleri keşfedin.",
+        "steps": [
+          {
+            "title": "ZEC'i özel olarak kullanma",
+            "description": "ZEC'i özel olarak nasıl kullanacağınızı öğrenin."
+          },
+          {
+            "title": "Cüzdanları keşfedin",
+            "description": "Cüzdanları ve özelliklerini karşılaştırın."
+          },
+          {
+            "title": "Zcash Edinme",
+            "description": "ZEC'yi edinmenin yolları hakkında bilgi edinin."
+          },
+          {
+            "title": "İşlemler",
+            "description": "Zcash işlemlerinin nasıl çalıştığını öğrenin."
+          },
+          {
+            "title": "Zcash Değer Havuzları",
+            "description": "Zcash'in işlem gizliliğini nasıl koruduğunu öğrenin."
+          },
+          {
+            "title": "Birleşik adresler",
+            "description": "Zcash'yi almak için kullanılan adresleri anlayın."
+          },
+          {
+            "title": "Korumalı notlar",
+            "description": "Korumalı ödemelerde notların nasıl çalıştığını öğrenin."
+          },
+          {
+            "title": "Fonların kurtarılması",
+            "description": "Cüzdan kurtarma ve yedeklemeler hakkında bilgi edinin."
+          }
+        ]
+      },
+      "build": {
+        "title": "Zcash ile oluşturun",
+        "audience": "Geliştiriciler",
+        "description": "Oluşturmaya başlamak için teknik kaynakları ve araçları bulun.",
+        "steps": [
+          {
+            "title": "Geliştirici kaynakları",
+            "description": "Zcash geliştirme kaynaklarını bulun."
+          },
+          {
+            "title": "Geliştirici hızlı başlangıç",
+            "description": "Zcash geliştirme araçlarını kullanmaya başlayın."
+          },
+          {
+            "title": "Zcash Devtool",
+            "description": "Zcash Devtool'nin nasıl kullanılacağını öğrenin."
+          },
+          {
+            "title": "Zcash görselleştiricileri",
+            "description": "Etkileşimli Zcash görselleştirmelerini keşfedin."
+          },
+          {
+            "title": "Zcash test ağı",
+            "description": "Uygulamaları test etmek için bir ağı keşfedin."
+          },
+          {
+            "title": "Zcash JS",
+            "description": "JavaScript geliştirici kılavuzunu keşfedin."
+          },
+          {
+            "title": "Düğümler ve indeksleme",
+            "description": "Düğüm RPC'si ve blockchain indeksleme hakkında bilgi edinin."
+          }
+        ]
+      },
+      "contribute": {
+        "title": "ZecHub'ye katkıda bulunun",
+        "audience": "Topluluğa katkıda bulunanlar",
+        "description": "Topluluğun nasıl çalıştığını ve nerede yardımcı olabileceğinizi öğrenin.",
+        "steps": [
+          {
+            "title": "ZecHub nedir?",
+            "description": "ZecHub ve misyonu hakkında bilgi edinin."
+          },
+          {
+            "title": "ZecHub Oluşturmaya Yardım Edin",
+            "description": "Katkıda bulunmanın yollarını keşfedin."
+          },
+          {
+            "title": "ZecHub'ye Katkıda Bulunma",
+            "description": "Katkı iş akışını anlayın."
+          },
+          {
+            "title": "ZecHub Stil Rehberi",
+            "description": "Topluluğun içerik kurallarını öğrenin."
+          },
+          {
+            "title": "ZecHub DAO",
+            "description": "ZecHub topluluğunun nasıl organize olduğunu keşfedin."
+          },
+          {
+            "title": "ZecWeekly",
+            "description": "Topluluk bülteni hakkında bilgi edinin."
+          }
+        ]
+      },
+      "privacy": {
+        "title": "Ödemelerin ötesinde gizlilik",
+        "audience": "Gizlilik öğrenenler",
+        "description": "İşlem görünürlüğünü ve günlük gizliliği destekleyen araçları anlayın.",
+        "steps": [
+          {
+            "title": "Ödemeyi kimler görebilir?",
+            "description": "Hangi ödeme bilgilerinin görünebileceğini öğrenin."
+          },
+          {
+            "title": "Gezgin görünürlüğünü engelle",
+            "description": "Herkese açık blockchain verilerinin neler ortaya çıkarabileceğini anlayın."
+          },
+          {
+            "title": "Anahtarları görüntüleme",
+            "description": "İşlem bilgilerinin seçici paylaşımını keşfedin."
+          },
+          {
+            "title": "Güvenli mesajlaşma programları",
+            "description": "Özel iletişime yönelik araçları keşfedin."
+          },
+          {
+            "title": "Web tarayıcıları",
+            "description": "Tarayıcı gizlilik seçenekleri hakkında bilgi edinin."
+          },
+          {
+            "title": "VPN ve dVPN",
+            "description": "Ağ gizlilik araçlarını ve bunların sunduğu avantajları keşfedin."
+          },
+          {
+            "title": "PGP şifrelemesi",
+            "description": "İletileri şifreleme ve imzalama hakkında bilgi edinin."
+          }
+        ]
+      },
+      "protocol": {
+        "title": "Zcash nasıl çalışır?",
+        "audience": "Teknik öğrenenler",
+        "description": "Korumalı işlemler, kriptografi, düğümler ve protokol araştırmalarının derinliklerine inin.",
+        "steps": [
+          {
+            "title": "Zcash temelleri",
+            "description": "Korumalı işlemlerin temellerini inceleyin."
+          },
+          {
+            "title": "Karma işlevler",
+            "description": "Temel bir şifreleme yapı taşını öğrenin."
+          },
+          {
+            "title": "Sıfır bilgi kanıtları",
+            "description": "Korumalı işlemler için kullanılan kanıtları keşfedin."
+          },
+          {
+            "title": "Tam düğümler",
+            "description": "Düğümlerin ağa nasıl katıldığını öğrenin."
+          },
+          {
+            "title": "Lightwallet düğümleri",
+            "description": "Light cüzdanların kullandığı altyapıyı keşfedin."
+          },
+          {
+            "title": "Resmi doğrulama",
+            "description": "Protokol güvenliğinin nasıl doğrulanabileceğini keşfedin."
+          },
+          {
+            "title": "Ağ yükseltmeleri",
+            "description": "Protokol değişikliklerinin geçmişini takip edin."
+          }
+        ]
+      },
+      "real-world": {
+        "title": "Zcash gerçek dünyada",
+        "audience": "Günlük kullanımlar",
+        "description": "Ödemeleri, bağışları, yaratıcıları ve pratik gizlilik senaryolarını keşfedin.",
+        "steps": [
+          {
+            "title": "Zcash kullanım örnekleri",
+            "description": "ZEC'yi kullanma yollarına genel bir bakışla başlayın."
+          },
+          {
+            "title": "Satıcı ödemeleri",
+            "description": "Zcash'yi satıcı olarak kabul etmeyi keşfedin."
+          },
+          {
+            "title": "Özel bağışlar",
+            "description": "Korumalı bağış alma hakkında bilgi edinin."
+          },
+          {
+            "title": "Serbest çalışan gizliliği",
+            "description": "Serbest çalışanlara yönelik gizlilik kurulumunu keşfedin."
+          },
+          {
+            "title": "Gazeteci mahremiyeti",
+            "description": "Gazetecilere yönelik bir gizlilik kurulumunu keşfedin."
+          },
+          {
+            "title": "Yaratıcılar ve ipuçları",
+            "description": "Yaratıcılara ve destekçilere yönelik araçları keşfedin."
+          },
+          {
+            "title": "Ödeme talepleri",
+            "description": "Ödeme isteği bağlantılarının nasıl çalıştığını öğrenin."
+          }
+        ]
+      },
+      "community": {
+        "title": "Zcash topluluğu ve yönetişim",
+        "audience": "Topluluk öğrencileri",
+        "description": "Ekosistemi şekillendiren kuruluşları, finansmanı ve kişileri keşfedin.",
+        "steps": [
+          {
+            "title": "Zcash nasıl organize edilir?",
+            "description": "Zcash üzerinde çalışan gruplarla tanışın."
+          },
+          {
+            "title": "Geliştirme fonu",
+            "description": "Ağ geliştirmenin nasıl finanse edildiğini öğrenin."
+          },
+          {
+            "title": "Finansman ve yönetişim",
+            "description": "Ekosistemdeki yönetişimi ve finansmanı keşfedin."
+          },
+          {
+            "title": "Topluluk danışma paneli",
+            "description": "Topluluk danışma paneli hakkında bilgi edinin."
+          },
+          {
+            "title": "Topluluk projeleri",
+            "description": "Ekosistemdeki projeleri keşfedin."
+          },
+          {
+            "title": "Ağaç uzmanı çağrıları",
+            "description": "Teknik topluluk tartışmalarını bulun."
+          },
+          {
+            "title": "ZecHub'ye katkıda bulunun",
+            "description": "Eğitim topluluğuna yardım etmenin yollarını bulun."
+          }
+        ]
+      }
+    },
+    "tryNextPath": "Başka bir yol deneyin: {title}",
+    "exploreWiki": "Wiki'nin tamamını keşfedin",
+    "exploreWikiDescription": "Bilgi tabanındaki tüm konu ve sayfalarla öğrenmeye devam edin.",
+    "previous": "Önceki",
+    "next": "Sonraki",
+    "previousPaths": "Önceki yollar",
+    "nextPaths": "Sonraki yollar",
+    "stepPages": "Adım sayfaları",
+    "pageOf": "{total}'nin {page} sayfası"
+  },
   "menuLabels": {
     "Accept Payments": "Ödemeleri Kabul Et",
     "Akash Network Zebra": "Akash Network Zebra",

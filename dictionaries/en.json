@@ -1,4 +1,340 @@
 {
+  "myPath": {
+    "myPath": "My Path",
+    "closeMyPath": "Close My Path",
+    "pageActions": "My Path page actions",
+    "learningPaths": "Learning paths",
+    "heading": "Find your way with Zcash.",
+    "intro": "Choose a path, mark steps complete, and save pages for later. Your progress stays in this browser.",
+    "privacy": "No account or wallet connection needed.",
+    "storageUnavailable": "Browser storage is unavailable. Your progress is temporary and may be lost when you leave this view.",
+    "currentPath": "Current path",
+    "completeCount": "{done} of {total} complete",
+    "progress": "{title} progress",
+    "continueStep": "Continue: {title}",
+    "completedPath": "You completed this path. Choose another path to keep learning.",
+    "completed": "Completed",
+    "markComplete": "Mark complete",
+    "resetConfirm": "Reset progress for {title}? Saved pages will stay.",
+    "resetPath": "Reset this path",
+    "allPaths": "All paths",
+    "choosePath": "Choose a path",
+    "stepCount": "{count} steps",
+    "returnPath": "Return to path",
+    "startPath": "Start this path",
+    "completedCount": "{count} completed",
+    "savedPages": "Saved pages",
+    "savedDescription": "Save wiki pages to find them again later.",
+    "noSaved": "No saved pages yet.",
+    "saveHint": "Use Save page while exploring the wiki.",
+    "remove": "Remove",
+    "clearConfirm": "Clear all My Path progress and saved pages from this browser?",
+    "clearAll": "Clear all My Path data",
+    "headerProgress": "My Path: {done} of {total} steps complete",
+    "homeHeading": "Learn at your own pace",
+    "homeProgress": "{done} of {total} steps complete",
+    "nextTitle": "Next: {title}",
+    "pathComplete": "Path complete",
+    "homeIntro": "Choose a path, track your progress, and save pages for later.",
+    "continuePath": "Continue your path",
+    "viewPath": "View your path",
+    "explorePaths": "Explore learning paths",
+    "stepPosition": "Step {current} of {total}",
+    "keepPage": "Keep this page for later",
+    "saved": "Saved",
+    "savePage": "Save page",
+    "paths": {
+      "learn": {
+        "title": "Learn Zcash",
+        "audience": "New to Zcash",
+        "description": "Learn the basics of Zcash, financial privacy, and the network.",
+        "steps": [
+          {
+            "title": "What is Zcash?",
+            "description": "Learn what Zcash and ZEC are."
+          },
+          {
+            "title": "New user guide",
+            "description": "Start with the Zcash user guide."
+          },
+          {
+            "title": "Shielded pools",
+            "description": "Learn about Zcash transaction privacy."
+          },
+          {
+            "title": "Network upgrades",
+            "description": "See how Zcash has evolved."
+          },
+          {
+            "title": "Monetary policy",
+            "description": "Understand ZEC supply and issuance."
+          },
+          {
+            "title": "Who can see a payment?",
+            "description": "Explore what different people can see."
+          },
+          {
+            "title": "Ways to use ZEC",
+            "description": "Explore practical uses for Zcash."
+          }
+        ]
+      },
+      "use": {
+        "title": "Use Zcash privately",
+        "audience": "Ready to use ZEC",
+        "description": "Explore wallets, transactions and the choices that affect privacy.",
+        "steps": [
+          {
+            "title": "Using ZEC privately",
+            "description": "Learn how to use ZEC privately."
+          },
+          {
+            "title": "Explore wallets",
+            "description": "Compare wallets and their features."
+          },
+          {
+            "title": "Buying ZEC",
+            "description": "Learn about ways to acquire ZEC."
+          },
+          {
+            "title": "Transactions",
+            "description": "Learn how Zcash transactions work."
+          },
+          {
+            "title": "Shielded pools",
+            "description": "Learn how Zcash protects transaction privacy."
+          },
+          {
+            "title": "Unified addresses",
+            "description": "Understand the addresses used to receive Zcash."
+          },
+          {
+            "title": "Shielded memos",
+            "description": "Learn how memos work in shielded payments."
+          },
+          {
+            "title": "Recovering funds",
+            "description": "Learn about wallet recovery and backups."
+          }
+        ]
+      },
+      "build": {
+        "title": "Build with Zcash",
+        "audience": "Developers",
+        "description": "Find the technical resources and tools to start building.",
+        "steps": [
+          {
+            "title": "Developer resources",
+            "description": "Find Zcash development resources."
+          },
+          {
+            "title": "Developer quick start",
+            "description": "Get started with Zcash development tools."
+          },
+          {
+            "title": "Zcash Devtool",
+            "description": "Learn how to use Zcash Devtool."
+          },
+          {
+            "title": "Zcash visualizers",
+            "description": "Explore interactive Zcash visualizations."
+          },
+          {
+            "title": "Zcash testnet",
+            "description": "Explore a network for testing applications."
+          },
+          {
+            "title": "Zcash JS",
+            "description": "Explore the JavaScript developer guide."
+          },
+          {
+            "title": "Nodes and indexing",
+            "description": "Learn about node RPC and blockchain indexing."
+          }
+        ]
+      },
+      "contribute": {
+        "title": "Contribute to ZecHub",
+        "audience": "Community contributors",
+        "description": "Learn how the community works and where you can help.",
+        "steps": [
+          {
+            "title": "What is ZecHub?",
+            "description": "Learn about ZecHub and its mission."
+          },
+          {
+            "title": "Help build ZecHub",
+            "description": "Explore ways to contribute."
+          },
+          {
+            "title": "Contributing guide",
+            "description": "Understand the contribution workflow."
+          },
+          {
+            "title": "ZecHub style guide",
+            "description": "Learn the community's content conventions."
+          },
+          {
+            "title": "ZecHub DAO",
+            "description": "Explore how the ZecHub community organizes."
+          },
+          {
+            "title": "ZecWeekly",
+            "description": "Learn about the community newsletter."
+          }
+        ]
+      },
+      "privacy": {
+        "title": "Privacy beyond payments",
+        "audience": "Privacy learners",
+        "description": "Understand transaction visibility and tools that support everyday privacy.",
+        "steps": [
+          {
+            "title": "Who can see a payment?",
+            "description": "Learn what payment information can be visible."
+          },
+          {
+            "title": "Block explorer visibility",
+            "description": "Understand what public blockchain data can reveal."
+          },
+          {
+            "title": "Viewing keys",
+            "description": "Explore selective sharing of transaction information."
+          },
+          {
+            "title": "Secure messengers",
+            "description": "Explore tools for private communication."
+          },
+          {
+            "title": "Web browsers",
+            "description": "Learn about browser privacy choices."
+          },
+          {
+            "title": "VPN and dVPN",
+            "description": "Explore network privacy tools and their tradeoffs."
+          },
+          {
+            "title": "PGP encryption",
+            "description": "Learn about encrypting and signing messages."
+          }
+        ]
+      },
+      "protocol": {
+        "title": "How Zcash works",
+        "audience": "Technical learners",
+        "description": "Go deeper into shielded transactions, cryptography, nodes and protocol research.",
+        "steps": [
+          {
+            "title": "Zcash foundations",
+            "description": "Study the foundations of shielded transactions."
+          },
+          {
+            "title": "Hash functions",
+            "description": "Learn a core cryptographic building block."
+          },
+          {
+            "title": "Zero-knowledge proofs",
+            "description": "Explore the proofs used for shielded transactions."
+          },
+          {
+            "title": "Full nodes",
+            "description": "Learn how nodes participate in the network."
+          },
+          {
+            "title": "Lightwallet nodes",
+            "description": "Explore infrastructure used by light wallets."
+          },
+          {
+            "title": "Formal verification",
+            "description": "Explore how protocol security can be verified."
+          },
+          {
+            "title": "Network upgrades",
+            "description": "Follow the history of protocol changes."
+          }
+        ]
+      },
+      "real-world": {
+        "title": "Zcash in the real world",
+        "audience": "Everyday uses",
+        "description": "Explore payments, donations, creators and practical privacy scenarios.",
+        "steps": [
+          {
+            "title": "Zcash use cases",
+            "description": "Start with an overview of ways to use ZEC."
+          },
+          {
+            "title": "Merchant payments",
+            "description": "Explore accepting Zcash as a merchant."
+          },
+          {
+            "title": "Private donations",
+            "description": "Learn about receiving shielded donations."
+          },
+          {
+            "title": "Freelancer privacy",
+            "description": "Explore a privacy setup for freelancers."
+          },
+          {
+            "title": "Journalist privacy",
+            "description": "Explore a privacy setup for journalists."
+          },
+          {
+            "title": "Creators and tips",
+            "description": "Discover tools for creators and supporters."
+          },
+          {
+            "title": "Payment requests",
+            "description": "Learn how payment request links work."
+          }
+        ]
+      },
+      "community": {
+        "title": "Zcash community and governance",
+        "audience": "Community learners",
+        "description": "Explore the organizations, funding and people shaping the ecosystem.",
+        "steps": [
+          {
+            "title": "How Zcash is organized",
+            "description": "Meet the groups working on Zcash."
+          },
+          {
+            "title": "Development fund",
+            "description": "Learn how network development is funded."
+          },
+          {
+            "title": "Funding and governance",
+            "description": "Explore governance and funding in the ecosystem."
+          },
+          {
+            "title": "Community advisory panel",
+            "description": "Learn about the community advisory panel."
+          },
+          {
+            "title": "Community projects",
+            "description": "Discover projects across the ecosystem."
+          },
+          {
+            "title": "Arborist calls",
+            "description": "Find technical community discussions."
+          },
+          {
+            "title": "Contribute to ZecHub",
+            "description": "Find ways to help the education community."
+          }
+        ]
+      }
+    },
+    "tryNextPath": "Try another path: {title}",
+    "exploreWiki": "Explore the full wiki",
+    "exploreWikiDescription": "Keep learning with all the topics and pages in the knowledgebase.",
+    "previous": "Previous",
+    "next": "Next",
+    "previousPaths": "Previous paths",
+    "nextPaths": "Next paths",
+    "stepPages": "Step pages",
+    "pageOf": "Page {page} of {total}"
+  },
   "menuLabels": {
     "Accept Payments": "Accept Payments",
     "Akash Network Zebra": "Zebra on Akash",

@@ -1,4 +1,340 @@
 {
+  "myPath": {
+    "myPath": "Jalanku",
+    "closeMyPath": "Tutup Jalanku",
+    "pageActions": "Tindakan halaman Jalur Saya",
+    "learningPaths": "Jalur pembelajaran",
+    "heading": "Temukan jalan Anda dengan Zcash.",
+    "intro": "Pilih jalur, tandai langkah selesai, dan simpan halaman untuk nanti. Kemajuan Anda tetap ada di browser ini.",
+    "privacy": "Tidak diperlukan koneksi akun atau dompet.",
+    "storageUnavailable": "Penyimpanan browser tidak tersedia. Kemajuan Anda bersifat sementara dan mungkin hilang jika Anda meninggalkan tampilan ini.",
+    "currentPath": "Jalur saat ini",
+    "completeCount": "{done} dari {total} selesai",
+    "progress": "Kemajuan {title}",
+    "continueStep": "Lanjutkan: {title}",
+    "completedPath": "Anda menyelesaikan jalur ini. Pilih jalur lain untuk terus belajar.",
+    "completed": "Selesai",
+    "markComplete": "Tandai selesai",
+    "resetConfirm": "Setel ulang kemajuan untuk {title}? Halaman yang disimpan akan tetap ada.",
+    "resetPath": "Setel ulang jalur ini",
+    "allPaths": "Semua jalur",
+    "choosePath": "Pilih jalan",
+    "stepCount": "{count} langkah",
+    "returnPath": "Kembali ke jalur",
+    "startPath": "Mulailah jalan ini",
+    "completedCount": "{count} selesai",
+    "savedPages": "Halaman yang disimpan",
+    "savedDescription": "Simpan halaman wiki untuk menemukannya lagi nanti.",
+    "noSaved": "Belum ada halaman yang disimpan.",
+    "saveHint": "Gunakan Simpan halaman saat menjelajahi wiki.",
+    "remove": "Hapus",
+    "clearConfirm": "Hapus semua kemajuan Jalur Saya dan halaman tersimpan dari browser ini?",
+    "clearAll": "Hapus semua data Jalur Saya",
+    "headerProgress": "Jalur Saya: {done} dari langkah {total} selesai",
+    "homeHeading": "Belajarlah sesuai kecepatan Anda sendiri",
+    "homeProgress": "{done} dari langkah {total} selesai",
+    "nextTitle": "Berikutnya: {title}",
+    "pathComplete": "Jalur selesai",
+    "homeIntro": "Pilih jalur, lacak kemajuan Anda, dan simpan halaman untuk nanti.",
+    "continuePath": "Lanjutkan jalanmu",
+    "viewPath": "Lihat jalan Anda",
+    "explorePaths": "Jelajahi jalur pembelajaran",
+    "stepPosition": "Langkah {current} dari {total}",
+    "keepPage": "Simpan halaman ini untuk nanti",
+    "saved": "Disimpan",
+    "savePage": "Simpan halaman",
+    "paths": {
+      "learn": {
+        "title": "Pelajari Zcash",
+        "audience": "Baru mengenal Zcash",
+        "description": "Pelajari dasar-dasar Zcash, privasi finansial, dan jaringan.",
+        "steps": [
+          {
+            "title": "Dasar-dasar Zcash",
+            "description": "Pelajari apa itu Zcash dan ZEC."
+          },
+          {
+            "title": "Panduan Pengguna Baru Zcash",
+            "description": "Mulailah dengan panduan pengguna Zcash."
+          },
+          {
+            "title": "Zcash Pool Nilai",
+            "description": "Pelajari tentang privasi transaksi Zcash."
+          },
+          {
+            "title": "Zcash Peningkatan Jaringan",
+            "description": "Lihat bagaimana Zcash berevolusi."
+          },
+          {
+            "title": "Kebijakan moneter",
+            "description": "Memahami pasokan dan penerbitan ZEC."
+          },
+          {
+            "title": "Siapa yang dapat melihat pembayaran?",
+            "description": "Jelajahi apa yang dapat dilihat oleh berbagai orang."
+          },
+          {
+            "title": "Cara menggunakan ZEC",
+            "description": "Jelajahi kegunaan praktis untuk Zcash."
+          }
+        ]
+      },
+      "use": {
+        "title": "Gunakan Zcash secara pribadi",
+        "audience": "Siap digunakan ZEC",
+        "description": "Jelajahi dompet, transaksi, dan pilihan yang memengaruhi privasi.",
+        "steps": [
+          {
+            "title": "Menggunakan ZEC, secara privat",
+            "description": "Pelajari cara menggunakan ZEC secara pribadi."
+          },
+          {
+            "title": "Jelajahi dompet",
+            "description": "Bandingkan dompet dan fitur-fiturnya."
+          },
+          {
+            "title": "Mendapatkan Zcash",
+            "description": "Pelajari tentang cara memperoleh ZEC."
+          },
+          {
+            "title": "Transaksi",
+            "description": "Pelajari cara kerja transaksi Zcash."
+          },
+          {
+            "title": "Zcash Pool Nilai",
+            "description": "Pelajari bagaimana Zcash melindungi privasi transaksi."
+          },
+          {
+            "title": "Alamat terpadu",
+            "description": "Pahami alamat yang digunakan untuk menerima Zcash."
+          },
+          {
+            "title": "Memo terlindung",
+            "description": "Pelajari cara kerja memo dalam pembayaran terlindung."
+          },
+          {
+            "title": "Pemulihan dana",
+            "description": "Pelajari tentang pemulihan dan pencadangan dompet."
+          }
+        ]
+      },
+      "build": {
+        "title": "Bangun dengan Zcash",
+        "audience": "Pengembang",
+        "description": "Temukan sumber daya dan alat teknis untuk mulai membangun.",
+        "steps": [
+          {
+            "title": "Sumber daya pengembang",
+            "description": "Temukan sumber daya pengembangan Zcash."
+          },
+          {
+            "title": "Mulai cepat pengembang",
+            "description": "Mulailah dengan alat pengembangan Zcash."
+          },
+          {
+            "title": "Devtool Zcash",
+            "description": "Pelajari cara menggunakan Zcash Devtool."
+          },
+          {
+            "title": "Visualisator Zcash",
+            "description": "Jelajahi visualisasi Zcash interaktif."
+          },
+          {
+            "title": "Jaringan uji Zcash",
+            "description": "Jelajahi jaringan untuk menguji aplikasi."
+          },
+          {
+            "title": "Zcash JS",
+            "description": "Jelajahi panduan pengembang JavaScript."
+          },
+          {
+            "title": "Node dan pengindeksan",
+            "description": "Pelajari tentang node RPC dan pengindeksan blockchain."
+          }
+        ]
+      },
+      "contribute": {
+        "title": "Berkontribusi pada ZecHub",
+        "audience": "Kontributor komunitas",
+        "description": "Pelajari cara kerja komunitas dan di mana Anda dapat membantu.",
+        "steps": [
+          {
+            "title": "Apa itu ZecHub?",
+            "description": "Pelajari tentang ZecHub dan misinya."
+          },
+          {
+            "title": "Bantu Bangun ZecHub",
+            "description": "Jelajahi cara untuk berkontribusi."
+          },
+          {
+            "title": "Berkontribusi ke ZecHub",
+            "description": "Pahami alur kerja kontribusi."
+          },
+          {
+            "title": "Panduan Gaya ZecHub",
+            "description": "Pelajari konvensi konten komunitas."
+          },
+          {
+            "title": "ZecHub DAO",
+            "description": "Jelajahi bagaimana komunitas ZecHub berorganisasi."
+          },
+          {
+            "title": "Zec Mingguan",
+            "description": "Pelajari tentang buletin komunitas."
+          }
+        ]
+      },
+      "privacy": {
+        "title": "Privasi di luar pembayaran",
+        "audience": "Pembelajar privasi",
+        "description": "Memahami visibilitas transaksi dan alat yang mendukung privasi sehari-hari.",
+        "steps": [
+          {
+            "title": "Siapa yang dapat melihat pembayaran?",
+            "description": "Pelajari informasi pembayaran apa yang dapat dilihat."
+          },
+          {
+            "title": "Blokir visibilitas penjelajah",
+            "description": "Pahami apa yang dapat diungkapkan oleh data blockchain publik."
+          },
+          {
+            "title": "Melihat kunci",
+            "description": "Jelajahi pembagian informasi transaksi secara selektif."
+          },
+          {
+            "title": "Utusan yang aman",
+            "description": "Jelajahi alat untuk komunikasi pribadi."
+          },
+          {
+            "title": "Peramban web",
+            "description": "Pelajari tentang pilihan privasi browser."
+          },
+          {
+            "title": "VPN dan VPN",
+            "description": "Jelajahi alat privasi jaringan dan konsekuensinya."
+          },
+          {
+            "title": "Enkripsi PGP",
+            "description": "Pelajari tentang mengenkripsi dan menandatangani pesan."
+          }
+        ]
+      },
+      "protocol": {
+        "title": "Bagaimana Zcash bekerja",
+        "audience": "Pembelajar teknis",
+        "description": "Pelajari lebih dalam transaksi terlindung, kriptografi, node, dan penelitian protokol.",
+        "steps": [
+          {
+            "title": "Yayasan Zcash",
+            "description": "Pelajari dasar-dasar transaksi terlindung."
+          },
+          {
+            "title": "Fungsi hash",
+            "description": "Pelajari blok bangunan inti kriptografi."
+          },
+          {
+            "title": "Bukti tanpa pengetahuan",
+            "description": "Jelajahi bukti yang digunakan untuk transaksi terlindung."
+          },
+          {
+            "title": "Node penuh",
+            "description": "Pelajari bagaimana node berpartisipasi dalam jaringan."
+          },
+          {
+            "title": "Node dompet ringan",
+            "description": "Jelajahi infrastruktur yang digunakan oleh dompet ringan."
+          },
+          {
+            "title": "Verifikasi formal",
+            "description": "Jelajahi bagaimana keamanan protokol dapat diverifikasi."
+          },
+          {
+            "title": "Peningkatan jaringan",
+            "description": "Ikuti sejarah perubahan protokol."
+          }
+        ]
+      },
+      "real-world": {
+        "title": "Zcash di dunia nyata",
+        "audience": "Penggunaan sehari-hari",
+        "description": "Jelajahi pembayaran, donasi, pembuat konten, dan skenario privasi praktis.",
+        "steps": [
+          {
+            "title": "Kasus penggunaan Zcash",
+            "description": "Mulailah dengan ikhtisar cara menggunakan ZEC."
+          },
+          {
+            "title": "Pembayaran pedagang",
+            "description": "Jelajahi menerima Zcash sebagai pedagang."
+          },
+          {
+            "title": "Sumbangan pribadi",
+            "description": "Pelajari tentang menerima donasi terlindung."
+          },
+          {
+            "title": "Privasi pekerja lepas",
+            "description": "Jelajahi pengaturan privasi untuk pekerja lepas."
+          },
+          {
+            "title": "Privasi jurnalis",
+            "description": "Jelajahi pengaturan privasi untuk jurnalis."
+          },
+          {
+            "title": "Pembuat dan tip",
+            "description": "Temukan alat untuk pembuat dan pendukung."
+          },
+          {
+            "title": "Permintaan pembayaran",
+            "description": "Pelajari cara kerja tautan permintaan pembayaran."
+          }
+        ]
+      },
+      "community": {
+        "title": "Komunitas dan tata kelola Zcash",
+        "audience": "Pembelajar komunitas",
+        "description": "Jelajahi organisasi, pendanaan, dan orang-orang yang membentuk ekosistem.",
+        "steps": [
+          {
+            "title": "Bagaimana Zcash diatur",
+            "description": "Temui kelompok yang mengerjakan Zcash."
+          },
+          {
+            "title": "Dana pembangunan",
+            "description": "Pelajari bagaimana pengembangan jaringan didanai."
+          },
+          {
+            "title": "Pendanaan dan tata kelola",
+            "description": "Jelajahi tata kelola dan pendanaan dalam ekosistem."
+          },
+          {
+            "title": "Panel penasihat komunitas",
+            "description": "Pelajari tentang panel penasihat komunitas."
+          },
+          {
+            "title": "Proyek komunitas",
+            "description": "Temukan proyek di seluruh ekosistem."
+          },
+          {
+            "title": "Panggilan Arborist",
+            "description": "Temukan diskusi komunitas teknis."
+          },
+          {
+            "title": "Berkontribusi pada ZecHub",
+            "description": "Temukan cara untuk membantu komunitas pendidikan."
+          }
+        ]
+      }
+    },
+    "tryNextPath": "Coba jalur lain: {title}",
+    "exploreWiki": "Jelajahi wiki selengkapnya",
+    "exploreWikiDescription": "Teruslah belajar dengan semua topik dan halaman di basis pengetahuan.",
+    "previous": "Sebelumnya",
+    "next": "Selanjutnya",
+    "previousPaths": "Jalur sebelumnya",
+    "nextPaths": "Jalur berikutnya",
+    "stepPages": "Halaman langkah",
+    "pageOf": "Halaman {page} dari {total}"
+  },
   "menuLabels": {
     "Accept Payments": "Terima Pembayaran",
     "Akash Network Zebra": "Akash Network Zebra",

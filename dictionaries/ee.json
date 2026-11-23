@@ -1,4 +1,340 @@
 {
+  "myPath": {
+    "myPath": "Nye Mɔ",
+    "closeMyPath": "Mitu Nye Mɔa",
+    "pageActions": "Nye Mɔ ƒe axa ƒe nuwɔnawo",
+    "learningPaths": "Nusɔsrɔ̃ ƒe mɔwo",
+    "heading": "Di wò mɔ kple Zcash.",
+    "intro": "Tia mɔ aɖe, de dzesi afɔɖeɖeawo be wowu enu, eye nàdzra axawo ɖo na emegbe. Wò ŋgɔyiyi nɔa web-browser sia me.",
+    "privacy": "Akɔnta alo gakotoku ƒe kadodo aɖeke mehiã o.",
+    "storageUnavailable": "Browser ƒe nudzraɖoƒe mele dɔ wɔm o. Wò ŋgɔyiyi nye ɣeyiɣi kpui aɖe ko eye ate ŋu abu ne èdo le nukpɔsusu sia me.",
+    "currentPath": "Mɔ si dzi woto fifia",
+    "completeCount": "{done} ƒe {total} wu enu",
+    "progress": "{title} ŋgɔyiyi",
+    "continueStep": "Yi edzi: {title}",
+    "completedPath": "Èwu mɔ sia nu. Tia mɔ bubu si dzi nàto ayi edzi anɔ nu srɔ̃m.",
+    "completed": "Wowu enu",
+    "markComplete": "Mark wu enu",
+    "resetConfirm": "Gbugbɔ ɖo ŋgɔyiyi na {title}? Axa siwo wodzra ɖo la anɔ anyi.",
+    "resetPath": "Gbugbɔ ɖo mɔ sia",
+    "allPaths": "Mɔwo katã dzi",
+    "choosePath": "Tia mɔ aɖe",
+    "stepCount": "{count} afɔɖeɖewo",
+    "returnPath": "Trɔ yi mɔ dzi",
+    "startPath": "Dze mɔ sia gɔme",
+    "completedCount": "{count} wu enu",
+    "savedPages": "Axa siwo wodzra ɖo",
+    "savedDescription": "Dzra wiki ƒe axawo ɖo be nàgake ɖe wo ŋu emegbe.",
+    "noSaved": "Axa aɖeke meli si wodzra ɖo haɖe o.",
+    "saveHint": "Zã Save page esime nèle wiki la me dzrom.",
+    "remove": "Ðee ɖa",
+    "clearConfirm": "Ðe Nye Mɔ ƒe ŋgɔyiyiwo katã kple axa siwo wodzra ɖo la ɖa le web-browser sia dzia?",
+    "clearAll": "Klɔ Nye Mɔ ŋuti nyatakakawo katã ɖa",
+    "headerProgress": "Nye Mɔ: {done} ƒe {total} afɔɖeɖewo wu enu",
+    "homeHeading": "Srɔ̃ nu le wò ŋutɔ wò ablaɖeɖe nu",
+    "homeProgress": "{done} ƒe {total} afɔɖeɖewo wu enu",
+    "nextTitle": "Nusi kplɔe ɖo: {title}",
+    "pathComplete": "Mɔa wu enu",
+    "homeIntro": "Tia mɔ aɖe, lé ŋku ɖe wò ŋgɔyiyi ŋu, eye nàdzra axawo ɖo na emegbe.",
+    "continuePath": "Yi wò mɔa dzi",
+    "viewPath": "Kpɔ wò mɔa ɖa",
+    "explorePaths": "Dzro nusɔsrɔ̃mɔwo me",
+    "stepPosition": "Afɔɖeɖe {current} ƒe {total}",
+    "keepPage": "Dzra axa sia ɖo hena emegbe",
+    "saved": "Wodzrae ɖo",
+    "savePage": "Dzra axaa ɖo",
+    "paths": {
+      "learn": {
+        "title": "Srɔ̃ nu tso Zcash ŋu",
+        "audience": "Yeye le Zcash me",
+        "description": "Srɔ̃ Zcash ƒe gɔmedzenufiafiawo, ganyawo ƒe adzamenyawo, kple network la.",
+        "steps": [
+          {
+            "title": "Zcash ƒe Gɔmedzedzeawo",
+            "description": "Srɔ̃ nusi Zcash kple ZEC nye."
+          },
+          {
+            "title": "Zcash Fiafi Zaɖela ƒe Mɔfia",
+            "description": "Dze egɔme kple Zcash zazã ƒe mɔfiame."
+          },
+          {
+            "title": "Zcash Asigame ƒe Gaƒuƒoƒowo [Value Pools]",
+            "description": "Srɔ̃ nu tso Zcash ƒe asitsatsa ƒe adzamenyawo ŋu."
+          },
+          {
+            "title": "Zcash Mɔ̃ ƒe sewo trɔtrɔ",
+            "description": "Kpɔ alesi Zcash trɔe ɖa."
+          },
+          {
+            "title": "Ganyawo ŋuti ɖoɖowo",
+            "description": "Se ZEC ƒe nuzazã kple eɖeɖe gɔme."
+          },
+          {
+            "title": "Amekae ate ŋu akpɔ fetu aɖe?",
+            "description": "Dzro nusiwo ame vovovowo ate ŋu akpɔ me."
+          },
+          {
+            "title": "Mɔ siwo dzi woato azã ZEC",
+            "description": "Dzro Zcash ƒe zazã ŋutɔŋutɔwo me."
+          }
+        ]
+      },
+      "use": {
+        "title": "Zã Zcash le ɖokuiwò si",
+        "audience": "Wole klalo be yewoazã ZEC",
+        "description": "Dzro gakotokuwo, asitsatsa kple tiatia siwo kpɔa ŋusẽ ɖe ame ŋutɔ ƒe nyatakakawo dzi.",
+        "steps": [
+          {
+            "title": "Ale si wòazu ZEC, le ɣaɣla me",
+            "description": "Srɔ̃ alesi nàzã ZEC le ɖokuiwò si."
+          },
+          {
+            "title": "Dzro gakotokuwo me",
+            "description": "Tsɔ gakotokuwo kple woƒe nɔnɔmewo sɔ kple wo nɔewo."
+          },
+          {
+            "title": "Zcash Ƒe Nudzɔdzɔ",
+            "description": "Srɔ̃ nu tso mɔ siwo dzi nàto axɔ ZEC ŋu."
+          },
+          {
+            "title": "Gaɖoɖowo",
+            "description": "Srɔ̃ alesi Zcash ƒe asitsatsa wɔa dɔe."
+          },
+          {
+            "title": "Zcash Asigame ƒe Gaƒuƒoƒowo [Value Pools]",
+            "description": "Srɔ̃ alesi Zcash kpɔa asitsatsa ƒe adzamenyawo tae."
+          },
+          {
+            "title": "Adrɛs siwo wowɔ ɖekae",
+            "description": "Se adrɛs siwo wozãna tsɔ xɔa Zcash gɔme."
+          },
+          {
+            "title": "Nuŋlɔɖi siwo ŋu wokpɔ ta na",
+            "description": "Srɔ̃ alesi nuŋlɔɖiwo wɔa dɔe le fexexe si wokpɔ ta na me."
+          },
+          {
+            "title": "Gawo gbugbɔgaxɔ",
+            "description": "Srɔ̃ nu tso gakotokua gbugbɔgaxɔ kple eƒe kɔpiwo ŋu."
+          }
+        ]
+      },
+      "build": {
+        "title": "Tu kple Zcash",
+        "audience": "Dɔwɔlawo",
+        "description": "Di mɔ̃ɖaŋunuwo kple dɔwɔnu siwo nàtsɔ adze xɔtutu gɔme.",
+        "steps": [
+          {
+            "title": "Developer ƒe nunɔamesiwo",
+            "description": "Di Zcash ƒe ŋgɔyiyidɔwo."
+          },
+          {
+            "title": "Developer ƒe gɔmedzedze kabakaba",
+            "description": "Dze egɔme kple Zcash ŋgɔyiyidɔwɔnuwo."
+          },
+          {
+            "title": "Zcash Devtool",
+            "description": "Srɔ̃ alesi nàzã Zcash Devtool."
+          },
+          {
+            "title": "Zcash nukpɔkpɔwo",
+            "description": "Dzro Zcash ƒe nukpɔkpɔ siwo me wowɔa nu aduadu le me."
+          },
+          {
+            "title": "Zcash dodokpɔ ƒe mɔ̃",
+            "description": "Dzro network aɖe me hena dɔwɔɖoɖowo dodokpɔ."
+          },
+          {
+            "title": "Zcash JS",
+            "description": "Dzro JavaScript ƒe dɔwɔlawo ƒe mɔfiamegbalẽa me."
+          },
+          {
+            "title": "Nodes kple indexing",
+            "description": "Srɔ̃ nu tso node RPC kple blockchain indexing ŋu."
+          }
+        ]
+      },
+      "contribute": {
+        "title": "Kpe asi ɖe ZecHub ŋu",
+        "audience": "Nutoa me nudzɔlawo",
+        "description": "Srɔ̃ alesi nutoa me tɔwo wɔa dɔe kple afisi nàte ŋu akpe asi ɖe eŋu le.",
+        "steps": [
+          {
+            "title": "Nu ka nye ZecHub?",
+            "description": "Srɔ̃ nu tso ZecHub kple eƒe dɔdasi ŋu."
+          },
+          {
+            "title": "Kpe ɖe ZecHub tutu ŋu",
+            "description": "Dzro mɔ siwo dzi nàto adzɔ nu."
+          },
+          {
+            "title": "Kpekpeɖeŋu na ZecHub",
+            "description": "Se nudzɔdzɔ ƒe dɔwɔwɔ gɔme."
+          },
+          {
+            "title": "ZecHub Ƒe Ŋlɔnu ƒe Nɔnɔme Ƒe Fiafia [Style Guide]",
+            "description": "Srɔ̃ nutoa me ƒe emenyawo ƒe takpekpewo."
+          },
+          {
+            "title": "ZecHub DAO ƒe amegã",
+            "description": "Dzro alesi ZecHub nutoa me tɔwo wɔa ɖoɖoe me."
+          },
+          {
+            "title": "ZecKwasiɖa sia kwasiɖa",
+            "description": "Srɔ̃ nu tso nutoa me nyadzɔdzɔgbalẽa ŋu."
+          }
+        ]
+      },
+      "privacy": {
+        "title": "Ame ŋutɔ ƒe nyawo tsɔtsɔ aɣla si gbɔ fexexe ŋu",
+        "audience": "Ame ŋutɔ ƒe nyawo ŋuti nusrɔ̃lawo",
+        "description": "Se asitsatsa ƒe dzedzeme kple dɔwɔnu siwo doa alɔ gbesiagbe adzamenyawo gɔme.",
+        "steps": [
+          {
+            "title": "Amekae ate ŋu akpɔ fetu aɖe?",
+            "description": "Srɔ̃ nu tso fexexe ŋuti nyatakaka siwo ate ŋu adze."
+          },
+          {
+            "title": "Block explorer ƒe nukpɔkpɔ",
+            "description": "Se nusi dutoƒo blockchain nyatakakawo ate ŋu aɖe afia gɔme."
+          },
+          {
+            "title": "Safuiwo kpɔkpɔ",
+            "description": "Dzro asitsatsa ŋuti nyatakakawo mamã tiatiatɔe me."
+          },
+          {
+            "title": "Dɔla siwo le dedie",
+            "description": "Dzro dɔwɔnu siwo nàtsɔ aɖo dze kple amewo le ame ŋutɔ gbɔ la me."
+          },
+          {
+            "title": "Nyatakakadzraɖoƒewo ƒe nyatakakadzraɖoƒewo",
+            "description": "Srɔ̃ nu tso web-browser ƒe ameŋunyatakakawo ƒe tiatia ŋu."
+          },
+          {
+            "title": "VPN kple dVPN",
+            "description": "Dzro dɔwɔnu siwo wozãna tsɔ kpɔa nyatakakawo ta le kɔmpiuta dzi kple woƒe asitsatsa me."
+          },
+          {
+            "title": "PGP ƒe nya ɣaɣlawo tsɔtsɔ ɣla",
+            "description": "Srɔ̃ nu tso gbedasiwo tsɔtsɔ ɣla kple wo dede asi ŋu."
+          }
+        ]
+      },
+      "protocol": {
+        "title": "Alesi Zcash wɔa dɔe",
+        "audience": "Mɔ̃ɖaŋununya srɔ̃lawo",
+        "description": "Yi gogloƒe ɖe shielded transactions, cryptography, nodes kple protocol numekuku me.",
+        "steps": [
+          {
+            "title": "Zcash gɔmeɖoanyiwo",
+            "description": "Srɔ̃ nu tso gɔmeɖoanyi siwo dzi wotu asitsatsa siwo ŋu wokpɔa akpo ɖo ŋu."
+          },
+          {
+            "title": "Hash ƒe dɔwɔwɔwo",
+            "description": "Srɔ̃ nya ɣaɣlawo ƒe xɔtunu vevi aɖe."
+          },
+          {
+            "title": "Kpeɖodzi siwo me sidzedze aɖeke mele o",
+            "description": "Dzro kpeɖodzi siwo wozãna na asitsatsa siwo ŋu wokpɔa akpoxɔnuwo le me."
+          },
+          {
+            "title": "Nodes blibowo",
+            "description": "Srɔ̃ alesi nodes kpɔa gome le network la me."
+          },
+          {
+            "title": "Lightwallet ƒe nugbɔwo",
+            "description": "Dzro xɔtuɖoɖo siwo gakotoku siwo me kɔ zãna me."
+          },
+          {
+            "title": "Kpeɖodzi le se nu",
+            "description": "Ku alesi woate ŋu aɖo kpe protocol ƒe dedienɔnɔ dzii me."
+          },
+          {
+            "title": "Network ƒe ŋgɔyiyiwo",
+            "description": "Dze ɖoɖowɔɖi ƒe tɔtrɔwo ƒe ŋutinya yome."
+          }
+        ]
+      },
+      "real-world": {
+        "title": "Zcash le xexe ŋutɔŋutɔ me",
+        "audience": "Gbesiagbe zazãwo",
+        "description": "Dzro fexexe, nudzɔdzɔwo, nuwɔlawo kple ameŋunyatakakawo takpɔkpɔ ƒe nɔnɔme nyuiwo me.",
+        "steps": [
+          {
+            "title": "Zcash zazã ƒe nɔnɔmewo",
+            "description": "Dze egɔme kple mɔ siwo dzi nàto azã ZEC ƒe wɔwɔfia."
+          },
+          {
+            "title": "Asitsalawo ƒe fexexe",
+            "description": "Dzro Zcash xɔxɔ abe asitsala ene me."
+          },
+          {
+            "title": "Ame ŋutɔ ƒe nudzɔdzɔwo",
+            "description": "Srɔ̃ nu tso nudzɔdzɔ siwo ŋu wokpɔ ta na xɔxɔ ŋu."
+          },
+          {
+            "title": "Freelancer ƒe adzamenyawo",
+            "description": "Dzro adzamenyawo ƒe ɖoɖo aɖe me na dɔwɔla siwo wɔa dɔ le wo ɖokui si."
+          },
+          {
+            "title": "Nyadzɔdzɔŋlɔlawo ƒe nya ɣaɣlawo",
+            "description": "Dzro adzamenyawo ŋuti ɖoɖo aɖe me na nyadzɔdzɔŋlɔlawo."
+          },
+          {
+            "title": "Wɔlawo kple aɖaŋuɖoɖowo",
+            "description": "Ke ɖe dɔwɔnuwo ŋu na nuwɔlawo kple amesiwo doa alɔe."
+          },
+          {
+            "title": "Fexexe ƒe biabiawo",
+            "description": "Srɔ̃ alesi fexexe ƒe biabiawo ƒe kadodowo wɔa dɔe."
+          }
+        ]
+      },
+      "community": {
+        "title": "Zcash nutoa me kple dziɖuɖu",
+        "audience": "Nutoa me nusrɔ̃lawo",
+        "description": "Dzro habɔbɔwo, gakpekpeɖeŋu kple ame siwo le nɔnɔme wɔm na lãwo ƒe agbenɔnɔ me.",
+        "steps": [
+          {
+            "title": "Alesi wowɔ ɖoɖo ɖe Zcash ŋui",
+            "description": "Do go ƒuƒoƒo siwo le dɔ wɔm tso Zcash ŋu."
+          },
+          {
+            "title": "Ŋgɔyiyi ƒe gaxɔ",
+            "description": "Srɔ̃ alesi wokpɔa ga le network wɔwɔ me."
+          },
+          {
+            "title": "Gazazã kple dziɖuɖu",
+            "description": "Ku dziɖuɖu kple gazazã le lãwo ƒe agbenɔnɔ ƒe ɖoɖoa me."
+          },
+          {
+            "title": "Nutoa me aɖaŋuɖoha",
+            "description": "Srɔ̃ nu tso nutoa me ƒe aɖaŋuɖoha ŋu."
+          },
+          {
+            "title": "Nutoa me dɔwo",
+            "description": "Ke ɖe dɔ siwo wowɔ le lãwo kple wo nɔƒewo katã ŋu."
+          },
+          {
+            "title": "Atiŋutinunyalawo ƒe yɔyɔwo",
+            "description": "Di mɔ̃ɖaŋununya ƒe nutoa me numedzodzrowo."
+          },
+          {
+            "title": "Kpe asi ɖe ZecHub ŋu",
+            "description": "Di mɔ siwo dzi nàto akpe ɖe sukudede ƒe nutoa me tɔwo ŋu."
+          }
+        ]
+      }
+    },
+    "tryNextPath": "Te mɔ bubu kpɔ: {title}",
+    "exploreWiki": "Dzro wiki bliboa me",
+    "exploreWikiDescription": "Yi edzi nànɔ nu srɔ̃m kple tanyawo kple axa siwo katã le sidzedze ƒe dɔwɔƒea.",
+    "previous": "Do ŋgɔ",
+    "next": "Eyome",
+    "previousPaths": "Mɔ siwo dzi woto va yi",
+    "nextPaths": "Mɔ siwo kplɔe ɖo",
+    "stepPages": "Afɔɖeɖe ƒe axawo",
+    "pageOf": "Axa {page} ƒe {total}"
+  },
   "menuLabels": {
     "Accept Payments": "Lɔ̃ Ðe Fexexewo Dzi",
     "Akash Network Zebra": "Akash Network Zebra",

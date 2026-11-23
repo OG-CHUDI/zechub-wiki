@@ -179,8 +179,8 @@ export default async function RootLayout({
                   </NavigationWrapper>
                 </MotionProvider>
               </DarkModeProvider>
+              <DesktopInterfaceHost locale={locale} />
             </LanguageProvider>
-            <DesktopInterfaceHost locale={locale} />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

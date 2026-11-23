@@ -1,4 +1,340 @@
 {
+  "myPath": {
+    "myPath": "私の道",
+    "closeMyPath": "私の道を閉じてください",
+    "pageActions": "「マイパス」ページのアクション",
+    "learningPaths": "学習パス",
+    "heading": "Zcash で自分の道を見つけてください。",
+    "intro": "パスを選択し、ステップを完了としてマークし、後で使用できるようにページを保存します。進行状況はこのブラウザに残ります。",
+    "privacy": "アカウントやウォレットへの接続は必要ありません。",
+    "storageUnavailable": "ブラウザのストレージが利用できません。進行状況は一時的なものであり、このビューを離れると失われる可能性があります。",
+    "currentPath": "現在のパス",
+    "completeCount": "{done}/{total} 完了",
+    "progress": "{title} の進捗状況",
+    "continueStep": "続行: {title}",
+    "completedPath": "この道を完了しました。学習を続けるために別の道を選択してください。",
+    "completed": "完了",
+    "markComplete": "完了としてマークを付ける",
+    "resetConfirm": "{title} の進行状況をリセットしますか?保存したページは残ります。",
+    "resetPath": "このパスをリセットします",
+    "allPaths": "すべてのパス",
+    "choosePath": "パスを選択してください",
+    "stepCount": "{count} 歩",
+    "returnPath": "パスに戻る",
+    "startPath": "このパスを開始します",
+    "completedCount": "{count} 完了しました",
+    "savedPages": "保存されたページ",
+    "savedDescription": "Wiki ページを保存して、後で再度検索できるようにします。",
+    "noSaved": "まだ保存されたページはありません。",
+    "saveHint": "Wiki を探索するときに「ページを保存」を使用します。",
+    "remove": "削除",
+    "clearConfirm": "このブラウザからすべての My Path の進行状況と保存したページを消去しますか?",
+    "clearAll": "マイパスデータをすべてクリアする",
+    "headerProgress": "私のパス: {total} ステップ中 {done} ステップが完了しました",
+    "homeHeading": "自分のペースで学習しましょう",
+    "homeProgress": "{total} ステップ中 {done} ステップが完了しました",
+    "nextTitle": "次へ: {title}",
+    "pathComplete": "パスが完了しました",
+    "homeIntro": "パスを選択し、進行状況を追跡し、後で使用できるようにページを保存します。",
+    "continuePath": "自分の道を続けてください",
+    "viewPath": "自分のパスを表示する",
+    "explorePaths": "学習パスを探索する",
+    "stepPosition": "{total} のステップ {current}",
+    "keepPage": "このページは後で使用するために保管しておいてください",
+    "saved": "保存されました",
+    "savePage": "ページを保存",
+    "paths": {
+      "learn": {
+        "title": "Zcashを学ぶ",
+        "audience": "Zcash は初めてです",
+        "description": "Zcash、財務上のプライバシー、ネットワークの基本を学びます。",
+        "steps": [
+          {
+            "title": "Zcashの基礎",
+            "description": "Zcash と ZEC について学びましょう。"
+          },
+          {
+            "title": "Zcash 新規ユーザーガイド",
+            "description": "Zcash ユーザーガイドから始めてください。"
+          },
+          {
+            "title": "Zcash バリュープール",
+            "description": "Zcash トランザクションのプライバシーについて学びます。"
+          },
+          {
+            "title": "Zcash ネットワークアップグレード（Network Upgrades）",
+            "description": "Zcash がどのように進化したかをご覧ください。"
+          },
+          {
+            "title": "金融政策",
+            "description": "ZECの供給と発行を理解する。"
+          },
+          {
+            "title": "誰が支払いを確認できますか?",
+            "description": "さまざまな人が何を見ることができるかを調べてください。"
+          },
+          {
+            "title": "ZECの使い方",
+            "description": "Zcash の実際的な使用方法を調べてください。"
+          }
+        ]
+      },
+      "use": {
+        "title": "Zcash をプライベートで使用する",
+        "audience": "すぐに使えるZEC",
+        "description": "ウォレット、トランザクション、プライバシーに影響を与える選択肢について調べてください。",
+        "steps": [
+          {
+            "title": "ZECをプライベートに利用する",
+            "description": "ZEC をプライベートで使用する方法を学びます。"
+          },
+          {
+            "title": "ウォレットを探索する",
+            "description": "ウォレットとその機能を比較します。"
+          },
+          {
+            "title": "Zcashの入手",
+            "description": "ZEC を取得する方法について説明します。"
+          },
+          {
+            "title": "トランザクション",
+            "description": "Zcash トランザクションがどのように機能するかを学びます。"
+          },
+          {
+            "title": "Zcash バリュープール",
+            "description": "Zcash がトランザクションのプライバシーをどのように保護するかを学びましょう。"
+          },
+          {
+            "title": "統一されたアドレス",
+            "description": "Zcash の受信に使用されるアドレスを理解します。"
+          },
+          {
+            "title": "シールドされたメモ",
+            "description": "保護された支払いでメモがどのように機能するかを学びます。"
+          },
+          {
+            "title": "資金の回収",
+            "description": "ウォレットの復元とバックアップについて学びます。"
+          }
+        ]
+      },
+      "build": {
+        "title": "Zcash で構築する",
+        "audience": "開発者",
+        "description": "構築を開始するための技術リソースとツールを見つけてください。",
+        "steps": [
+          {
+            "title": "開発者リソース",
+            "description": "Zcash 開発リソースを見つけてください。"
+          },
+          {
+            "title": "開発者のクイックスタート",
+            "description": "Zcash 開発ツールを使ってみましょう。"
+          },
+          {
+            "title": "Zcash 開発ツール（Devtool）",
+            "description": "Zcash Devtool の使用方法を学習します。"
+          },
+          {
+            "title": "Zcash ビジュアライザー",
+            "description": "インタラクティブな Zcash ビジュアライゼーションを探索します。"
+          },
+          {
+            "title": "Zcash テストネット",
+            "description": "アプリケーションをテストするためにネットワークを探索します。"
+          },
+          {
+            "title": "Zcash JS",
+            "description": "JavaScript 開発者ガイドを参照してください。"
+          },
+          {
+            "title": "ノードとインデックス作成",
+            "description": "ノード RPC とブロックチェーンのインデックス作成について学びます。"
+          }
+        ]
+      },
+      "contribute": {
+        "title": "ZecHub に貢献する",
+        "audience": "コミュニティの貢献者",
+        "description": "コミュニティがどのように機能し、どこで支援できるかを学びましょう。",
+        "steps": [
+          {
+            "title": "ZecHubとは何ですか？",
+            "description": "ZecHub とその使命について学びましょう。"
+          },
+          {
+            "title": "ZecHubの構築にご協力ください",
+            "description": "貢献する方法を検討してください。"
+          },
+          {
+            "title": "ZecHubへの貢献",
+            "description": "貢献ワークフローを理解します。"
+          },
+          {
+            "title": "ZecHub スタイルガイド",
+            "description": "コミュニティのコンテンツ規約を学びましょう。"
+          },
+          {
+            "title": "ZecHub ダオ",
+            "description": "ZecHub コミュニティがどのように組織されているかを調べてください。"
+          },
+          {
+            "title": "ゼクウィークリー",
+            "description": "コミュニティニュースレターについて学びましょう。"
+          }
+        ]
+      },
+      "privacy": {
+        "title": "支払いを超えたプライバシー",
+        "audience": "プライバシー学習者",
+        "description": "トランザクションの可視性と日常のプライバシーをサポートするツールを理解します。",
+        "steps": [
+          {
+            "title": "誰が支払いを確認できますか?",
+            "description": "どのような支払い情報が表示されるかを確認してください。"
+          },
+          {
+            "title": "エクスプローラーの表示をブロックする",
+            "description": "パブリック ブロックチェーン データから何が明らかになるかを理解します。"
+          },
+          {
+            "title": "キーの表示",
+            "description": "トランザクション情報の選択的な共有を検討します。"
+          },
+          {
+            "title": "安全なメッセンジャー",
+            "description": "プライベートなコミュニケーションのためのツールを探索してください。"
+          },
+          {
+            "title": "ウェブブラウザ",
+            "description": "ブラウザーのプライバシーの選択について学びます。"
+          },
+          {
+            "title": "VPN と dVPN",
+            "description": "ネットワーク プライバシー ツールとそのトレードオフを調べます。"
+          },
+          {
+            "title": "PGP暗号化",
+            "description": "メッセージの暗号化と署名について学びます。"
+          }
+        ]
+      },
+      "protocol": {
+        "title": "Zcashの仕組み",
+        "audience": "技術学習者",
+        "description": "シールドされたトランザクション、暗号化、ノード、プロトコルの研究をさらに深く掘り下げます。",
+        "steps": [
+          {
+            "title": "Zcash財団",
+            "description": "シールドされたトランザクションの基礎を学びます。"
+          },
+          {
+            "title": "ハッシュ関数",
+            "description": "コアとなる暗号の構成要素を学びます。"
+          },
+          {
+            "title": "ゼロ知識証明",
+            "description": "シールドされたトランザクションに使用される証明を調べます。"
+          },
+          {
+            "title": "フルノード",
+            "description": "ノードがネットワークにどのように参加するかを学びます。"
+          },
+          {
+            "title": "ライトウォレットノード",
+            "description": "ライトウォレットで使用されるインフラストラクチャを調べます。"
+          },
+          {
+            "title": "正式な検証",
+            "description": "プロトコルのセキュリティを検証する方法を検討します。"
+          },
+          {
+            "title": "ネットワークのアップグレード",
+            "description": "プロトコルの変更履歴を追跡します。"
+          }
+        ]
+      },
+      "real-world": {
+        "title": "現実世界のZcash",
+        "audience": "日常使い",
+        "description": "支払い、寄付、クリエイター、そして実際的なプライバシーのシナリオを調べてください。",
+        "steps": [
+          {
+            "title": "Zcash の使用例",
+            "description": "まずは、ZEC の使用方法の概要から始めます。"
+          },
+          {
+            "title": "販売者の支払い",
+            "description": "Zcash を販売者として受け入れることを検討してください。"
+          },
+          {
+            "title": "個人の寄付",
+            "description": "保護された寄付の受け取りについてご覧ください。"
+          },
+          {
+            "title": "フリーランサーのプライバシー",
+            "description": "フリーランサー向けのプライバシー設定を検討してください。"
+          },
+          {
+            "title": "ジャーナリストのプライバシー",
+            "description": "ジャーナリスト向けのプライバシー設定を検討してください。"
+          },
+          {
+            "title": "クリエイターとヒント",
+            "description": "クリエイターとサポーターのためのツールを見つけてください。"
+          },
+          {
+            "title": "支払い要求",
+            "description": "支払いリクエストのリンクがどのように機能するかをご覧ください。"
+          }
+        ]
+      },
+      "community": {
+        "title": "Zcash コミュニティとガバナンス",
+        "audience": "コミュニティ学習者",
+        "description": "エコシステムを形成する組織、資金、人々を調べてください。",
+        "steps": [
+          {
+            "title": "Zcash の構成方法",
+            "description": "Zcash に取り組んでいるグループを紹介します。"
+          },
+          {
+            "title": "開発資金",
+            "description": "ネットワーク開発の資金調達方法を学びましょう。"
+          },
+          {
+            "title": "資金調達とガバナンス",
+            "description": "エコシステム内のガバナンスと資金調達を調査します。"
+          },
+          {
+            "title": "コミュニティ諮問委員会",
+            "description": "コミュニティ諮問委員会について学びましょう。"
+          },
+          {
+            "title": "コミュニティプロジェクト",
+            "description": "エコシステム全体でプロジェクトを発見します。"
+          },
+          {
+            "title": "樹木医の呼びかけ",
+            "description": "技術コミュニティのディスカッションを見つけます。"
+          },
+          {
+            "title": "ZecHub に貢献する",
+            "description": "教育コミュニティを支援する方法を見つけてください。"
+          }
+        ]
+      }
+    },
+    "tryNextPath": "別のパスを試してください: {title}",
+    "exploreWiki": "ウィキ全体を探索する",
+    "exploreWikiDescription": "ナレッジベースのすべてのトピックとページで学習を続けてください。",
+    "previous": "前へ",
+    "next": "次へ",
+    "previousPaths": "以前のパス",
+    "nextPaths": "次のパス",
+    "stepPages": "ステップページ",
+    "pageOf": "ページ {page} / {total}"
+  },
   "menuLabels": {
     "Accept Payments": "支払いを受け付ける",
     "Akash Network Zebra": "Akash Network Zebra",

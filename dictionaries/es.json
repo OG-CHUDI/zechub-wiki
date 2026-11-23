@@ -1,4 +1,340 @@
 {
+  "myPath": {
+    "myPath": "mi camino",
+    "closeMyPath": "Cierra mi camino",
+    "pageActions": "Acciones de la página Mi ruta",
+    "learningPaths": "Caminos de aprendizaje",
+    "heading": "Encuentra tu camino con Zcash.",
+    "intro": "Elija una ruta, marque los pasos como completos y guarde las páginas para más adelante. Tu progreso permanece en este navegador.",
+    "privacy": "No se necesita conexión de cuenta o billetera.",
+    "storageUnavailable": "El almacenamiento del navegador no está disponible. Su progreso es temporal y puede perderse cuando abandone esta vista.",
+    "currentPath": "Camino actual",
+    "completeCount": "{done} de {total} completo",
+    "progress": "Progreso de {title}",
+    "continueStep": "Continuar: {title}",
+    "completedPath": "Completaste este camino. Elige otro camino para seguir aprendiendo.",
+    "completed": "Completado",
+    "markComplete": "Marcar completo",
+    "resetConfirm": "¿Restablecer el progreso de {title}? Las páginas guardadas permanecerán.",
+    "resetPath": "Restablecer esta ruta",
+    "allPaths": "Todos los caminos",
+    "choosePath": "Elige un camino",
+    "stepCount": "Pasos {count}",
+    "returnPath": "volver al camino",
+    "startPath": "Inicia este camino",
+    "completedCount": "{count} completado",
+    "savedPages": "páginas guardadas",
+    "savedDescription": "Guarde las páginas wiki para volver a encontrarlas más tarde.",
+    "noSaved": "Aún no hay páginas guardadas.",
+    "saveHint": "Utilice Guardar página mientras explora la wiki.",
+    "remove": "Quitar",
+    "clearConfirm": "¿Borrar todo el progreso de My Path y las páginas guardadas de este navegador?",
+    "clearAll": "Borrar todos los datos de Mi ruta",
+    "headerProgress": "Mi camino: Pasos {done} de {total} completos",
+    "homeHeading": "Aprende a tu propio ritmo",
+    "homeProgress": "Pasos {done} de {total} completos",
+    "nextTitle": "Siguiente: {title}",
+    "pathComplete": "Ruta completa",
+    "homeIntro": "Elija una ruta, realice un seguimiento de su progreso y guarde páginas para más adelante.",
+    "continuePath": "continúa tu camino",
+    "viewPath": "Ver tu camino",
+    "explorePaths": "Explorar rutas de aprendizaje",
+    "stepPosition": "Paso {current} de {total}",
+    "keepPage": "Mantenga esta página para más tarde",
+    "saved": "Guardado",
+    "savePage": "Guardar página",
+    "paths": {
+      "learn": {
+        "title": "Aprende Zcash",
+        "audience": "Nuevo en Zcash",
+        "description": "Aprenda los conceptos básicos de Zcash, la privacidad financiera y la red.",
+        "steps": [
+          {
+            "title": "Fundamentos [Basics] de Zcash",
+            "description": "Conozca qué son Zcash y ZEC."
+          },
+          {
+            "title": "Zcash Guía para nuevos usuarios [New User Guide]",
+            "description": "Comience con la guía del usuario de Zcash."
+          },
+          {
+            "title": "Pools de valor Zcash",
+            "description": "Obtenga más información sobre la privacidad de las transacciones de Zcash."
+          },
+          {
+            "title": "Zcash Actualizaciones de red [Network Upgrades]",
+            "description": "Vea cómo ha evolucionado Zcash."
+          },
+          {
+            "title": "Política monetaria",
+            "description": "Comprender el suministro y la emisión de ZEC."
+          },
+          {
+            "title": "¿Quién puede ver un pago?",
+            "description": "Explora lo que diferentes personas pueden ver."
+          },
+          {
+            "title": "Formas de utilizar ZEC",
+            "description": "Explore usos prácticos de Zcash."
+          }
+        ]
+      },
+      "use": {
+        "title": "Utilice Zcash de forma privada",
+        "audience": "Listo para usar ZEC",
+        "description": "Explore billeteras, transacciones y las opciones que afectan la privacidad.",
+        "steps": [
+          {
+            "title": "Uso de ZEC de forma privada",
+            "description": "Aprenda a utilizar ZEC de forma privada."
+          },
+          {
+            "title": "Explorar carteras",
+            "description": "Compare billeteras y sus características."
+          },
+          {
+            "title": "Obtener Zcash",
+            "description": "Conozca las formas de adquirir ZEC."
+          },
+          {
+            "title": "Transacciones",
+            "description": "Descubra cómo funcionan las transacciones Zcash."
+          },
+          {
+            "title": "Pools de valor Zcash",
+            "description": "Descubra cómo Zcash protege la privacidad de las transacciones."
+          },
+          {
+            "title": "Direcciones unificadas",
+            "description": "Comprenda las direcciones utilizadas para recibir Zcash."
+          },
+          {
+            "title": "notas blindadas",
+            "description": "Descubra cómo funcionan los memorandos en pagos blindados."
+          },
+          {
+            "title": "Recuperar fondos",
+            "description": "Obtenga más información sobre la recuperación y las copias de seguridad de la billetera."
+          }
+        ]
+      },
+      "build": {
+        "title": "Construir con Zcash",
+        "audience": "Desarrolladores",
+        "description": "Encuentre los recursos técnicos y las herramientas para comenzar a construir.",
+        "steps": [
+          {
+            "title": "Recursos para desarrolladores",
+            "description": "Encuentre recursos de desarrollo de Zcash."
+          },
+          {
+            "title": "Inicio rápido para desarrolladores",
+            "description": "Comience con las herramientas de desarrollo Zcash."
+          },
+          {
+            "title": "El Devtool de Zcash",
+            "description": "Aprenda a utilizar Zcash Devtool."
+          },
+          {
+            "title": "Visualizadores Zcash",
+            "description": "Explore visualizaciones interactivas de Zcash."
+          },
+          {
+            "title": "Red de prueba Zcash",
+            "description": "Explore una red para probar aplicaciones."
+          },
+          {
+            "title": "Zcash JS",
+            "description": "Explore la guía para desarrolladores de JavaScript."
+          },
+          {
+            "title": "Nodos e indexación",
+            "description": "Obtenga información sobre RPC de nodos y la indexación de blockchain."
+          }
+        ]
+      },
+      "contribute": {
+        "title": "Contribuir a ZecHub",
+        "audience": "Contribuyentes de la comunidad",
+        "description": "Descubra cómo funciona la comunidad y dónde puede ayudar.",
+        "steps": [
+          {
+            "title": "¿Qué es ZecHub?",
+            "description": "Conozca sobre ZecHub y su misión."
+          },
+          {
+            "title": "Ayuda a construir ZecHub",
+            "description": "Explore formas de contribuir."
+          },
+          {
+            "title": "Contribuir a ZecHub",
+            "description": "Comprender el flujo de trabajo de contribución."
+          },
+          {
+            "title": "Guía de estilo de ZecHub",
+            "description": "Conozca las convenciones de contenido de la comunidad."
+          },
+          {
+            "title": "ZecHub DAO",
+            "description": "Explore cómo se organiza la comunidad ZecHub."
+          },
+          {
+            "title": "Zec Semanal",
+            "description": "Obtenga más información sobre el boletín comunitario."
+          }
+        ]
+      },
+      "privacy": {
+        "title": "Privacidad más allá de los pagos",
+        "audience": "Estudiantes de privacidad",
+        "description": "Comprenda la visibilidad de las transacciones y las herramientas que respaldan la privacidad diaria.",
+        "steps": [
+          {
+            "title": "¿Quién puede ver un pago?",
+            "description": "Descubra qué información de pago puede ser visible."
+          },
+          {
+            "title": "Visibilidad del explorador de bloques",
+            "description": "Comprenda lo que pueden revelar los datos públicos de blockchain."
+          },
+          {
+            "title": "Visualización de claves",
+            "description": "Explore el intercambio selectivo de información de transacciones."
+          },
+          {
+            "title": "Mensajeros seguros",
+            "description": "Explore herramientas para la comunicación privada."
+          },
+          {
+            "title": "Navegadores web",
+            "description": "Obtenga más información sobre las opciones de privacidad del navegador."
+          },
+          {
+            "title": "VPN y dVPN",
+            "description": "Explore las herramientas de privacidad de la red y sus ventajas y desventajas."
+          },
+          {
+            "title": "cifrado PGP",
+            "description": "Obtenga información sobre cómo cifrar y firmar mensajes."
+          }
+        ]
+      },
+      "protocol": {
+        "title": "Cómo funciona Zcash",
+        "audience": "Estudiantes técnicos",
+        "description": "Profundice en transacciones protegidas, criptografía, nodos e investigación de protocolos.",
+        "steps": [
+          {
+            "title": "Cimentaciones Zcash",
+            "description": "Estudiar los fundamentos de las transacciones blindadas."
+          },
+          {
+            "title": "Funciones hash",
+            "description": "Aprenda un componente básico criptográfico."
+          },
+          {
+            "title": "Pruebas de conocimiento cero",
+            "description": "Explore las pruebas utilizadas para transacciones protegidas."
+          },
+          {
+            "title": "Nodos completos",
+            "description": "Aprenda cómo participan los nodos en la red."
+          },
+          {
+            "title": "Nodos de billetera ligera",
+            "description": "Explore la infraestructura utilizada por las billeteras ligeras."
+          },
+          {
+            "title": "Verificación formal",
+            "description": "Explore cómo se puede verificar la seguridad del protocolo."
+          },
+          {
+            "title": "Actualizaciones de red",
+            "description": "Siga el historial de cambios de protocolo."
+          }
+        ]
+      },
+      "real-world": {
+        "title": "Zcash en el mundo real",
+        "audience": "usos cotidianos",
+        "description": "Explore pagos, donaciones, creadores y escenarios prácticos de privacidad.",
+        "steps": [
+          {
+            "title": "Casos de uso de Zcash",
+            "description": "Comience con una descripción general de las formas de utilizar ZEC."
+          },
+          {
+            "title": "Pagos comerciales",
+            "description": "Explore aceptar Zcash como comerciante."
+          },
+          {
+            "title": "Donaciones privadas",
+            "description": "Obtenga información sobre cómo recibir donaciones protegidas."
+          },
+          {
+            "title": "Privacidad del autónomo",
+            "description": "Explore una configuración de privacidad para autónomos."
+          },
+          {
+            "title": "Privacidad del periodista",
+            "description": "Explore una configuración de privacidad para periodistas."
+          },
+          {
+            "title": "Creadores y consejos",
+            "description": "Descubra herramientas para creadores y seguidores."
+          },
+          {
+            "title": "Solicitudes de pago",
+            "description": "Descubra cómo funcionan los enlaces de solicitud de pago."
+          }
+        ]
+      },
+      "community": {
+        "title": "Comunidad y gobernanza Zcash",
+        "audience": "Estudiantes de la comunidad",
+        "description": "Explore las organizaciones, la financiación y las personas que dan forma al ecosistema.",
+        "steps": [
+          {
+            "title": "Cómo está organizado Zcash",
+            "description": "Conozca los grupos que trabajan en Zcash."
+          },
+          {
+            "title": "Fondo de desarrollo",
+            "description": "Descubra cómo se financia el desarrollo de la red."
+          },
+          {
+            "title": "Financiamiento y gobernanza",
+            "description": "Explore la gobernanza y la financiación en el ecosistema."
+          },
+          {
+            "title": "Panel asesor comunitario",
+            "description": "Obtenga más información sobre el panel asesor comunitario."
+          },
+          {
+            "title": "Proyectos comunitarios",
+            "description": "Descubra proyectos en todo el ecosistema."
+          },
+          {
+            "title": "llamadas de arbolistas",
+            "description": "Encuentre debates técnicos de la comunidad."
+          },
+          {
+            "title": "Contribuir a ZecHub",
+            "description": "Encuentre formas de ayudar a la comunidad educativa."
+          }
+        ]
+      }
+    },
+    "tryNextPath": "Pruebe con otra ruta: {title}",
+    "exploreWiki": "Explora la wiki completa",
+    "exploreWikiDescription": "Continúe aprendiendo con todos los temas y páginas de la base de conocimientos.",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "previousPaths": "Caminos anteriores",
+    "nextPaths": "Próximos caminos",
+    "stepPages": "Paginas de pasos",
+    "pageOf": "Página {page} de {total}"
+  },
   "menuLabels": {
     "Accept Payments": "Aceptar pagos",
     "Akash Network Zebra": "Akash Network Zebra",

@@ -7,6 +7,7 @@ const mockSetTheme = jest.fn();
 jest.mock("next-themes", () => ({
   useTheme: () => ({ resolvedTheme: "dark", setTheme: mockSetTheme }),
 }));
+jest.mock("@/context/LanguageContext", () => ({ useLanguage: () => ({ t: {} }) }));
 jest.mock("@/i18n/navigation", () => ({
   Link: ({ href, children, ...props }: React.ComponentProps<"a">) => (
     <a href={href} {...props}>
@@ -145,5 +146,18 @@ describe("Desktop interface host", () => {
     ).toHaveFocus();
     fireEvent.click(screen.getByRole("button", { name: "Close My Path" }));
     expect(button).toHaveFocus();
+  });
+
+  it("accepts dock messages only from the embedded desktop", async () => {
+    applyInterface("desktop");
+    render(<DesktopInterfaceHost locale="en" />);
+    const frame = await screen.findByTitle("ZecHub Desktop") as HTMLIFrameElement;
+    const origin = new URL(frame.src).origin;
+    window.dispatchEvent(new MessageEvent("message", { origin: "https://example.com", source: frame.contentWindow, data: { type: "zechub:open-my-path" } }));
+    expect(screen.queryByRole("complementary", { name: "My Path" })).toBeNull();
+    window.dispatchEvent(new MessageEvent("message", { origin, source: frame.contentWindow, data: { type: "zechub:my-path-ready" } }));
+    await waitFor(() => expect(screen.queryByRole("button", { name: "My Path" })).toBeNull());
+    window.dispatchEvent(new MessageEvent("message", { origin, source: frame.contentWindow, data: { type: "zechub:open-my-path" } }));
+    expect(await screen.findByRole("complementary", { name: "My Path" })).toBeVisible();
   });
 });

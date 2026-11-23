@@ -1,4 +1,340 @@
 {
+  "myPath": {
+    "myPath": "Njia Yangu",
+    "closeMyPath": "Funga Njia Yangu",
+    "pageActions": "Vitendo vya ukurasa wangu wa Njia",
+    "learningPaths": "Njia za kujifunza",
+    "heading": "Tafuta njia yako na Zcash.",
+    "intro": "Chagua njia, weka alama kwenye hatua zilizokamilika, na uhifadhi kurasa kwa ajili ya baadaye. Maendeleo yako yatasalia katika kivinjari hiki.",
+    "privacy": "Hakuna akaunti au muunganisho wa pochi unaohitajika.",
+    "storageUnavailable": "Hifadhi ya kivinjari haipatikani. Maendeleo yako ni ya muda na huenda yakapotea ukiacha mwonekano huu.",
+    "currentPath": "Njia ya sasa",
+    "completeCount": "{done} ya {total} imekamilika",
+    "progress": "{title} maendeleo",
+    "continueStep": "Endelea: {title}",
+    "completedPath": "Umekamilisha njia hii. Chagua njia nyingine ya kuendelea kujifunza.",
+    "completed": "Imekamilika",
+    "markComplete": "Weka alama kuwa umekamilika",
+    "resetConfirm": "Ungependa kuweka upya maendeleo ya {title}? Kurasa zilizohifadhiwa zitasalia.",
+    "resetPath": "Weka upya njia hii",
+    "allPaths": "Njia zote",
+    "choosePath": "Chagua njia",
+    "stepCount": "{count} hatua",
+    "returnPath": "Rudi kwenye njia",
+    "startPath": "Anza njia hii",
+    "completedCount": "{count} imekamilika",
+    "savedPages": "Kurasa zilizohifadhiwa",
+    "savedDescription": "Hifadhi kurasa za wiki ili kuzipata tena baadaye.",
+    "noSaved": "Bado hakuna kurasa zilizohifadhiwa.",
+    "saveHint": "Tumia Hifadhi ukurasa unapovinjari wiki.",
+    "remove": "Ondoa",
+    "clearConfirm": "Je, ungependa kufuta maendeleo yote ya Njia Yangu na kurasa zilizohifadhiwa kutoka kwa kivinjari hiki?",
+    "clearAll": "Futa data yote ya Njia Yangu",
+    "headerProgress": "Njia Yangu: {done} ya {total} hatua zimekamilika",
+    "homeHeading": "Jifunze kwa kasi yako mwenyewe",
+    "homeProgress": "{done} ya {total} hatua zimekamilika",
+    "nextTitle": "Inayofuata: {title}",
+    "pathComplete": "Njia imekamilika",
+    "homeIntro": "Chagua njia, fuatilia maendeleo yako, na uhifadhi kurasa kwa ajili ya baadaye.",
+    "continuePath": "Endelea na njia yako",
+    "viewPath": "Tazama njia yako",
+    "explorePaths": "Chunguza njia za kujifunza",
+    "stepPosition": "Hatua {current} ya {total}",
+    "keepPage": "Hifadhi ukurasa huu kwa baadaye",
+    "saved": "Imehifadhiwa",
+    "savePage": "Hifadhi ukurasa",
+    "paths": {
+      "learn": {
+        "title": "Jifunze Zcash",
+        "audience": "Mpya kwa Zcash",
+        "description": "Jifunze misingi ya Zcash, faragha ya kifedha na mtandao.",
+        "steps": [
+          {
+            "title": "Misingi ya Zcash",
+            "description": "Jifunze Zcash na ZEC ni nini."
+          },
+          {
+            "title": "Zcash Mwongozo wa Mtumiaji Mpya",
+            "description": "Anza na mwongozo wa mtumiaji wa Zcash."
+          },
+          {
+            "title": "Zcash Mabwawa ya Thamani",
+            "description": "Pata maelezo kuhusu faragha ya shughuli ya Zcash."
+          },
+          {
+            "title": "Maboresho ya Mtandao wa Zcash [Network Upgrades]",
+            "description": "Tazama jinsi Zcash imebadilika."
+          },
+          {
+            "title": "Sera ya fedha",
+            "description": "Kuelewa usambazaji na utoaji wa ZEC."
+          },
+          {
+            "title": "Nani anaweza kuona malipo?",
+            "description": "Chunguza kile ambacho watu tofauti wanaweza kuona."
+          },
+          {
+            "title": "Njia za kutumia ZEC",
+            "description": "Chunguza matumizi ya vitendo ya Zcash."
+          }
+        ]
+      },
+      "use": {
+        "title": "Tumia Zcash kwa faragha",
+        "audience": "Tayari kutumia ZEC",
+        "description": "Gundua pochi, miamala na chaguo zinazoathiri faragha.",
+        "steps": [
+          {
+            "title": "Kutumia ZEC, kwa faragha [privately]",
+            "description": "Jifunze jinsi ya kutumia ZEC kwa faragha."
+          },
+          {
+            "title": "Chunguza pochi",
+            "description": "Linganisha pochi na sifa zao."
+          },
+          {
+            "title": "Kupata Zcash",
+            "description": "Jifunze kuhusu njia za kupata ZEC."
+          },
+          {
+            "title": "Miamala",
+            "description": "Jifunze jinsi miamala ya Zcash inavyofanya kazi."
+          },
+          {
+            "title": "Zcash Mabwawa ya Thamani",
+            "description": "Jifunze jinsi Zcash hulinda faragha ya muamala."
+          },
+          {
+            "title": "Anwani zilizounganishwa",
+            "description": "Elewa anwani zinazotumiwa kupokea Zcash."
+          },
+          {
+            "title": "Memo zilizolindwa",
+            "description": "Jifunze jinsi memos hufanya kazi katika malipo yaliyolindwa."
+          },
+          {
+            "title": "Kurejesha fedha",
+            "description": "Jifunze kuhusu urejeshaji wa pochi na chelezo."
+          }
+        ]
+      },
+      "build": {
+        "title": "Jenga kwa Zcash",
+        "audience": "Watengenezaji",
+        "description": "Tafuta nyenzo za kiufundi na zana za kuanza kujenga.",
+        "steps": [
+          {
+            "title": "Rasilimali za msanidi",
+            "description": "Pata rasilimali za maendeleo za Zcash."
+          },
+          {
+            "title": "Msanidi programu anza haraka",
+            "description": "Anza na zana za ukuzaji za Zcash."
+          },
+          {
+            "title": "Devtool ya Zcash",
+            "description": "Jifunze jinsi ya kutumia Zcash Devtool."
+          },
+          {
+            "title": "Vielelezo vya Zcash",
+            "description": "Gundua taswira shirikishi za Zcash."
+          },
+          {
+            "title": "Zcash testnet",
+            "description": "Gundua mtandao wa kujaribu programu."
+          },
+          {
+            "title": "Zcash JS",
+            "description": "Gundua mwongozo wa msanidi wa JavaScript."
+          },
+          {
+            "title": "Nodi na indexing",
+            "description": "Jifunze kuhusu nodi RPC na indexing blockchain."
+          }
+        ]
+      },
+      "contribute": {
+        "title": "Changia kwa ZecHub",
+        "audience": "Wachangiaji wa jumuiya",
+        "description": "Jifunze jinsi jumuiya inavyofanya kazi na wapi unaweza kusaidia.",
+        "steps": [
+          {
+            "title": "ZecHub ni nini?",
+            "description": "Jifunze kuhusu ZecHub na dhamira yake."
+          },
+          {
+            "title": "Saidia Kujenga ZecHub",
+            "description": "Chunguza njia za kuchangia."
+          },
+          {
+            "title": "Kuchangia kwa ZecHub",
+            "description": "Kuelewa mtiririko wa kazi ya mchango."
+          },
+          {
+            "title": "Mwongozo wa mtindo wa ZecHub",
+            "description": "Jifunze kanuni za maudhui ya jumuiya."
+          },
+          {
+            "title": "ZecHub DAO",
+            "description": "Chunguza jinsi jumuiya ya ZecHub hupanga."
+          },
+          {
+            "title": "ZecWeekly",
+            "description": "Jifunze kuhusu jarida la jumuiya."
+          }
+        ]
+      },
+      "privacy": {
+        "title": "Faragha zaidi ya malipo",
+        "audience": "Wanafunzi wa faragha",
+        "description": "Elewa mwonekano wa muamala na zana zinazotumia faragha ya kila siku.",
+        "steps": [
+          {
+            "title": "Nani anaweza kuona malipo?",
+            "description": "Jifunze ni maelezo gani ya malipo yanaweza kuonekana."
+          },
+          {
+            "title": "Zuia mwonekano wa mgunduzi",
+            "description": "Kuelewa data ya blockchain ya umma inaweza kufichua."
+          },
+          {
+            "title": "Vifunguo vya kutazama",
+            "description": "Gundua ugavi uliochaguliwa wa maelezo ya muamala."
+          },
+          {
+            "title": "Salama wajumbe",
+            "description": "Chunguza zana za mawasiliano ya kibinafsi."
+          },
+          {
+            "title": "Vivinjari vya wavuti",
+            "description": "Jifunze kuhusu chaguo za faragha za kivinjari."
+          },
+          {
+            "title": "VPN na dVPN",
+            "description": "Gundua zana za faragha za mtandao na biashara zao."
+          },
+          {
+            "title": "Usimbaji fiche wa PGP",
+            "description": "Jifunze kuhusu kusimba na kutia sahihi ujumbe."
+          }
+        ]
+      },
+      "protocol": {
+        "title": "Jinsi Zcash inavyofanya kazi",
+        "audience": "Wanafunzi wa kiufundi",
+        "description": "Nenda ndani zaidi katika shughuli zilizolindwa, kriptografia, nodi na utafiti wa itifaki.",
+        "steps": [
+          {
+            "title": "Zcash misingi",
+            "description": "Jifunze misingi ya miamala iliyolindwa."
+          },
+          {
+            "title": "Vitendaji vya hashi",
+            "description": "Jifunze muundo wa msingi wa kriptografia."
+          },
+          {
+            "title": "Uthibitisho wa kutojua maarifa",
+            "description": "Chunguza uthibitisho unaotumika kwa miamala iliyolindwa."
+          },
+          {
+            "title": "Nodi kamili",
+            "description": "Jifunze jinsi nodi zinashiriki katika mtandao."
+          },
+          {
+            "title": "Nodi za Lightwallet",
+            "description": "Chunguza miundombinu inayotumiwa na pochi nyepesi."
+          },
+          {
+            "title": "Uthibitishaji rasmi",
+            "description": "Chunguza jinsi usalama wa itifaki unavyoweza kuthibitishwa."
+          },
+          {
+            "title": "Maboresho ya mtandao",
+            "description": "Fuata historia ya mabadiliko ya itifaki."
+          }
+        ]
+      },
+      "real-world": {
+        "title": "Zcash katika ulimwengu wa kweli",
+        "audience": "Matumizi ya kila siku",
+        "description": "Gundua malipo, michango, watayarishi na hali halisi za faragha.",
+        "steps": [
+          {
+            "title": "Zcash kesi za matumizi",
+            "description": "Anza na muhtasari wa njia za kutumia ZEC."
+          },
+          {
+            "title": "Malipo ya mfanyabiashara",
+            "description": "Gundua kukubali Zcash kama mfanyabiashara."
+          },
+          {
+            "title": "Michango ya kibinafsi",
+            "description": "Jifunze kuhusu kupokea michango iliyolindwa."
+          },
+          {
+            "title": "Faragha ya mfanyakazi huru",
+            "description": "Gundua usanidi wa faragha kwa wafanyikazi huru."
+          },
+          {
+            "title": "Faragha ya mwandishi wa habari",
+            "description": "Gundua usanidi wa faragha kwa wanahabari."
+          },
+          {
+            "title": "Waumbaji na vidokezo",
+            "description": "Gundua zana za watayarishi na wafuasi."
+          },
+          {
+            "title": "Maombi ya malipo",
+            "description": "Jifunze jinsi viungo vya ombi la malipo hufanya kazi."
+          }
+        ]
+      },
+      "community": {
+        "title": "Zcash jumuiya na utawala",
+        "audience": "Wanafunzi wa jumuiya",
+        "description": "Chunguza mashirika, ufadhili na watu wanaounda mfumo ikolojia.",
+        "steps": [
+          {
+            "title": "Jinsi Zcash imepangwa",
+            "description": "Kutana na vikundi vinavyofanyia kazi Zcash."
+          },
+          {
+            "title": "Mfuko wa maendeleo",
+            "description": "Jifunze jinsi maendeleo ya mtandao yanavyofadhiliwa."
+          },
+          {
+            "title": "Ufadhili na utawala",
+            "description": "Chunguza utawala na ufadhili katika mfumo ikolojia."
+          },
+          {
+            "title": "Jopo la ushauri wa jumuiya",
+            "description": "Pata maelezo kuhusu jopo la ushauri wa jumuiya."
+          },
+          {
+            "title": "Miradi ya jumuiya",
+            "description": "Gundua miradi katika mfumo ikolojia."
+          },
+          {
+            "title": "Arborist wito",
+            "description": "Tafuta majadiliano ya jumuiya ya kiufundi."
+          },
+          {
+            "title": "Changia kwa ZecHub",
+            "description": "Tafuta njia za kusaidia jumuiya ya elimu."
+          }
+        ]
+      }
+    },
+    "tryNextPath": "Jaribu njia nyingine: {title}",
+    "exploreWiki": "Gundua wiki nzima",
+    "exploreWikiDescription": "Endelea kujifunza na mada na kurasa zote kwenye msingi wa maarifa.",
+    "previous": "Iliyotangulia",
+    "next": "Inayofuata",
+    "previousPaths": "Njia za awali",
+    "nextPaths": "Njia zinazofuata",
+    "stepPages": "Kurasa za hatua",
+    "pageOf": "Ukurasa {page} wa {total}"
+  },
   "menuLabels": {
     "Accept Payments": "Kubali Malipo",
     "Akash Network Zebra": "Akash Mtandao Zebra",

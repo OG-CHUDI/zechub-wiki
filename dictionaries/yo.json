@@ -1,4 +1,340 @@
 {
+  "myPath": {
+    "myPath": "Ona mi",
+    "closeMyPath": "Pa Ona Mi",
+    "pageActions": "Awọn iṣe oju-iwe Ona Mi",
+    "learningPaths": "Awọn ọna ikẹkọ",
+    "heading": "Wa ọna rẹ pẹlu Zcash.",
+    "intro": "Yan ọna kan, samisi awọn igbesẹ ti pari, ati fi awọn oju-iwe pamọ fun igbamiiran. Ilọsiwaju rẹ duro ni ẹrọ aṣawakiri yii.",
+    "privacy": "Ko si iroyin tabi asopọ apamọwọ nilo.",
+    "storageUnavailable": "Ibi ipamọ ẹrọ aṣawakiri ko si. Ilọsiwaju rẹ jẹ igba diẹ ati pe o le sọnu nigbati o ba lọ kuro ni wiwo yii.",
+    "currentPath": "Ona lọwọlọwọ",
+    "completeCount": "{done} ti {total} ti pari",
+    "progress": "{title} itesiwaju",
+    "continueStep": "Tesiwaju: {title}",
+    "completedPath": "O pari ọna yii. Yan ọna miiran lati tẹsiwaju ẹkọ.",
+    "completed": "Ti pari",
+    "markComplete": "Samisi ni pipe",
+    "resetConfirm": "Ilọsiwaju tunto fun {title}? Awọn oju-iwe ti o fipamọ yoo duro.",
+    "resetPath": "Tun ọna yii ṣe",
+    "allPaths": "Gbogbo awọn ọna",
+    "choosePath": "Yan ọna kan",
+    "stepCount": "{count} awọn igbesẹ",
+    "returnPath": "Pada si ọna",
+    "startPath": "Bẹrẹ ọna yii",
+    "completedCount": "{count} ti pari",
+    "savedPages": "Awọn oju-iwe ti a fipamọ",
+    "savedDescription": "Fi awọn oju-iwe wiki pamọ lati wa wọn lẹẹkansi nigbamii.",
+    "noSaved": "Ko si awọn oju-iwe ti o fipamọ sibẹsibẹ.",
+    "saveHint": "Lo Oju-iwe Fipamọ lakoko ti o n ṣawari wiki naa.",
+    "remove": "Yọ kuro",
+    "clearConfirm": "Ko gbogbo ilọsiwaju Ọna Mi kuro ati awọn oju-iwe ti o fipamọ lati ẹrọ aṣawakiri yii bi?",
+    "clearAll": "Ko gbogbo data Oju-ọna Mi kuro",
+    "headerProgress": "Ona Mi: {done} ti awọn igbesẹ {total} ti pari",
+    "homeHeading": "Kọ ẹkọ ni iyara tirẹ",
+    "homeProgress": "{done} ti {total} awọn igbesẹ ti pari",
+    "nextTitle": "Next: {title}",
+    "pathComplete": "Ona pari",
+    "homeIntro": "Yan ọna kan, tọpa ilọsiwaju rẹ, ati fi awọn oju-iwe pamọ fun igbamiiran.",
+    "continuePath": "Tẹsiwaju ọna rẹ",
+    "viewPath": "Wo ọna rẹ",
+    "explorePaths": "Ṣawari awọn ipa ọna ẹkọ",
+    "stepPosition": "Igbesẹ {current} ti {total}",
+    "keepPage": "Jeki oju-iwe yii fun igbamiiran",
+    "saved": "Ti fipamọ",
+    "savePage": "Fi oju-iwe pamọ",
+    "paths": {
+      "learn": {
+        "title": "Kọ ẹkọ Zcash",
+        "audience": "Tuntun si Zcash",
+        "description": "Kọ ẹkọ awọn ipilẹ ti Zcash, aṣiri owo, ati nẹtiwọọki.",
+        "steps": [
+          {
+            "title": "Àwọn Ìpìlẹ̀ Zcash",
+            "description": "Kọ ẹkọ kini Zcash ati ZEC jẹ."
+          },
+          {
+            "title": "Atọ́nà Olùṣàmúlò Tuntun Zcash",
+            "description": "Bẹrẹ pẹlu itọsọna olumulo Zcash."
+          },
+          {
+            "title": "Àwọn Àpò Ìye Zcash",
+            "description": "Kọ ẹkọ nipa asiri iṣowo iṣowo Zcash."
+          },
+          {
+            "title": "Àwọn Ìmúdàgbàsókè Nẹ́tíwọ́ọ̀kì Zcash",
+            "description": "Wo bi Zcash ti wa."
+          },
+          {
+            "title": "Eto imulo owo",
+            "description": "Ni oye ipese ati ipinfunni ZEC."
+          },
+          {
+            "title": "Tani o le wo isanwo kan?",
+            "description": "Ye ohun ti o yatọ si eniyan le ri."
+          },
+          {
+            "title": "Awọn ọna lati lo ZEC",
+            "description": "Ṣawari awọn lilo ti o wulo fun Zcash."
+          }
+        ]
+      },
+      "use": {
+        "title": "Lo Zcash ni ikọkọ",
+        "audience": "Ṣetan lati lo ZEC",
+        "description": "Ṣawari awọn apamọwọ, awọn iṣowo ati awọn yiyan ti o ni ipa lori aṣiri.",
+        "steps": [
+          {
+            "title": "Lílò ZEC, ní ìdákọ̀kọ́",
+            "description": "Kọ ẹkọ bi o ṣe le lo ZEC ni ikọkọ."
+          },
+          {
+            "title": "Ṣawari awọn apamọwọ",
+            "description": "Ṣe afiwe awọn apamọwọ ati awọn ẹya wọn."
+          },
+          {
+            "title": "Gbígba Zcash",
+            "description": "Kọ ẹkọ nipa awọn ọna lati gba ZEC."
+          },
+          {
+            "title": "Awọn iṣowo",
+            "description": "Kọ ẹkọ bii awọn iṣowo Zcash ṣe n ṣiṣẹ."
+          },
+          {
+            "title": "Àwọn Àpò Ìye Zcash",
+            "description": "Kọ ẹkọ bii Zcash ṣe aabo fun aṣiri idunadura."
+          },
+          {
+            "title": "Awọn adirẹsi isokan",
+            "description": "Loye awọn adirẹsi ti a lo lati gba Zcash."
+          },
+          {
+            "title": "Awọn akọsilẹ idabobo",
+            "description": "Kọ ẹkọ bi awọn akọsilẹ ṣe n ṣiṣẹ ni awọn sisanwo idabobo."
+          },
+          {
+            "title": "Awọn owo ti n bọlọwọ pada",
+            "description": "Kọ ẹkọ nipa imularada apamọwọ ati awọn afẹyinti."
+          }
+        ]
+      },
+      "build": {
+        "title": "Kọ pẹlu Zcash",
+        "audience": "Awọn olupilẹṣẹ",
+        "description": "Wa awọn orisun imọ-ẹrọ ati awọn irinṣẹ lati bẹrẹ kikọ.",
+        "steps": [
+          {
+            "title": "Olùgbéejáde oro",
+            "description": "Wa awọn orisun idagbasoke Zcash."
+          },
+          {
+            "title": "Developer awọn ọna ibere",
+            "description": "Bẹrẹ pẹlu awọn irinṣẹ idagbasoke Zcash."
+          },
+          {
+            "title": "Ọpa Devọl Zcash",
+            "description": "Kọ ẹkọ bi o ṣe le lo Zcash Devtool."
+          },
+          {
+            "title": "Zcash visualizers",
+            "description": "Ṣawari awọn iworan Zcash ibaraenisepo."
+          },
+          {
+            "title": "Zcash testnet",
+            "description": "Ṣawari nẹtiwọki kan fun idanwo awọn ohun elo."
+          },
+          {
+            "title": "Zcash JS",
+            "description": "Ṣabẹwo itọsọna idagbasoke JavaScript."
+          },
+          {
+            "title": "Awọn apa ati titọka",
+            "description": "Kọ ẹkọ nipa ipade RPC ati titọka blockchain."
+          }
+        ]
+      },
+      "contribute": {
+        "title": "Ṣe alabapin si ZecHub",
+        "audience": "awujo olùkópa",
+        "description": "Kọ ẹkọ bii agbegbe ṣe n ṣiṣẹ ati ibiti o ti le ṣe iranlọwọ.",
+        "steps": [
+          {
+            "title": "Kí ni ZecHub?",
+            "description": "Kọ ẹkọ nipa ZecHub ati iṣẹ apinfunni rẹ."
+          },
+          {
+            "title": "Ran lọwọ lati kọ ZecHub",
+            "description": "Ṣawari awọn ọna lati ṣe alabapin."
+          },
+          {
+            "title": "Ṣe àfikún sí ZecHub",
+            "description": "Loye iṣan-iṣẹ ilowosi."
+          },
+          {
+            "title": "Atọ́nà Ọ̀nà Ìmúlò ZecHub",
+            "description": "Kọ ẹkọ awọn apejọ akoonu ti agbegbe."
+          },
+          {
+            "title": "ZecHub DAO",
+            "description": "Ṣawari bi agbegbe ZecHub ṣe ṣeto."
+          },
+          {
+            "title": "Zecly osẹ",
+            "description": "Kọ ẹkọ nipa iwe iroyin agbegbe."
+          }
+        ]
+      },
+      "privacy": {
+        "title": "Asiri kọja awọn sisanwo",
+        "audience": "Awọn akẹkọ ikọkọ",
+        "description": "Loye hihan idunadura ati awọn irinṣẹ ti o ṣe atilẹyin aṣiri lojoojumọ.",
+        "steps": [
+          {
+            "title": "Tani o le wo isanwo kan?",
+            "description": "Kọ ẹkọ kini alaye sisanwo le han."
+          },
+          {
+            "title": "Dina hihan oluwakiri",
+            "description": "Loye kini data blockchain ti gbogbo eniyan le ṣafihan."
+          },
+          {
+            "title": "Wiwo awọn bọtini",
+            "description": "Ye yiyan pinpin ti idunadura alaye."
+          },
+          {
+            "title": "Awọn ojiṣẹ to ni aabo",
+            "description": "Ṣawari awọn irinṣẹ fun ibaraẹnisọrọ aladani."
+          },
+          {
+            "title": "Awọn aṣawakiri wẹẹbu",
+            "description": "Kọ ẹkọ nipa awọn yiyan aṣiri aṣawakiri."
+          },
+          {
+            "title": "VPN ati dVPN",
+            "description": "Ṣawari awọn irinṣẹ aṣiri nẹtiwọki ati awọn iṣowo wọn."
+          },
+          {
+            "title": "PGP ìsekóòdù",
+            "description": "Kọ ẹkọ nipa fifi ẹnọ kọ nkan ati fowo si awọn ifiranṣẹ."
+          }
+        ]
+      },
+      "protocol": {
+        "title": "Bawo ni Zcash ṣiṣẹ",
+        "audience": "Awọn akẹkọ imọ-ẹrọ",
+        "description": "Lọ jinle sinu awọn iṣowo idabobo, cryptography, awọn apa ati iwadii ilana.",
+        "steps": [
+          {
+            "title": "Awọn ipilẹ Zcash",
+            "description": "Ṣe iwadi awọn ipilẹ ti awọn iṣowo idaabobo."
+          },
+          {
+            "title": "Awọn iṣẹ Hash",
+            "description": "Kọ ẹkọ bulọọki ile cryptographic kan."
+          },
+          {
+            "title": "Awọn ẹri imọ-odo",
+            "description": "Ṣawari awọn ẹri ti a lo fun awọn iṣowo idabobo."
+          },
+          {
+            "title": "Awọn apa kikun",
+            "description": "Kọ ẹkọ bii awọn apa ṣe kopa ninu nẹtiwọọki."
+          },
+          {
+            "title": "Awọn apa ina apamọwọ",
+            "description": "Ṣawari awọn amayederun ti a lo nipasẹ awọn apamọwọ ina."
+          },
+          {
+            "title": "Ijẹrisi deede",
+            "description": "Ṣawari bi aabo ilana ṣe le rii daju."
+          },
+          {
+            "title": "Awọn iṣagbega nẹtiwọki",
+            "description": "Tẹle itan-akọọlẹ ti awọn iyipada ilana."
+          }
+        ]
+      },
+      "real-world": {
+        "title": "Zcash ni aye gidi",
+        "audience": "Awọn lilo ojoojumọ",
+        "description": "Ṣawari awọn sisanwo, awọn ẹbun, awọn olupilẹṣẹ ati awọn oju iṣẹlẹ ikọkọ ti o wulo.",
+        "steps": [
+          {
+            "title": "Zcash lilo igba",
+            "description": "Bẹrẹ pẹlu akopọ awọn ọna lati lo ZEC."
+          },
+          {
+            "title": "Awọn sisanwo oniṣowo",
+            "description": "Ṣawari gbigba Zcash bi oniṣowo kan."
+          },
+          {
+            "title": "Awọn ẹbun aladani",
+            "description": "Kọ ẹkọ nipa gbigba awọn ẹbun aabo."
+          },
+          {
+            "title": "Freelancer ìpamọ",
+            "description": "Ṣawakiri iṣeto aṣiri kan fun awọn alamọdaju."
+          },
+          {
+            "title": "Asiri onise iroyin",
+            "description": "Ṣawakiri iṣeto aṣiri fun awọn oniroyin."
+          },
+          {
+            "title": "Ẹlẹda ati awọn italologo",
+            "description": "Ṣawari awọn irinṣẹ fun awọn olupilẹṣẹ ati awọn alatilẹyin."
+          },
+          {
+            "title": "Awọn ibeere sisanwo",
+            "description": "Kọ ẹkọ bii awọn ọna asopọ ibeere isanwo ṣe n ṣiṣẹ."
+          }
+        ]
+      },
+      "community": {
+        "title": "Zcash awujo ati isejoba",
+        "audience": "Awọn akẹkọ agbegbe",
+        "description": "Ṣawari awọn ajo, igbeowosile ati awọn eniyan ti n ṣatunṣe ilolupo.",
+        "steps": [
+          {
+            "title": "Bawo ni Zcash ti ṣeto",
+            "description": "Pade awọn ẹgbẹ ti n ṣiṣẹ lori Zcash."
+          },
+          {
+            "title": "Owo idagbasoke",
+            "description": "Kọ ẹkọ bii idagbasoke nẹtiwọki ṣe n ṣe inawo."
+          },
+          {
+            "title": "Igbeowo ati isejoba",
+            "description": "Ye isejoba ati igbeowosile ni ilolupo."
+          },
+          {
+            "title": "Community Advisory nronu",
+            "description": "Kọ ẹkọ nipa igbimọ imọran agbegbe."
+          },
+          {
+            "title": "Agbegbe ise agbese",
+            "description": "Ṣe afẹri awọn iṣẹ akanṣe ilolupo."
+          },
+          {
+            "title": "Arborist awọn ipe",
+            "description": "Wa awọn ijiroro agbegbe imọ-ẹrọ."
+          },
+          {
+            "title": "Ṣe alabapin si ZecHub",
+            "description": "Wa awọn ọna lati ṣe iranlọwọ fun agbegbe ẹkọ."
+          }
+        ]
+      }
+    },
+    "tryNextPath": "Gbiyanju ona miiran: {title}",
+    "exploreWiki": "Ye ni kikun wiki",
+    "exploreWikiDescription": "Jeki kikọ ẹkọ pẹlu gbogbo awọn koko-ọrọ ati awọn oju-iwe ni ipilẹ oye.",
+    "previous": "Ti tẹlẹ",
+    "next": "Itele",
+    "previousPaths": "Awọn ọna ti tẹlẹ",
+    "nextPaths": "Awọn ọna atẹle",
+    "stepPages": "Awọn oju-iwe igbesẹ",
+    "pageOf": "Oju-iwe {page} ti {total}"
+  },
   "menuLabels": {
     "Accept Payments": "Gba Àwọn Ìsanwó",
     "Akash Network Zebra": "Akash Network Zebra[àtúnṣe _ àtúnṣe àmìọ̀rọ̀]",

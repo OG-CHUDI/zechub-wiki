@@ -1,4 +1,340 @@
 {
+  "myPath": {
+    "myPath": "我的路",
+    "closeMyPath": "关闭我的道路",
+    "pageActions": "我的路径页面操作",
+    "learningPaths": "学习路径",
+    "heading": "通过 Zcash 找到您的出路。",
+    "intro": "选择路径，将步骤标记为完成，然后保存页面供以后使用。您的进度保留在此浏览器中。",
+    "privacy": "无需帐户或钱包连接。",
+    "storageUnavailable": "浏览器存储不可用。您的进度是暂时的，当您离开此视图时可能会丢失。",
+    "currentPath": "当前路径",
+    "completeCount": "共 {total} 步，已完成 {done} 步",
+    "progress": "{title} 进度",
+    "continueStep": "继续：{title}",
+    "completedPath": "你完成了这条路。选择另一条道路继续学习。",
+    "completed": "已完成",
+    "markComplete": "标记完成",
+    "resetConfirm": "重置 {title} 的进度？保存的页面将保留。",
+    "resetPath": "重置此路径",
+    "allPaths": "所有路径",
+    "choosePath": "选择一条路径",
+    "stepCount": "{count} 步数",
+    "returnPath": "返回路径",
+    "startPath": "开始这条路",
+    "completedCount": "{count} 已完成",
+    "savedPages": "已保存的页面",
+    "savedDescription": "保存 wiki 页面以便稍后再次查找。",
+    "noSaved": "还没有保存的页面。",
+    "saveHint": "探索 wiki 时使用“保存”页面。",
+    "remove": "删除",
+    "clearConfirm": "清除此浏览器中的所有“我的路径”进度和已保存的页面吗？",
+    "clearAll": "清除所有“我的路径”数据",
+    "headerProgress": "我的路径：{done} 的 {total} 步骤完成",
+    "homeHeading": "按照自己的节奏学习",
+    "homeProgress": "共 {total} 步，已完成 {done} 步",
+    "nextTitle": "下一篇：{title}",
+    "pathComplete": "路径完成",
+    "homeIntro": "选择一条路径，跟踪您的进度，并保存页面供以后使用。",
+    "continuePath": "继续你的道路",
+    "viewPath": "查看您的路径",
+    "explorePaths": "探索学习路径",
+    "stepPosition": "第 {current} 步，共 {total} 步",
+    "keepPage": "保留此页面供以后使用",
+    "saved": "已保存",
+    "savePage": "保存页面",
+    "paths": {
+      "learn": {
+        "title": "了解 Zcash",
+        "audience": "新加入 Zcash",
+        "description": "了解 Zcash、财务隐私和网络的基础知识。",
+        "steps": [
+          {
+            "title": "Zcash 基础",
+            "description": "了解什么是 Zcash 和 ZEC。"
+          },
+          {
+            "title": "Zcash 新用户指南",
+            "description": "从 Zcash 用户指南开始。"
+          },
+          {
+            "title": "Zcash 价值池 [Value Pools]",
+            "description": "了解 Zcash 交易隐私。"
+          },
+          {
+            "title": "Zcash 网络升级 [Network Upgrades]",
+            "description": "了解 Zcash 是如何演变的。"
+          },
+          {
+            "title": "货币政策",
+            "description": "了解ZEC的供应和发行。"
+          },
+          {
+            "title": "谁可以看到付款？",
+            "description": "探索不同的人能看到什么。"
+          },
+          {
+            "title": "ZEC的使用方法",
+            "description": "探索 Zcash 的实际用途。"
+          }
+        ]
+      },
+      "use": {
+        "title": "私下使用Zcash",
+        "audience": "准备使用ZEC",
+        "description": "探索影响隐私的钱包、交易和选择。",
+        "steps": [
+          {
+            "title": "私密使用 ZEC",
+            "description": "了解如何私下使用ZEC。"
+          },
+          {
+            "title": "探索钱包",
+            "description": "比较钱包及其功能。"
+          },
+          {
+            "title": "获取 Zcash",
+            "description": "了解获取 ZEC 的方法。"
+          },
+          {
+            "title": "交易 [Transactions]",
+            "description": "了解 Zcash 交易如何运作。"
+          },
+          {
+            "title": "Zcash 价值池 [Value Pools]",
+            "description": "了解 Zcash 如何保护交易隐私。"
+          },
+          {
+            "title": "统一地址",
+            "description": "了解用于接收 Zcash 的地址。"
+          },
+          {
+            "title": "屏蔽备忘录",
+            "description": "了解备忘录在隐秘支付中的工作原理。"
+          },
+          {
+            "title": "追回资金",
+            "description": "了解钱包恢复和备份。"
+          }
+        ]
+      },
+      "build": {
+        "title": "使用 Zcash 构建",
+        "audience": "开发商",
+        "description": "找到开始构建的技术资源和工具。",
+        "steps": [
+          {
+            "title": "开发者资源",
+            "description": "查找Zcash开发资源。"
+          },
+          {
+            "title": "开发者快速入门",
+            "description": "开始使用 Zcash 开发工具。"
+          },
+          {
+            "title": "Zcash 开发工具 [Devtool]",
+            "description": "了解如何使用 Zcash Devtool。"
+          },
+          {
+            "title": "Zcash 可视化工具",
+            "description": "探索交互式 Zcash 可视化。"
+          },
+          {
+            "title": "Zcash 测试网",
+            "description": "探索用于测试应用程序的网络。"
+          },
+          {
+            "title": "Zcash JS",
+            "description": "探索 JavaScript 开发人员指南。"
+          },
+          {
+            "title": "节点和索引",
+            "description": "了解节点 RPC 和区块链索引。"
+          }
+        ]
+      },
+      "contribute": {
+        "title": "为 ZecHub 做出贡献",
+        "audience": "社区贡献者",
+        "description": "了解社区如何运作以及您可以在哪些方面提供帮助。",
+        "steps": [
+          {
+            "title": "什么是 ZecHub？",
+            "description": "了解 ZecHub 及其使命。"
+          },
+          {
+            "title": "帮助构建 ZecHub",
+            "description": "探索贡献的方式。"
+          },
+          {
+            "title": "为 ZecHub 做贡献",
+            "description": "了解贡献工作流程。"
+          },
+          {
+            "title": "ZecHub 风格指南",
+            "description": "了解社区的内容惯例。"
+          },
+          {
+            "title": "ZecHub道",
+            "description": "探索 ZecHub 社区的组织方式。"
+          },
+          {
+            "title": "泽克周刊",
+            "description": "了解社区新闻通讯。"
+          }
+        ]
+      },
+      "privacy": {
+        "title": "支付之外的隐私",
+        "audience": "隐私学习者",
+        "description": "了解交易可见性和支持日常隐私的工具。",
+        "steps": [
+          {
+            "title": "谁可以看到付款？",
+            "description": "了解哪些付款信息可见。"
+          },
+          {
+            "title": "块浏览器可见性",
+            "description": "了解公共区块链数据可以揭示什么。"
+          },
+          {
+            "title": "查看按键",
+            "description": "探索选择性共享交易信息。"
+          },
+          {
+            "title": "安全通讯工具",
+            "description": "探索私人沟通工具。"
+          },
+          {
+            "title": "网络浏览器",
+            "description": "了解浏览器隐私选择。"
+          },
+          {
+            "title": "VPN 和 dVPN",
+            "description": "探索网络隐私工具及其权衡。"
+          },
+          {
+            "title": "PGP加密",
+            "description": "了解加密和签名消息。"
+          }
+        ]
+      },
+      "protocol": {
+        "title": "Zcash 的工作原理",
+        "audience": "技术学习者",
+        "description": "深入研究屏蔽交易、密码学、节点和协议研究。",
+        "steps": [
+          {
+            "title": "Zcash 基金会",
+            "description": "研究屏蔽交易的基础。"
+          },
+          {
+            "title": "哈希函数",
+            "description": "学习核心加密构建块。"
+          },
+          {
+            "title": "零知识证明",
+            "description": "探索用于屏蔽交易的证明。"
+          },
+          {
+            "title": "全节点",
+            "description": "了解节点如何参与网络。"
+          },
+          {
+            "title": "轻钱包节点",
+            "description": "探索轻钱包使用的基础设施。"
+          },
+          {
+            "title": "形式验证",
+            "description": "探索如何验证协议安全性。"
+          },
+          {
+            "title": "网络升级",
+            "description": "跟踪协议变更的历史记录。"
+          }
+        ]
+      },
+      "real-world": {
+        "title": "现实世界中的Zcash",
+        "audience": "日常使用",
+        "description": "探索支付、捐赠、创作者和实用的隐私场景。",
+        "steps": [
+          {
+            "title": "Zcash 用例",
+            "description": "首先概述 ZEC 的使用方法。"
+          },
+          {
+            "title": "商户支付",
+            "description": "探索接受Zcash作为商家。"
+          },
+          {
+            "title": "私人捐款",
+            "description": "了解有关接受屏蔽捐赠的信息。"
+          },
+          {
+            "title": "自由职业者隐私",
+            "description": "探索自由职业者的隐私设置。"
+          },
+          {
+            "title": "记者隐私",
+            "description": "探索记者的隐私设置。"
+          },
+          {
+            "title": "创作者和提示",
+            "description": "发现适合创作者和支持者的工具。"
+          },
+          {
+            "title": "付款请求",
+            "description": "了解付款请求链接的工作原理。"
+          }
+        ]
+      },
+      "community": {
+        "title": "Zcash 社区和治理",
+        "audience": "社区学习者",
+        "description": "探索塑造生态系统的组织、资金和人员。",
+        "steps": [
+          {
+            "title": "Zcash 是如何组织的",
+            "description": "认识一下 Zcash 的工作组。"
+          },
+          {
+            "title": "发展基金",
+            "description": "了解网络开发的资金来源。"
+          },
+          {
+            "title": "资金和治理",
+            "description": "探索生态系统中的治理和融资。"
+          },
+          {
+            "title": "社区咨询小组",
+            "description": "了解社区咨询小组。"
+          },
+          {
+            "title": "社区项目",
+            "description": "发现整个生态系统中的项目。"
+          },
+          {
+            "title": "树艺师打电话",
+            "description": "查找技术社区讨论。"
+          },
+          {
+            "title": "为 ZecHub 做出贡献",
+            "description": "寻找帮助教育界的方法。"
+          }
+        ]
+      }
+    },
+    "tryNextPath": "尝试另一条路径：{title}",
+    "exploreWiki": "探索完整的维基",
+    "exploreWikiDescription": "继续学习知识库中的所有主题和页面。",
+    "previous": "上一页",
+    "next": "下一步",
+    "previousPaths": "之前的路径",
+    "nextPaths": "接下来的路径",
+    "stepPages": "步骤页面",
+    "pageOf": "{total} 的页面 {page}"
+  },
   "menuLabels": {
     "Accept Payments": "接受付款",
     "Akash Network Zebra": "Akash Network Zebra",

@@ -1,4 +1,26 @@
 import { expect, test } from "@playwright/test";
+import fr from "../dictionaries/fr.json";
+import ar from "../dictionaries/ar.json";
+import { learningPaths } from "../src/lib/learningPaths";
+
+const learnSteps = learningPaths.find((path) => path.id === "learn")!.steps.length;
+
+test("completed paths lead to another path and the full wiki", async ({ page }) => {
+  await page.addInitScript((paths) => {
+    localStorage.setItem("zechub-my-path-v1", JSON.stringify({ activePath: "learn", completed: { learn: paths.find((path) => path.id === "learn")!.steps.map((step) => step.href) }, saved: [] }));
+  }, learningPaths);
+  await page.goto("/my-path");
+  await expect(page.getByRole("button", { name: /Try another path:/ })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Explore the full wiki" }).first()).toHaveAttribute("href", /\/sitemap/);
+  await page.getByRole("button", { name: /Try another path:/ }).click();
+  await expect(page.getByRole("heading", { name: "Use Zcash privately", level: 2 })).toBeVisible();
+  await page.evaluate((paths) => {
+    localStorage.setItem("zechub-my-path-v1", JSON.stringify({ activePath: "learn", completed: Object.fromEntries(paths.map((path) => [path.id, path.steps.map((step) => step.href)])), saved: [] }));
+  }, learningPaths);
+  await page.reload();
+  await expect(page.getByRole("button", { name: /Try another path:/ })).toHaveCount(0);
+  await expect(page.getByRole("link", { name: "Explore the full wiki" }).first()).toBeVisible();
+});
 
 test("a reader can start, complete and resume a private learning path", async ({
   page,
@@ -12,13 +34,13 @@ test("a reader can start, complete and resume a private learning path", async ({
     .filter({ hasText: "Learn Zcash" })
     .getByRole("button", { name: "Start this path" })
     .click();
-  await expect(page.getByText("0 of 4 complete")).toBeVisible();
+  await expect(page.getByText(`0 of ${learnSteps} complete`)).toBeVisible();
   await page
     .getByRole("button", { name: /Mark complete\s*: What is Zcash\?/ })
     .click();
-  await expect(page.getByText("1 of 4 complete")).toBeVisible();
+  await expect(page.getByText(`1 of ${learnSteps} complete`)).toBeVisible();
   await page.reload();
-  await expect(page.getByText("1 of 4 complete")).toBeVisible();
+  await expect(page.getByText(`1 of ${learnSteps} complete`)).toBeVisible();
   await page.goto("/", { waitUntil: "domcontentloaded" });
   await expect(
     page.getByRole("link", { name: "Continue your path" }),
@@ -28,7 +50,7 @@ test("a reader can start, complete and resume a private learning path", async ({
     timeout: 90_000,
   });
   await expect(page.getByLabel("My Path page actions")).toContainText(
-    "Step 2 of 4",
+    `Step 2 of ${learnSteps}`,
     { timeout: 30_000 },
   );
   await page.getByRole("button", { name: "Save page" }).click();
@@ -37,7 +59,7 @@ test("a reader can start, complete and resume a private learning path", async ({
     page.getByRole("button", { name: "Saved", exact: true }),
   ).toBeVisible();
   await page.goto("/my-path", { waitUntil: "domcontentloaded" });
-  await expect(page.getByText("2 of 4 complete")).toBeVisible();
+  await expect(page.getByText(`2 of ${learnSteps} complete`)).toBeVisible();
   await expect(
     page
       .getByRole("region", { name: "Saved pages" })
@@ -45,7 +67,7 @@ test("a reader can start, complete and resume a private learning path", async ({
   ).toBeVisible();
 });
 
-test("path cards fit a narrow mobile viewport", async ({ page }) => {
+test("path cards scroll within a narrow mobile viewport", async ({ page }) => {
   test.setTimeout(120_000);
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/my-path", { waitUntil: "domcontentloaded" });
@@ -54,12 +76,30 @@ test("path cards fit a narrow mobile viewport", async ({ page }) => {
   const second = await cards.nth(1).boundingBox();
   expect(first).not.toBeNull();
   expect(second).not.toBeNull();
-  expect(second!.y).toBeGreaterThan(first!.y + first!.height - 1);
+  expect(second!.x).toBeGreaterThan(first!.x);
+  const cardsRow = page.locator("#path-cards");
+  expect(await cardsRow.evaluate((element) => element.scrollWidth > element.clientWidth)).toBe(true);
+  await page.getByRole("button", { name: "Next paths" }).click();
+  await expect.poll(() => cardsRow.evaluate((element) => element.scrollLeft)).toBeGreaterThan(0);
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth <= window.innerWidth,
     ),
   ).toBe(true);
+});
+
+test("a longer path can be navigated a page at a time", async ({ page }) => {
+  await page.goto("/my-path");
+  await page.evaluate(() => localStorage.removeItem("zechub-my-path-v1"));
+  await page.reload();
+  await page.getByRole("article").filter({ hasText: "Learn Zcash" }).getByRole("button", { name: "Start this path" }).click();
+  const steps = page.getByRole("navigation", { name: "Step pages" });
+  await expect(steps).toContainText("Page 1 of 2");
+  await steps.getByRole("button", { name: "Next" }).click();
+  await expect(steps).toContainText("Page 2 of 2");
+  await expect(page.getByRole("link", { name: "Monetary policy" })).toBeVisible();
+  await steps.getByRole("button", { name: "Previous" }).click();
+  await expect(page.getByRole("link", { name: "What is Zcash?", exact: true })).toBeVisible();
 });
 
 test("Desktop users can open a path without changing interfaces", async ({
@@ -100,6 +140,17 @@ test("Desktop users can open a path without changing interfaces", async ({
     "desktop",
   );
   await expect(panel).not.toBeVisible();
+});
+
+test("localized paths preserve translated copy, routes and right-to-left layout", async ({ page }) => {
+  test.setTimeout(120_000);
+  await page.goto("/fr/my-path", { waitUntil: "domcontentloaded" });
+  await expect(page.getByRole("heading", { name: fr.myPath.heading })).toBeVisible();
+  await page.getByRole("article").filter({ hasText: fr.myPath.paths.learn.title }).getByRole("button", { name: fr.myPath.startPath }).click();
+  await expect(page.getByRole("link", { name: new RegExp(fr.myPath.paths.learn.steps[0].title) }).first()).toHaveAttribute("href", /\/fr\/start-here\/what-is-zec-and-zcash/);
+  await page.goto("/ar/my-path", { waitUntil: "domcontentloaded" });
+  await expect(page.locator("html")).toHaveAttribute("dir", "rtl");
+  await expect(page.getByRole("heading", { name: ar.myPath.heading })).toBeVisible();
 });
 
 for (const theme of ["default", "ocean", "sunset", "forest", "ledger"]) {
