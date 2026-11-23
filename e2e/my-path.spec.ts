@@ -142,6 +142,18 @@ test("Desktop users can open a path without changing interfaces", async ({
   await expect(panel).not.toBeVisible();
 });
 
+test("the real Desktop dock opens My Path", async ({ page }) => {
+  test.skip(!process.env.DESKTOP_DOCK_TEST, "Requires the updated Desktop app configured in NEXT_PUBLIC_DESKTOP_INTERFACE_URL");
+  test.setTimeout(120_000);
+  await page.addInitScript(() => localStorage.setItem("zechub-interface", "desktop"));
+  await page.goto("/", { waitUntil: "domcontentloaded" });
+  const dockButton = page.frameLocator('iframe[title="ZecHub Desktop"]').getByRole("button", { name: "My Path", exact: true });
+  await expect(dockButton).toBeVisible({ timeout: 60_000 });
+  await expect(page.locator("[data-desktop-path-trigger]")).toHaveCount(0);
+  await dockButton.click();
+  await expect(page.getByRole("complementary", { name: "My Path" })).toBeVisible();
+});
+
 test("localized paths preserve translated copy, routes and right-to-left layout", async ({ page }) => {
   test.setTimeout(120_000);
   await page.goto("/fr/my-path", { waitUntil: "domcontentloaded" });
