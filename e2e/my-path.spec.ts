@@ -7,7 +7,7 @@ const learnSteps = learningPaths.find((path) => path.id === "learn")!.steps.leng
 
 test("completed paths lead to another path and the full wiki", async ({ page }) => {
   await page.addInitScript((paths) => {
-    localStorage.setItem("zechub-my-path-v1", JSON.stringify({ activePath: "learn", completed: { learn: paths.find((path) => path.id === "learn")!.steps.map((step) => step.href) }, saved: [] }));
+    if (!localStorage.getItem("zechub-my-path-v1")) localStorage.setItem("zechub-my-path-v1", JSON.stringify({ activePath: "learn", completed: { learn: paths.find((path) => path.id === "learn")!.steps.map((step) => step.href) }, saved: [] }));
   }, learningPaths);
   await page.goto("/my-path");
   await expect(page.getByRole("button", { name: /Try another path:/ })).toBeVisible();
