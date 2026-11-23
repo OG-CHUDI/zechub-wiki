@@ -9,6 +9,10 @@ import {
   ChevronRight,
   ChevronLeft,
   Compass,
+  Cpu,
+  Fingerprint,
+  Globe2,
+  Landmark,
   LockKeyhole,
   RotateCcw,
   ShieldCheck,
@@ -17,6 +21,7 @@ import {
 import { Link } from "@/i18n/navigation";
 import { useMyPath } from "./PathProvider";
 import { usePathCopy, formatPathText as fmt } from "./usePathCopy";
+import "./path-design.css";
 
 const button =
   "inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-[color:color-mix(in_srgb,var(--color-brand)_75%,black)] px-4 py-2 text-sm font-semibold text-on-brand transition hover:bg-[color:color-mix(in_srgb,var(--color-brand)_65%,black)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-900";
@@ -52,8 +57,8 @@ export default function MyPathPage() {
   };
 
   return (
-    <main className="mx-auto w-full min-w-0 max-w-6xl px-5 pb-24 pt-12 sm:px-8 sm:pt-16">
-      <div className="max-w-3xl">
+    <main className="path-journal mx-auto w-full min-w-0 max-w-6xl px-5 pb-24 pt-12 sm:px-8 sm:pt-16">
+      <div className="path-journal-intro max-w-3xl">
         <p className="mb-4 flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.16em] text-slate-700 dark:text-slate-200">
           <Compass size={17} aria-hidden="true" /> {copy.learningPaths}
         </p>
@@ -189,7 +194,7 @@ export default function MyPathPage() {
         </section>
       )}
 
-      <section className="mt-14" aria-labelledby="paths-heading">
+      <section className="path-collection mt-14" aria-labelledby="paths-heading">
         <div className="flex items-end justify-between gap-4">
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-200">
@@ -208,11 +213,15 @@ export default function MyPathPage() {
           </div>
         </div>
         <div id="path-cards" ref={cardsRef} role="region" tabIndex={0} aria-label={copy.allPaths} className="mt-6 flex snap-x snap-mandatory gap-4 overflow-x-auto overscroll-x-contain pb-5 pt-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">
-          {paths.map((path) => {
+          {paths.map((path, pathIndex) => {
             const count = (state.completed[path.id] ?? []).length;
             const selected = active?.id === path.id;
             const PathIcon =
-              path.id === "use"
+              path.id === "privacy" ? Fingerprint
+                : path.id === "protocol" ? Cpu
+                  : path.id === "real-world" ? Globe2
+                    : path.id === "community" ? Landmark
+                      : path.id === "use"
                 ? ShieldCheck
                 : path.id === "build"
                   ? Code2
@@ -222,15 +231,20 @@ export default function MyPathPage() {
             return (
               <article
                 key={path.id}
-                className={`flex w-[min(85%,22rem)] shrink-0 snap-start flex-col rounded-2xl border p-6 transition-[transform,box-shadow] duration-200 hover:-translate-y-1 hover:shadow-lg motion-reduce:transform-none motion-reduce:transition-none ${selected ? "border-brand bg-brand/5 shadow-sm" : "border-slate-200 bg-white dark:border-slate-700 dark:bg-slate-900"}`}
+                className={`path-card flex w-[min(85%,22rem)] shrink-0 snap-start flex-col rounded-2xl border p-6 ${selected ? "path-card-selected border-brand bg-brand/5" : "border-slate-200 bg-white dark:border-slate-700 dark:bg-slate-900"}`}
               >
-                <div className="flex items-center justify-between gap-3">
-                  <span className="rounded-lg bg-brand/10 p-2 text-brand dark:text-brand-soft">
+                <div className="path-card-top flex items-start justify-between gap-3">
+                  <span className="path-card-icon rounded-lg bg-brand/10 p-2 text-brand dark:text-brand-soft">
                     <PathIcon size={20} aria-hidden="true" />
                   </span>
+                  <span className="path-card-index" aria-hidden="true">{String(pathIndex + 1).padStart(2, "0")}</span>
+                </div>
+                <div className="path-card-rule" aria-hidden="true"><span /><svg viewBox="0 0 72 16" fill="none"><path d="M1 11C12 11 12 4 23 4s11 7 22 7S56 4 71 4" stroke="currentColor" strokeWidth="1.5" strokeDasharray="3 3"/><circle cx="71" cy="4" r="2.5" fill="currentColor"/></svg></div>
+                <div className="flex items-center justify-between gap-3">
                   <span className="text-sm text-slate-500 dark:text-slate-400">
                     {fmt(copy.stepCount, { count: path.steps.length })}
                   </span>
+                  <span className="path-card-dots" aria-hidden="true">{path.steps.map((step) => <i key={step.href} className={(state.completed[path.id] ?? []).includes(step.href) ? "is-complete" : ""} />)}</span>
                 </div>
                 <p className="mt-5 text-xs font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-200">
                   {path.audience}
@@ -259,6 +273,7 @@ export default function MyPathPage() {
                       : count
                         ? copy.returnPath
                         : copy.startPath}
+                    {!selected && <ChevronRight size={15} aria-hidden="true" className="path-card-arrow rtl:rotate-180" />}
                   </button>
                   {count > 0 && (
                     <span className="text-sm text-slate-500 dark:text-slate-400">

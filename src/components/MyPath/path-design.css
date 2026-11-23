@@ -1,0 +1,106 @@
+/* A quiet learning-journal treatment that takes its color from the current wiki theme. */
+.path-journal-intro > p:first-child::before {
+  content: "";
+  width: 2rem;
+  height: 2px;
+  background: var(--color-brand);
+  border-radius: 2px;
+}
+
+.path-collection #path-cards {
+  padding-inline: 0.25rem;
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, var(--color-brand) 55%, transparent) transparent;
+}
+
+.path-card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  min-height: 23rem;
+  border-radius: 1rem 1.75rem 1rem 1.75rem;
+  box-shadow: 0 4px 0 color-mix(in srgb, var(--color-brand) 12%, transparent);
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+
+.path-card::before {
+  content: "";
+  position: absolute;
+  inset-inline-end: 2rem;
+  top: 0;
+  width: 3.5rem;
+  height: 0.4rem;
+  border-radius: 0 0 0.35rem 0.35rem;
+  background: color-mix(in srgb, var(--color-brand) 65%, transparent);
+  transform: skewX(-14deg);
+}
+
+.path-card::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 9rem;
+  height: 9rem;
+  inset-inline-end: -4rem;
+  bottom: -5rem;
+  border: 1px solid color-mix(in srgb, var(--color-brand) 24%, transparent);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1rem color-mix(in srgb, var(--color-brand) 4%, transparent), 0 0 0 2rem color-mix(in srgb, var(--color-brand) 4%, transparent);
+}
+
+.path-card:hover, .path-card:focus-within {
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--color-brand) 65%, transparent);
+  box-shadow: 0 8px 0 color-mix(in srgb, var(--color-brand) 15%, transparent), 0 16px 28px rgb(0 0 0 / 0.08);
+}
+
+.path-card-selected {
+  box-shadow: 0 4px 0 color-mix(in srgb, var(--color-brand) 35%, transparent);
+}
+.path-card:not(.path-card-selected):nth-child(3n + 2) {
+  background-color: color-mix(in srgb, white 95%, var(--color-brand));
+}
+.dark .path-card:not(.path-card-selected):nth-child(3n + 2) {
+  background-color: color-mix(in srgb, #111827 95%, var(--color-brand));
+}
+.path-card h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.6rem;
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+}
+
+.path-card-icon {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid color-mix(in srgb, var(--color-brand) 22%, transparent);
+  transform: rotate(-4deg);
+  transition: transform 200ms ease;
+}
+
+.path-card:hover .path-card-icon, .path-card:focus-within .path-card-icon { transform: rotate(3deg); }
+.path-card-index {
+  font-family: Georgia, serif;
+  font-size: 2.5rem;
+  line-height: 1;
+  font-weight: 700;
+  color: color-mix(in srgb, var(--color-brand) 58%, transparent);
+  font-variant-numeric: tabular-nums;
+}
+.path-card-rule { display: flex; align-items: center; gap: 0.75rem; margin: 1rem 0; color: var(--color-brand); opacity: 0.65; }
+.path-card-rule span { flex: 1; height: 1px; background: color-mix(in srgb, var(--color-brand) 35%, transparent); }
+.path-card-rule svg { width: 4.5rem; height: 1rem; }
+.path-card-dots { display: flex; flex-wrap: wrap; justify-content: end; gap: 0.25rem; }
+.path-card-dots i { width: 0.38rem; height: 0.38rem; border-radius: 50%; border: 1px solid color-mix(in srgb, var(--color-brand) 55%, transparent); }
+.path-card-dots i.is-complete { background: var(--color-brand); }
+.path-card-arrow { transition: transform 200ms ease; }
+.path-card button:hover .path-card-arrow { transform: translateX(3px); }
+[dir="rtl"] .path-card button:hover .path-card-arrow { transform: rotate(180deg) translateX(3px); }
+
+@media (prefers-reduced-motion: reduce) {
+  .path-card, .path-card-icon, .path-card-arrow { transition: none; }
+  .path-card:hover, .path-card:focus-within, .path-card:hover .path-card-icon, .path-card:focus-within .path-card-icon, .path-card button:hover .path-card-arrow { transform: none; }
+  [dir="rtl"] .path-card button:hover .path-card-arrow { transform: rotate(180deg); }
+}

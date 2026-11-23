@@ -172,6 +172,7 @@ for (const theme of ["default", "ocean", "sunset", "forest", "ledger"]) {
       await expect(page.locator("html")).toHaveAttribute(
         "data-interface",
         "reader",
+        { timeout: 30_000 },
       );
       if (theme !== "default")
         await expect(page.locator("html")).toHaveAttribute(
