@@ -62,6 +62,7 @@ it("persists progress and saved pages, and resets them independently", async () 
   expect(screen.getByTestId("state")).toHaveTextContent("/wallets");
   fireEvent.click(screen.getByText("Clear"));
   expect(screen.getByTestId("state")).not.toHaveTextContent("/wallets");
+  expect(localStorage.getItem("zechub-my-path-v1")).toBeNull();
 });
 
 it("ignores malformed or unsafe saved state", () => {
@@ -99,4 +100,7 @@ it("synchronizes progress between two workspaces on the same page", async () => 
   expect(screen.getAllByTestId("state")[1]).toHaveTextContent(
     '"activePath":"learn"',
   );
+  fireEvent.click(screen.getAllByText("Clear")[0]);
+  expect(localStorage.getItem("zechub-my-path-v1")).toBeNull();
+  expect(screen.getAllByTestId("state")[1]).toHaveTextContent('"activePath":null');
 });

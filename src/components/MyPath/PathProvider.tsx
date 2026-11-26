@@ -114,12 +114,13 @@ export function PathProvider({ children }: { children: ReactNode }) {
       window.removeEventListener(CHANGE_EVENT, syncLocal);
     };
   }, []);
-  const update = useCallback((fn: (previous: PathState) => PathState) => {
+  const update = useCallback((fn: (previous: PathState) => PathState, removeStored = false) => {
     const next = fn(stateRef.current);
     stateRef.current = next;
     setState(next);
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+      if (removeStored) localStorage.removeItem(STORAGE_KEY);
+      else localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
       window.dispatchEvent(new Event(CHANGE_EVENT));
     } catch {
       setStorageAvailable(false);
@@ -163,7 +164,7 @@ export function PathProvider({ children }: { children: ReactNode }) {
       },
       resetPath: (id) =>
         update((s) => ({ ...s, completed: { ...s.completed, [id]: [] } })),
-      clearAll: () => update(() => emptyState),
+      clearAll: () => update(() => emptyState, true),
     }),
     [state, ready, storageAvailable, update],
   );

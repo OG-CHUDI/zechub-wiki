@@ -95,6 +95,19 @@ export default function PrivacyPage() {
       <Section title="Optional features you choose to use">
         <ul className="list-disc space-y-2 pl-5">
           <li>
+            <strong>My Path</strong> stores your chosen learning path, completed
+            steps, and saved pages in this browser&apos;s local storage when you
+            use the feature. This information is not sent to ZecHub as My Path
+            data and is not used for tracking. Anyone with access to this browser
+            profile may be able to see it. Use Clear all in My Path or clear this
+            site&apos;s browser data to remove it.
+          </li>
+          <li>
+            <strong>Desktop interface</strong> loads a separately hosted app
+            when you select it. Its host receives normal network requests,
+            including your IP address and the pages opened in that interface.
+          </li>
+          <li>
             <strong>Newsletter</strong> — if you subscribe, we store the email
             address you provide, for the newsletter only.
           </li>
