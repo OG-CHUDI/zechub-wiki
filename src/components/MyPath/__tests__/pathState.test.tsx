@@ -138,6 +138,17 @@ it("does not start or store a path when the dialog is cancelled", async () => {
   expect(localStorage.getItem("zechub-my-path-v1")).toBeNull();
 });
 
+it("asks for the same choice when saving a page before starting a path", async () => {
+  render(<PathProvider><Controls /></PathProvider>);
+  await waitFor(() => expect(screen.getByTestId("state")).not.toHaveTextContent("loading"));
+  fireEvent.click(screen.getByText("Save"));
+  expect(screen.getByRole("dialog")).toBeInTheDocument();
+  expect(localStorage.getItem("zechub-my-path-v1")).toBeNull();
+  fireEvent.click(screen.getByRole("button", { name: "Continue without saving" }));
+  expect(screen.getByTestId("state")).toHaveTextContent("/wallets");
+  expect(localStorage.getItem("zechub-my-path-v1")).toBeNull();
+});
+
 it("does not restore legacy data before consent and removes it if declined", async () => {
   localStorage.setItem("zechub-my-path-v1", JSON.stringify({ activePath: "learn", completed: {}, saved: [{ href: "/wallets", title: "Wallets" }] }));
   render(<PathProvider><Controls /></PathProvider>);

@@ -7,7 +7,7 @@ const learnSteps = learningPaths.find((path) => path.id === "learn")!.steps.leng
 
 test("visitors choose whether to save learning progress", async ({ page }) => {
   test.setTimeout(120_000);
-  await page.goto("/my-path");
+  await page.goto("/my-path", { waitUntil: "domcontentloaded" });
   await page.getByRole("article").filter({ hasText: "Learn Zcash" }).getByRole("button", { name: "Start this path" }).click();
   const dialog = page.getByRole("dialog", { name: "How My Path works" });
   await expect(dialog).toBeVisible();
@@ -16,7 +16,7 @@ test("visitors choose whether to save learning progress", async ({ page }) => {
   await page.getByRole("button", { name: /Mark complete\s*: What is Zcash/ }).click();
   await expect(page.getByText(`1 of ${learnSteps} complete`)).toBeVisible();
   expect(await page.evaluate(() => localStorage.getItem("zechub-my-path-v1"))).toBeNull();
-  await page.reload();
+  await page.reload({ waitUntil: "domcontentloaded" });
   await expect(page.getByRole("heading", { name: "Choose a path" })).toBeVisible();
 });
 
@@ -169,7 +169,12 @@ test("the real Desktop dock opens My Path", async ({ page }) => {
   await expect(dockButton).toBeVisible({ timeout: 60_000 });
   await expect(page.locator("[data-desktop-path-trigger]")).toHaveCount(0);
   await dockButton.click();
-  await expect(page.getByRole("complementary", { name: "My Path" })).toBeVisible();
+  const panel = page.getByRole("complementary", { name: "My Path" });
+  await expect(panel).toBeVisible();
+  await panel.getByRole("article").filter({ hasText: "Learn Zcash" }).getByRole("button", { name: "Start this path" }).click();
+  await expect(page.getByRole("dialog", { name: "How My Path works" })).toBeVisible();
+  await page.getByRole("dialog").getByRole("button", { name: "Continue without saving" }).click();
+  expect(await page.evaluate(() => localStorage.getItem("zechub-my-path-v1"))).toBeNull();
 });
 
 test("localized paths preserve translated copy, routes and right-to-left layout", async ({ page }) => {

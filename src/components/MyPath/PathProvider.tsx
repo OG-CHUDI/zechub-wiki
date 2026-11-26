@@ -224,9 +224,9 @@ export function PathProvider({ children }: { children: ReactNode }) {
     [state, ready, storageAvailable, storageMode, update, apply],
   );
   return <PathContext.Provider value={value}>{children}
-    <Dialog open={promptOpen} onClose={() => { pending.current = null; setPromptOpen(false); }} className="relative z-[11000]">
-      <div className="fixed inset-0 bg-black/60" aria-hidden="true" />
-      <div className="fixed inset-0 flex items-center justify-center p-4">
+    <Dialog open={promptOpen} onClose={() => { pending.current = null; setPromptOpen(false); }} className="fixed inset-0 z-[11000]">
+      <div className="absolute inset-0 bg-black/60" aria-hidden="true" />
+      <div className="absolute inset-0 flex items-center justify-center p-4">
         <DialogPanel className="max-h-[90dvh] w-full max-w-lg overflow-y-auto rounded-2xl border border-slate-300 bg-white p-6 text-slate-900 shadow-2xl dark:border-slate-600 dark:bg-slate-900 dark:text-white sm:p-8">
           <DialogTitle className="text-2xl font-semibold">{copy.consentTitle}</DialogTitle>
           <Description className="mt-4 leading-relaxed text-slate-700 dark:text-slate-200">{copy.consentIntro}</Description>
