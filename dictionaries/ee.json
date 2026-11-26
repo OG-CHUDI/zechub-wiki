@@ -5,7 +5,7 @@
     "pageActions": "Nye Mɔ ƒe axa ƒe nuwɔnawo",
     "learningPaths": "Nusɔsrɔ̃ ƒe mɔwo",
     "heading": "Di wò mɔ kple Zcash.",
-    "intro": "Tia mɔ aɖe, de dzesi afɔɖeɖeawo be wowu enu, eye nàdzra axawo ɖo na emegbe. Wò ŋgɔyiyi nɔa web-browser sia me.",
+    "intro": "Tia mɔ aɖe, de dzesi afɔɖeɖeawo be wowu enu, eye nàdzra axawo ɖo na emegbe.",
     "privacy": "Akɔnta alo gakotoku ƒe kadodo aɖeke mehiã o.",
     "storageUnavailable": "Browser ƒe nudzraɖoƒe mele dɔ wɔm o. Wò ŋgɔyiyi nye ɣeyiɣi kpui aɖe ko eye ate ŋu abu ne èdo le nukpɔsusu sia me.",
     "currentPath": "Mɔ si dzi woto fifia",
@@ -333,7 +333,14 @@
     "previousPaths": "Mɔ siwo dzi woto va yi",
     "nextPaths": "Mɔ siwo kplɔe ɖo",
     "stepPages": "Afɔɖeɖe ƒe axawo",
-    "pageOf": "Axa {page} ƒe {total}"
+    "pageOf": "Axa {page} ƒe {total}",
+    "consentTitle": "Alesi My Path wɔa dɔe",
+    "consentIntro": "Dze nusɔsrɔ̃mɔ aɖe dzi, de dzesi afɔɖeɖeawo be wowu enu, eye nàdzra axawo ɖo. My Path meɖoa wò ŋgɔyiyi ɖe ZecHub o.",
+    "consentDetails": "Ne ètiae be yeadzrae ɖo la, wò mɔ, afɔɖeɖe siwo nèwu enu kple axa siwo nèdzra ɖo la anɔ web-browser sia me. Amesiame si zãa browser profile sia ate ŋu akpɔ wo. Àte ŋu akɔ wo ŋu ɣesiaɣi.",
+    "consentMemory": "Yi edzi dzra ɖo manɔmee naa ŋgɔyiyi nɔa anyi vaseɖe esime nàgbugbɔ axa sia awɔ yeyee alo atue ko. Woaɖe My Path nyatakaka ɖesiaɖe si wodzra ɖo ɖe web-browser sia me va yi la ɖa.",
+    "consentSave": "Dzra ɖo ɖe web-browser sia dzi",
+    "consentNoSave": "Yi edzi nàdzra ga ɖo o",
+    "consentCancel": "Te fli ɖe eme"
   },
   "menuLabels": {
     "Accept Payments": "Lɔ̃ Ðe Fexexewo Dzi",

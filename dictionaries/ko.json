@@ -5,7 +5,7 @@
     "pageActions": "내 경로 페이지 작업",
     "learningPaths": "학습 경로",
     "heading": "Zcash로 길을 찾으세요.",
-    "intro": "경로를 선택하고, 단계를 완료로 표시하고, 나중을 위해 페이지를 저장하세요. 진행 상황은 이 브라우저에 유지됩니다.",
+    "intro": "경로를 선택하고, 단계를 완료로 표시하고, 나중을 위해 페이지를 저장하세요.",
     "privacy": "계정이나 지갑 연결이 필요하지 않습니다.",
     "storageUnavailable": "브라우저 저장 공간을 사용할 수 없습니다. 진행 상황은 일시적이며 이 보기를 벗어나면 손실될 수 있습니다.",
     "currentPath": "현재 경로",
@@ -333,7 +333,14 @@
     "previousPaths": "이전 경로",
     "nextPaths": "다음 경로",
     "stepPages": "단계 페이지",
-    "pageOf": "{total} 중 페이지 {page}"
+    "pageOf": "{total} 중 페이지 {page}",
+    "consentTitle": "My Path 작동 방식",
+    "consentIntro": "학습 경로를 따르고, 단계를 완료로 표시하고, 페이지를 저장하세요. My Path는 진행 상황을 ZecHub로 보내지 않습니다.",
+    "consentDetails": "저장을 선택하면 경로, 완료된 단계 및 저장된 페이지가 이 브라우저에 유지됩니다. 이 브라우저 프로필을 사용하는 사람은 누구나 해당 내용을 볼 수 있습니다. 언제든지 삭제할 수 있습니다.",
+    "consentMemory": "저장하지 않고 계속 진행하면 이 페이지를 새로 고치거나 닫을 때까지만 진행됩니다. 이 브라우저에 이전에 저장된 My Path 데이터는 모두 제거됩니다.",
+    "consentSave": "이 브라우저에 저장",
+    "consentNoSave": "저장하지 않고 계속",
+    "consentCancel": "취소"
   },
   "menuLabels": {
     "Accept Payments": "결제 받기",

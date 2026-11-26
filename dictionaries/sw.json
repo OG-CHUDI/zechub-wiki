@@ -5,7 +5,7 @@
     "pageActions": "Vitendo vya ukurasa wangu wa Njia",
     "learningPaths": "Njia za kujifunza",
     "heading": "Tafuta njia yako na Zcash.",
-    "intro": "Chagua njia, weka alama kwenye hatua zilizokamilika, na uhifadhi kurasa kwa ajili ya baadaye. Maendeleo yako yatasalia katika kivinjari hiki.",
+    "intro": "Chagua njia, weka alama kwenye hatua zilizokamilika, na uhifadhi kurasa kwa ajili ya baadaye.",
     "privacy": "Hakuna akaunti au muunganisho wa pochi unaohitajika.",
     "storageUnavailable": "Hifadhi ya kivinjari haipatikani. Maendeleo yako ni ya muda na huenda yakapotea ukiacha mwonekano huu.",
     "currentPath": "Njia ya sasa",
@@ -333,7 +333,14 @@
     "previousPaths": "Njia za awali",
     "nextPaths": "Njia zinazofuata",
     "stepPages": "Kurasa za hatua",
-    "pageOf": "Ukurasa {page} wa {total}"
+    "pageOf": "Ukurasa {page} wa {total}",
+    "consentTitle": "Jinsi My Path inavyofanya kazi",
+    "consentIntro": "Fuata njia ya kujifunza, weka alama kwenye hatua zilizokamilika, na uhifadhi kurasa. My Path haitumi maendeleo yako kwa ZecHub.",
+    "consentDetails": "Ukichagua kuhifadhi, njia yako, hatua zilizokamilika na kurasa zilizohifadhiwa zitasalia kwenye kivinjari hiki. Mtu yeyote anayetumia wasifu huu wa kivinjari anaweza kuziona. Unaweza kuzifuta wakati wowote.",
+    "consentMemory": "Endelea bila kuhifadhi huweka maendeleo pekee hadi utakapoonyesha upya au kufunga ukurasa huu. Data yoyote ya My Path iliyohifadhiwa hapo awali kwenye kivinjari hiki itaondolewa.",
+    "consentSave": "Hifadhi kwenye kivinjari hiki",
+    "consentNoSave": "Endelea bila kuhifadhi",
+    "consentCancel": "Ghairi"
   },
   "menuLabels": {
     "Accept Payments": "Kubali Malipo",

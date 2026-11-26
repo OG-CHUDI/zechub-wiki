@@ -5,7 +5,7 @@
     "pageActions": "My Path page actions",
     "learningPaths": "Learning paths",
     "heading": "Find your way with Zcash.",
-    "intro": "Choose a path, mark steps complete, and save pages for later. Your progress stays in this browser.",
+    "intro": "Choose a path, mark steps complete, and save pages for later.",
     "privacy": "No account or wallet connection needed.",
     "storageUnavailable": "Browser storage is unavailable. Your progress is temporary and may be lost when you leave this view.",
     "currentPath": "Current path",
@@ -333,7 +333,14 @@
     "previousPaths": "Previous paths",
     "nextPaths": "Next paths",
     "stepPages": "Step pages",
-    "pageOf": "Page {page} of {total}"
+    "pageOf": "Page {page} of {total}",
+    "consentTitle": "How My Path works",
+    "consentIntro": "Follow a learning path, mark steps complete, and save pages. My Path does not send your progress to ZecHub.",
+    "consentDetails": "If you choose to save, your path, completed steps and saved pages stay in this browser. Anyone using this browser profile may be able to see them. You can clear them at any time.",
+    "consentMemory": "Continue without saving keeps progress only until you refresh or close this page. Any previously saved My Path data in this browser will be removed.",
+    "consentSave": "Save on this browser",
+    "consentNoSave": "Continue without saving",
+    "consentCancel": "Cancel"
   },
   "menuLabels": {
     "Accept Payments": "Accept Payments",

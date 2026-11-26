@@ -5,7 +5,7 @@
     "pageActions": "Omume ibe m ụzọ",
     "learningPaths": "Ụzọ mmụta",
     "heading": "Chọta ụzọ gị na Zcash.",
-    "intro": "Họrọ ụzọ, kaa akara n'ụzọ zuru ezu, ma chekwaa ibe maka ma emechaa. Ọganihu gị dị na ihe nchọgharị a.",
+    "intro": "Họrọ ụzọ, kaa akara n'ụzọ zuru ezu, ma chekwaa ibe maka ma emechaa.",
     "privacy": "Enweghị akaụntụ ma ọ bụ njikọ obere akpa achọrọ.",
     "storageUnavailable": "Nchekwa ihe nchọgharị adịghị. Ọganihu gị bụ nwa oge ma nwee ike ịla n'iyi mgbe ịhapụ echiche a.",
     "currentPath": "Ụzọ dị ugbu a",
@@ -333,7 +333,14 @@
     "previousPaths": "Ụzọ gara aga",
     "nextPaths": "Ụzọ na-esote",
     "stepPages": "ibe nzọụkwụ",
-    "pageOf": "Ibe {page} nke {total}"
+    "pageOf": "Ibe {page} nke {total}",
+    "consentTitle": "Kedu ka My Path si arụ ọrụ",
+    "consentIntro": "Soro ụzọ mmụta, kaa akara n'usoro zuru oke ma chekwaa ibe. My Path anaghị eziga ọganihu gị na ZecHub.",
+    "consentDetails": "Ọ bụrụ na ịhọrọ ịchekwaa, ụzọ gị, usoro emechara na ibe echekwara ga-anọ na ihe nchọgharị a. Onye ọ bụla na-eji profaịlụ ihe nchọgharị a nwere ike ịhụ ha. Ị nwere ike ikpochapụ ha n'oge ọ bụla.",
+    "consentMemory": "Gaa n'ihu na-enweghị nchekwa na-eme ka ọganihu naanị ruo mgbe ị megharịrị ma ọ bụ mechie ibe a. A ga-ewepụ data My Path ọ bụla echekwara na mbụ na ihe nchọgharị a.",
+    "consentSave": "Chekwa na ihe nchọgharị a",
+    "consentNoSave": "Gaa n'ihu na-echekwaghị",
+    "consentCancel": "Kagbuo"
   },
   "menuLabels": {
     "Accept Payments": "Nabata Ịkwụ Ụgwọ",

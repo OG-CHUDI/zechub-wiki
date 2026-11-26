@@ -5,7 +5,7 @@
     "pageActions": "Aktionen auf der Seite „Mein Pfad“.",
     "learningPaths": "Lernpfade",
     "heading": "Finden Sie Ihren Weg mit Zcash.",
-    "intro": "Wählen Sie einen Pfad, markieren Sie die Schritte als abgeschlossen und speichern Sie die Seiten für später. Ihr Fortschritt bleibt in diesem Browser erhalten.",
+    "intro": "Wählen Sie einen Pfad, markieren Sie die Schritte als abgeschlossen und speichern Sie die Seiten für später.",
     "privacy": "Keine Konto- oder Wallet-Verbindung erforderlich.",
     "storageUnavailable": "Der Browserspeicher ist nicht verfügbar. Ihr Fortschritt ist vorübergehend und geht möglicherweise verloren, wenn Sie diese Ansicht verlassen.",
     "currentPath": "Aktueller Pfad",
@@ -333,7 +333,14 @@
     "previousPaths": "Bisherige Wege",
     "nextPaths": "Nächste Wege",
     "stepPages": "Schrittseiten",
-    "pageOf": "Seite {page} von {total}"
+    "pageOf": "Seite {page} von {total}",
+    "consentTitle": "So funktioniert My Path",
+    "consentIntro": "Folgen Sie einem Lernpfad, markieren Sie die Schritte als abgeschlossen und speichern Sie die Seiten. My Path sendet Ihren Fortschritt nicht an ZecHub.",
+    "consentDetails": "Wenn Sie sich zum Speichern entscheiden, bleiben Ihr Pfad, abgeschlossene Schritte und gespeicherte Seiten in diesem Browser erhalten. Jeder, der dieses Browserprofil verwendet, kann sie möglicherweise sehen. Sie können sie jederzeit löschen.",
+    "consentMemory": "„Ohne Speichern fortfahren“ hält den Fortschritt nur so lange aufrecht, bis Sie diese Seite aktualisieren oder schließen. Alle zuvor in diesem Browser gespeicherten My Path-Daten werden entfernt.",
+    "consentSave": "Speichern Sie in diesem Browser",
+    "consentNoSave": "Ohne Speichern fortfahren",
+    "consentCancel": "Abbrechen"
   },
   "menuLabels": {
     "Accept Payments": "Zahlungen akzeptieren",

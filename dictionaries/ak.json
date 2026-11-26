@@ -5,7 +5,7 @@
     "pageActions": "Me Kwan krataafa no nneyɛe",
     "learningPaths": "Adesua akwan",
     "heading": "Hwehwɛ wo kwan ne Zcash.",
-    "intro": "Paw ɔkwan bi, hyɛ anammɔn ahorow no agyirae sɛ awie, na sie nkratafa no ma akyiri yi. Wo nkɔsoɔ tra browser yi mu.",
+    "intro": "Paw ɔkwan bi, hyɛ anammɔn ahorow no agyirae sɛ awie, na sie nkratafa no ma akyiri yi.",
     "privacy": "Akonta anaa sika kotoku nkitahodi biara ho nhia.",
     "storageUnavailable": "Browser storage no nni hɔ. Wo nkɔso yɛ bere tiaa mu de na ebia wobɛyera bere a wufi saa adwene yi mu no.",
     "currentPath": "Mprempren kwan no",
@@ -333,7 +333,14 @@
     "previousPaths": "Akwan a atwam",
     "nextPaths": "Akwan a edi hɔ",
     "stepPages": "Anamɔn nkratafa",
-    "pageOf": "Kratafa {page} a ɛwɔ {total} mu"
+    "pageOf": "Kratafa {page} a ɛwɔ {total} mu",
+    "consentTitle": "Sɛnea My Path yɛ adwuma",
+    "consentIntro": "Di adesua kwan bi akyi, hyɛ anammɔn a wɔawie no agyirae, na sie nkratafa. My Path mfa wo nkɔsoɔ nkɔma ZecHub.",
+    "consentDetails": "Sɛ wopaw sɛ wobɛkora so a, wo kwan, anammɔn a woawie ne nkratafa a woakora so no tra browser yi mu. Ebia obiara a ɔde browser profile yi redi dwuma no betumi ahu wɔn. Wubetumi ayi wɔn afi hɔ bere biara.",
+    "consentMemory": "Kɔ so a wonkora so ma nkɔso kɔ so kosi sɛ wobɛsan ayɛ foforo anaasɛ wobɛto kratafa yi mu nkutoo. Wɔbɛyi My Path data biara a wɔadi kan akora so wɔ brawsa yi mu no afiri hɔ.",
+    "consentSave": "Fa sie wɔ browser yi so",
+    "consentNoSave": "Kɔ so a wonkora sika so",
+    "consentCancel": "Twa mu"
   },
   "menuLabels": {
     "Accept Payments": "Gye Katua a Wotua Tom",

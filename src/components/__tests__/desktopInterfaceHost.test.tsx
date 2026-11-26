@@ -121,6 +121,7 @@ describe("Desktop interface host", () => {
         .findAllByRole("button", { name: "Start this path" })
         .then((buttons) => buttons[0]),
     );
+    fireEvent.click(await screen.findByRole("button", { name: "Save on this browser" }));
     fireEvent.click(
       await screen.findByRole("link", { name: /Continue: What is Zcash/ }),
     );
@@ -132,7 +133,7 @@ describe("Desktop interface host", () => {
     );
     expect(screen.queryByRole("complementary", { name: "My Path" })).toBeNull();
     expect(
-      JSON.parse(localStorage.getItem("zechub-my-path-v1") ?? "{}").activePath,
+      JSON.parse(localStorage.getItem("zechub-my-path-v1") ?? "{}").state.activePath,
     ).toBe("learn");
   });
 

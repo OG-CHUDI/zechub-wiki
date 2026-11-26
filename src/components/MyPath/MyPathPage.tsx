@@ -36,6 +36,8 @@ export default function MyPathPage() {
     state,
     ready,
     storageAvailable,
+    storageMode,
+    requestSaving,
     choosePath,
     toggleStep,
     toggleSaved,
@@ -71,6 +73,7 @@ export default function MyPathPage() {
         <p className="mt-4 flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400">
           <LockKeyhole size={16} aria-hidden="true" /> {copy.privacy}
         </p>
+        {ready && storageMode === "memory" && <button type="button" onClick={requestSaving} className="mt-3 text-sm font-semibold text-slate-700 underline underline-offset-4 dark:text-slate-200">{copy.consentSave}</button>}
         {ready && !storageAvailable && (
           <p
             role="status"

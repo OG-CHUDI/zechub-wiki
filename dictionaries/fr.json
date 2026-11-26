@@ -5,7 +5,7 @@
     "pageActions": "Actions de la page Mon chemin",
     "learningPaths": "Parcours d'apprentissage",
     "heading": "Trouvez votre chemin avec Zcash.",
-    "intro": "Choisissez un chemin, marquez les étapes comme terminées et enregistrez les pages pour plus tard. Votre progression reste dans ce navigateur.",
+    "intro": "Choisissez un chemin, marquez les étapes comme terminées et enregistrez les pages pour plus tard.",
     "privacy": "Aucune connexion à un compte ou à un portefeuille n'est nécessaire.",
     "storageUnavailable": "Le stockage du navigateur n'est pas disponible. Votre progression est temporaire et peut être perdue lorsque vous quittez cette vue.",
     "currentPath": "Chemin actuel",
@@ -333,7 +333,14 @@
     "previousPaths": "Chemins précédents",
     "nextPaths": "Chemins suivants",
     "stepPages": "Pages d'étapes",
-    "pageOf": "Page {page} de {total}"
+    "pageOf": "Page {page} de {total}",
+    "consentTitle": "Comment fonctionne My Path",
+    "consentIntro": "Suivez un parcours d'apprentissage, marquez les étapes terminées et enregistrez les pages. My Path n'envoie pas votre progression à ZecHub.",
+    "consentDetails": "Si vous choisissez d'enregistrer, votre chemin, les étapes terminées et les pages enregistrées restent dans ce navigateur. Toute personne utilisant ce profil de navigateur pourra les voir. Vous pouvez les effacer à tout moment.",
+    "consentMemory": "Continuer sans enregistrer conserve la progression uniquement jusqu'à ce que vous actualisiez ou fermiez cette page. Toutes les données My Path précédemment enregistrées dans ce navigateur seront supprimées.",
+    "consentSave": "Enregistrer sur ce navigateur",
+    "consentNoSave": "Continuer sans enregistrer",
+    "consentCancel": "Annuler"
   },
   "menuLabels": {
     "Accept Payments": "Accepter les paiements",

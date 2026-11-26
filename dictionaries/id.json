@@ -5,7 +5,7 @@
     "pageActions": "Tindakan halaman Jalur Saya",
     "learningPaths": "Jalur pembelajaran",
     "heading": "Temukan jalan Anda dengan Zcash.",
-    "intro": "Pilih jalur, tandai langkah selesai, dan simpan halaman untuk nanti. Kemajuan Anda tetap ada di browser ini.",
+    "intro": "Pilih jalur, tandai langkah selesai, dan simpan halaman untuk nanti.",
     "privacy": "Tidak diperlukan koneksi akun atau dompet.",
     "storageUnavailable": "Penyimpanan browser tidak tersedia. Kemajuan Anda bersifat sementara dan mungkin hilang jika Anda meninggalkan tampilan ini.",
     "currentPath": "Jalur saat ini",
@@ -333,7 +333,14 @@
     "previousPaths": "Jalur sebelumnya",
     "nextPaths": "Jalur berikutnya",
     "stepPages": "Halaman langkah",
-    "pageOf": "Halaman {page} dari {total}"
+    "pageOf": "Halaman {page} dari {total}",
+    "consentTitle": "Bagaimana My Path bekerja",
+    "consentIntro": "Ikuti jalur pembelajaran, tandai langkah-langkah selesai, dan simpan halaman. My Path tidak mengirimkan kemajuan Anda ke ZecHub.",
+    "consentDetails": "Jika Anda memilih untuk menyimpan, jalur Anda, langkah-langkah yang diselesaikan, dan halaman yang disimpan akan tetap berada di browser ini. Siapa pun yang menggunakan profil browser ini mungkin dapat melihatnya. Anda dapat menghapusnya kapan saja.",
+    "consentMemory": "Lanjutkan tanpa menyimpan akan mempertahankan kemajuan hanya sampai Anda menyegarkan atau menutup halaman ini. Semua data My Path yang disimpan sebelumnya di browser ini akan dihapus.",
+    "consentSave": "Simpan di browser ini",
+    "consentNoSave": "Lanjutkan tanpa menyimpan",
+    "consentCancel": "Batalkan"
   },
   "menuLabels": {
     "Accept Payments": "Terima Pembayaran",

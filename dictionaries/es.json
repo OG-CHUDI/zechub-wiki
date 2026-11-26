@@ -5,7 +5,7 @@
     "pageActions": "Acciones de la página Mi ruta",
     "learningPaths": "Caminos de aprendizaje",
     "heading": "Encuentra tu camino con Zcash.",
-    "intro": "Elija una ruta, marque los pasos como completos y guarde las páginas para más adelante. Tu progreso permanece en este navegador.",
+    "intro": "Elija una ruta, marque los pasos como completos y guarde las páginas para más adelante.",
     "privacy": "No se necesita conexión de cuenta o billetera.",
     "storageUnavailable": "El almacenamiento del navegador no está disponible. Su progreso es temporal y puede perderse cuando abandone esta vista.",
     "currentPath": "Camino actual",
@@ -333,7 +333,14 @@
     "previousPaths": "Caminos anteriores",
     "nextPaths": "Próximos caminos",
     "stepPages": "Paginas de pasos",
-    "pageOf": "Página {page} de {total}"
+    "pageOf": "Página {page} de {total}",
+    "consentTitle": "Cómo funciona My Path",
+    "consentIntro": "Siga una ruta de aprendizaje, marque los pasos completados y guarde páginas. My Path no envía su progreso a ZecHub.",
+    "consentDetails": "Si elige guardar, su ruta, los pasos completados y las páginas guardadas permanecen en este navegador. Cualquiera que utilice este perfil de navegador podrá verlos. Puedes borrarlos en cualquier momento.",
+    "consentMemory": "Continuar sin guardar mantiene el progreso solo hasta que actualice o cierre esta página. Se eliminarán todos los datos de My Path previamente guardados en este navegador.",
+    "consentSave": "Guardar en este navegador",
+    "consentNoSave": "Continuar sin guardar",
+    "consentCancel": "Cancelar"
   },
   "menuLabels": {
     "Accept Payments": "Aceptar pagos",

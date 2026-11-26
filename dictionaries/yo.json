@@ -5,7 +5,7 @@
     "pageActions": "Awọn iṣe oju-iwe Ona Mi",
     "learningPaths": "Awọn ọna ikẹkọ",
     "heading": "Wa ọna rẹ pẹlu Zcash.",
-    "intro": "Yan ọna kan, samisi awọn igbesẹ ti pari, ati fi awọn oju-iwe pamọ fun igbamiiran. Ilọsiwaju rẹ duro ni ẹrọ aṣawakiri yii.",
+    "intro": "Yan ọna kan, samisi awọn igbesẹ ti pari, ati fi awọn oju-iwe pamọ fun igbamiiran.",
     "privacy": "Ko si iroyin tabi asopọ apamọwọ nilo.",
     "storageUnavailable": "Ibi ipamọ ẹrọ aṣawakiri ko si. Ilọsiwaju rẹ jẹ igba diẹ ati pe o le sọnu nigbati o ba lọ kuro ni wiwo yii.",
     "currentPath": "Ona lọwọlọwọ",
@@ -333,7 +333,14 @@
     "previousPaths": "Awọn ọna ti tẹlẹ",
     "nextPaths": "Awọn ọna atẹle",
     "stepPages": "Awọn oju-iwe igbesẹ",
-    "pageOf": "Oju-iwe {page} ti {total}"
+    "pageOf": "Oju-iwe {page} ti {total}",
+    "consentTitle": "Bawo ni My Path ṣiṣẹ",
+    "consentIntro": "Tẹle ipa ọna ẹkọ, samisi awọn igbesẹ ti pari, ati fi awọn oju-iwe pamọ. My Path ko fi ilọsiwaju rẹ ranṣẹ si ZecHub.",
+    "consentDetails": "Ti o ba yan lati fipamọ, ọna rẹ, awọn igbesẹ ti o pari ati awọn oju-iwe ti o fipamọ duro ni ẹrọ aṣawakiri yii. Ẹnikẹni ti o nlo profaili aṣawakiri yii le ni anfani lati rii wọn. O le nu wọn nigbakugba.",
+    "consentMemory": "Tẹsiwaju laisi fifipamọ o tọju ilọsiwaju nikan titi iwọ o fi sọtun tabi tii oju-iwe yii. Eyikeyi data My Path ti a fipamọ tẹlẹ ninu ẹrọ aṣawakiri yii yoo yọkuro.",
+    "consentSave": "Fipamọ sori ẹrọ aṣawakiri yii",
+    "consentNoSave": "Tẹsiwaju laisi fifipamọ",
+    "consentCancel": "Fagilee"
   },
   "menuLabels": {
     "Accept Payments": "Gba Àwọn Ìsanwó",

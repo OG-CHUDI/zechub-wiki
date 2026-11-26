@@ -5,7 +5,7 @@
     "pageActions": "Azioni della pagina Il mio percorso",
     "learningPaths": "Percorsi di apprendimento",
     "heading": "Trova la tua strada con Zcash.",
-    "intro": "Scegli un percorso, contrassegna i passaggi come completati e salva le pagine per dopo. I tuoi progressi rimangono in questo browser.",
+    "intro": "Scegli un percorso, contrassegna i passaggi come completati e salva le pagine per dopo.",
     "privacy": "Non è necessaria alcuna connessione ad un account o al portafoglio.",
     "storageUnavailable": "Lo spazio di archiviazione del browser non è disponibile. I tuoi progressi sono temporanei e potrebbero andare persi quando lasci questa visualizzazione.",
     "currentPath": "Percorso attuale",
@@ -333,7 +333,14 @@
     "previousPaths": "Percorsi precedenti",
     "nextPaths": "Prossimi percorsi",
     "stepPages": "Pagine di passaggio",
-    "pageOf": "Pagina {page} di {total}"
+    "pageOf": "Pagina {page} di {total}",
+    "consentTitle": "Come funziona My Path",
+    "consentIntro": "Segui un percorso di apprendimento, contrassegna i passaggi come completati e salva le pagine. My Path non invia i tuoi progressi a ZecHub.",
+    "consentDetails": "Se scegli di salvare, il percorso, i passaggi completati e le pagine salvate rimarranno in questo browser. Chiunque utilizzi questo profilo del browser potrebbe essere in grado di vederli. Puoi cancellarli in qualsiasi momento.",
+    "consentMemory": "Continua senza salvare mantiene i progressi solo finché non aggiorni o chiudi questa pagina. Tutti i dati My Path salvati in precedenza in questo browser verranno rimossi.",
+    "consentSave": "Salva su questo browser",
+    "consentNoSave": "Continua senza salvare",
+    "consentCancel": "Annulla"
   },
   "menuLabels": {
     "Accept Payments": "Accetta pagamenti",

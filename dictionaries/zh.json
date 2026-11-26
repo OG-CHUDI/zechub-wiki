@@ -5,7 +5,7 @@
     "pageActions": "我的路径页面操作",
     "learningPaths": "学习路径",
     "heading": "通过 Zcash 找到您的出路。",
-    "intro": "选择路径，将步骤标记为完成，然后保存页面供以后使用。您的进度保留在此浏览器中。",
+    "intro": "选择路径，将步骤标记为完成，然后保存页面供以后使用。",
     "privacy": "无需帐户或钱包连接。",
     "storageUnavailable": "浏览器存储不可用。您的进度是暂时的，当您离开此视图时可能会丢失。",
     "currentPath": "当前路径",
@@ -333,7 +333,14 @@
     "previousPaths": "之前的路径",
     "nextPaths": "接下来的路径",
     "stepPages": "步骤页面",
-    "pageOf": "{total} 的页面 {page}"
+    "pageOf": "{total} 的页面 {page}",
+    "consentTitle": "My Path 的工作原理",
+    "consentIntro": "遵循学习路径、标记完成的步骤并保存页面。 My Path 不会将您的进度发送到 ZecHub。",
+    "consentDetails": "如果您选择保存，您的路径、已完成的步骤和保存的页面将保留在此浏览器中。使用此浏览器配置文件的任何人都可以看到它们。您可以随时清除它们。",
+    "consentMemory": "继续而不保存只会保留进度，直到您刷新或关闭此页面。此浏览器中任何先前保存的 My Path 数据都将被删除。",
+    "consentSave": "在此浏览器上保存",
+    "consentNoSave": "不保存继续",
+    "consentCancel": "取消"
   },
   "menuLabels": {
     "Accept Payments": "接受付款",

@@ -5,7 +5,7 @@
     "pageActions": "Yolum sayfası eylemleri",
     "learningPaths": "Öğrenme yolları",
     "heading": "Zcash ile yolunuzu bulun.",
-    "intro": "Bir yol seçin, adımları tamamlandı olarak işaretleyin ve sayfaları daha sonra kullanmak üzere kaydedin. İlerlemeniz bu tarayıcıda kalır.",
+    "intro": "Bir yol seçin, adımları tamamlandı olarak işaretleyin ve sayfaları daha sonra kullanmak üzere kaydedin.",
     "privacy": "Hesap veya cüzdan bağlantısına gerek yok.",
     "storageUnavailable": "Tarayıcı depolama alanı kullanılamıyor. İlerlemeniz geçicidir ve bu görünümden çıktığınızda kaybolabilir.",
     "currentPath": "Geçerli yol",
@@ -333,7 +333,14 @@
     "previousPaths": "Önceki yollar",
     "nextPaths": "Sonraki yollar",
     "stepPages": "Adım sayfaları",
-    "pageOf": "{total}'nin {page} sayfası"
+    "pageOf": "{total}'nin {page} sayfası",
+    "consentTitle": "My Path nasıl çalışır?",
+    "consentIntro": "Bir öğrenme yolunu takip edin, adımları tamamlandı olarak işaretleyin ve sayfaları kaydedin. My Path, ilerlemenizi ZecHub'ye göndermez.",
+    "consentDetails": "Kaydetmeyi seçerseniz yolunuz, tamamladığınız adımlar ve kayıtlı sayfalarınız bu tarayıcıda kalır. Bu tarayıcı profilini kullanan herkes bunları görebilir. Bunları istediğiniz zaman temizleyebilirsiniz.",
+    "consentMemory": "Kaydetmeden devam et, ilerlemeyi yalnızca siz bu sayfayı yenileyene veya kapatana kadar sürdürür. Bu tarayıcıya önceden kaydedilmiş tüm My Path verileri kaldırılacaktır.",
+    "consentSave": "Bu tarayıcıya kaydet",
+    "consentNoSave": "Kaydetmeden devam et",
+    "consentCancel": "İptal"
   },
   "menuLabels": {
     "Accept Payments": "Ödemeleri Kabul Et",

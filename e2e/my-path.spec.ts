@@ -5,9 +5,24 @@ import { learningPaths } from "../src/lib/learningPaths";
 
 const learnSteps = learningPaths.find((path) => path.id === "learn")!.steps.length;
 
+test("visitors choose whether to save learning progress", async ({ page }) => {
+  test.setTimeout(120_000);
+  await page.goto("/my-path");
+  await page.getByRole("article").filter({ hasText: "Learn Zcash" }).getByRole("button", { name: "Start this path" }).click();
+  const dialog = page.getByRole("dialog", { name: "How My Path works" });
+  await expect(dialog).toBeVisible();
+  expect(await page.evaluate(() => localStorage.getItem("zechub-my-path-v1"))).toBeNull();
+  await dialog.getByRole("button", { name: "Continue without saving" }).click();
+  await page.getByRole("button", { name: /Mark complete\s*: What is Zcash/ }).click();
+  await expect(page.getByText(`1 of ${learnSteps} complete`)).toBeVisible();
+  expect(await page.evaluate(() => localStorage.getItem("zechub-my-path-v1"))).toBeNull();
+  await page.reload();
+  await expect(page.getByRole("heading", { name: "Choose a path" })).toBeVisible();
+});
+
 test("completed paths lead to another path and the full wiki", async ({ page }) => {
   await page.addInitScript((paths) => {
-    if (!localStorage.getItem("zechub-my-path-v1")) localStorage.setItem("zechub-my-path-v1", JSON.stringify({ activePath: "learn", completed: { learn: paths.find((path) => path.id === "learn")!.steps.map((step) => step.href) }, saved: [] }));
+    if (!localStorage.getItem("zechub-my-path-v1")) localStorage.setItem("zechub-my-path-v1", JSON.stringify({ version: 2, consent: true, state: { activePath: "learn", completed: { learn: paths.find((path) => path.id === "learn")!.steps.map((step) => step.href) }, saved: [] } }));
   }, learningPaths);
   await page.goto("/my-path");
   await expect(page.getByRole("button", { name: /Try another path:/ })).toBeVisible();
@@ -15,7 +30,7 @@ test("completed paths lead to another path and the full wiki", async ({ page }) 
   await page.getByRole("button", { name: /Try another path:/ }).click();
   await expect(page.getByRole("heading", { name: "Use Zcash privately", level: 2 })).toBeVisible();
   await page.evaluate((paths) => {
-    localStorage.setItem("zechub-my-path-v1", JSON.stringify({ activePath: "learn", completed: Object.fromEntries(paths.map((path) => [path.id, path.steps.map((step) => step.href)])), saved: [] }));
+    localStorage.setItem("zechub-my-path-v1", JSON.stringify({ version: 2, consent: true, state: { activePath: "learn", completed: Object.fromEntries(paths.map((path) => [path.id, path.steps.map((step) => step.href)])), saved: [] } }));
   }, learningPaths);
   await page.reload();
   await expect(page.getByRole("button", { name: /Try another path:/ })).toHaveCount(0);
@@ -34,6 +49,7 @@ test("a reader can start, complete and resume a private learning path", async ({
     .filter({ hasText: "Learn Zcash" })
     .getByRole("button", { name: "Start this path" })
     .click();
+  await page.getByRole("dialog").getByRole("button", { name: "Save on this browser" }).click();
   await expect(page.getByText(`0 of ${learnSteps} complete`)).toBeVisible();
   await page
     .getByRole("button", { name: /Mark complete\s*: What is Zcash\?/ })
@@ -93,6 +109,7 @@ test("a longer path can be navigated a page at a time", async ({ page }) => {
   await page.evaluate(() => localStorage.removeItem("zechub-my-path-v1"));
   await page.reload();
   await page.getByRole("article").filter({ hasText: "Learn Zcash" }).getByRole("button", { name: "Start this path" }).click();
+  await page.getByRole("dialog").getByRole("button", { name: "Continue without saving" }).click();
   const steps = page.getByRole("navigation", { name: "Step pages" });
   await expect(steps).toContainText("Page 1 of 2");
   await steps.getByRole("button", { name: "Next" }).click();
@@ -130,6 +147,7 @@ test("Desktop users can open a path without changing interfaces", async ({
     .filter({ hasText: "Learn Zcash" })
     .getByRole("button", { name: "Start this path" })
     .click();
+  await page.getByRole("dialog").getByRole("button", { name: "Continue without saving" }).click();
   await panel.getByRole("link", { name: "Continue: What is Zcash?" }).click();
   await expect(desktop).toHaveAttribute(
     "src",
@@ -159,6 +177,7 @@ test("localized paths preserve translated copy, routes and right-to-left layout"
   await page.goto("/fr/my-path", { waitUntil: "domcontentloaded" });
   await expect(page.getByRole("heading", { name: fr.myPath.heading })).toBeVisible();
   await page.getByRole("article").filter({ hasText: fr.myPath.paths.learn.title }).getByRole("button", { name: fr.myPath.startPath }).click();
+  await page.getByRole("dialog").getByRole("button", { name: fr.myPath.consentNoSave }).click();
   await expect(page.getByRole("link", { name: new RegExp(fr.myPath.paths.learn.steps[0].title) }).first()).toHaveAttribute("href", /\/fr\/start-here\/what-is-zec-and-zcash/);
   await page.goto("/ar/my-path", { waitUntil: "domcontentloaded" });
   await expect(page.locator("html")).toHaveAttribute("dir", "rtl");
